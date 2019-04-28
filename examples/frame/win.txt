@@ -1,0 +1,90 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Frame
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The FRAME example shows the frame hierarchy of a series of atomics
+in a clump. Each atomic has its own frame and can be selected and 
+rotated. Note that the root atomic and clump share the same frame. The 
+selected frame is represented by highlighting the bounding box of its atomic.
+
+Any rotation applied to a frame will affect the frame as well as its child
+frames. So if you rotate the root all its frames will be rotated relative to
+it. If you rotate a frame with no child frames only that frame will be rotated.
+
+The atomics are colored depending upon their frame position within the 
+hierarchy e.g. the root is red, the children of the root are green, the 
+grandchildren of the root are blue etc.
+
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+TAB                     - Select the next frame that is on the same level.
+
+CTRL + TAB              - Select the previous frame that is on the same 
+                          level.
+
+PAGE-UP                 - Select the current frame's parent.
+
+PAGE-DOWN               - Select the current frame's first child frame.
+
+Left mouse button drag  - Rotate the selected frame.
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+RESET                   - Allows the user to reset the rotation of the 
+                          frames.
+
+ATOMICS                 - Allows the user to turn the rendering of the 
+                          atomics on / off.
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

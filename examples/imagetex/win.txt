@@ -1,0 +1,110 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Imagetex
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The IMAGETEX example illustrates the correlation between different image
+types and the textures that are generated from them. It also shows how
+the texture's raster type can vary across different platforms.
+
+The example consists of a series of different images which reflect all 
+the typical types of image that may be used. In most cases the PNG image 
+format has been used.
+
+The following describes the formats of the images which have been used:
+
+    img888.png    -  24-bits (8 bits per component).
+    img8888.png   -  32-bits (8 bits per component).
+    imggray.png   -   8-bits (Gray-scale).
+
+    imgpal4.png   -  Image with a 4-bit palette.
+    imgpal8.png   -  Image with an 8-bit palette.
+
+    imgpal1.bmp + imgpal1m.bmp  
+                  -  Shows how two palletized images can be used to 
+                     create a masked texture.
+
+    imgpal2m.png  -  Shows how a single image can be used to create a 
+                     masked texture.
+
+    imgmask.png + imgmaskm.png
+                  -  Shows how two 32-bit images can be used to 
+                     create a masked 32-bit texture.
+
+    imgdffsz.png  -  Show how an image with dimensions that aren't
+                     a power of two is loaded.
+
+There are many factors to be aware of with respect to image and texture
+formats:
+
+(A) Although RenderWare fully supports the PNG image format, certain 
+    formats undergo conversion at read time before they are converted 
+    into textures. An example of this would be grayscale images which 
+    are converted to RGB images at read time on some platforms.
+
+(B) Different platforms have different methods for creating textures. 
+    The PC platform generally creates texture rasters of a default depth 
+    regardless of the image format. This often means that palletized 
+    images are converted to non-palletized textures.
+
+(C) Masked images are always converted to 32-bit rasters, regardless of 
+    the image format. To create masked images with different formats the 
+    image should be pre-processed outside of RenderWare and should be 
+    read as a single image with no mask, e.g. imgpal2m.png.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR             - Toggle menu/help/plain mode.
+
+ESC                  - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+LOAD IMAGE           - Allows the user to select an image.
+
+FPS                  - Allows the user to read the number of frames per
+                       second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN  - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN    - Scroll a page at a time.
+
+Mouse Wheel scroll  - Scroll up or down the page using the mouse wheel
+                      (if available).
+ 
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

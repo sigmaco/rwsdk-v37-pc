@@ -1,0 +1,88 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Collis1
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The COLLIS1 example is a small demonstration of collision detection in 
+RenderWare. The user is given control of a roving camera. There are two 
+collision modes that can be used:
+ 
+1) The first mode is based on collision detection between the world and 
+   a LINE. In this mode the camera is maintained at a fixed height above 
+   the undulating terrain, greater than or equal to the camera's radius.
+
+2) The second mode is based on collision detection between the world
+   and a SPHERE. In this mode the camera can be moved freely above the 
+   world, and collisions will occur when the distance between the world 
+   and the camera is less that the camera's radius. On a collision the 
+   camera will continue to move forwards but will follow the surface of 
+   the terrain. 
+    
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button drag  - Orient the camera, turn and tilt.
+
+Right mouse button      - Toggle forward movement.
+
+CTRL +
+Right mouse button      - Toggle backwards movement.
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+COLLISION MODE          - Allows the user to choose which collision mode 
+                          to use: SPHERE or LINE.
+
+CAMERA RADIUS           - Specifies the radius of the camera object which
+                          will be used in determining the camera's closest
+                          approach to the world geometry.                           
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+                   
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

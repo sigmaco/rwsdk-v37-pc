@@ -1,0 +1,205 @@
+# put a default target at the top to prevent rules from getting confused later
+
+all: checkopts demo
+
+#
+# include user custom options file if it exists
+#
+ifndef RWOPTIONS
+RWOPTIONS = ../options.mak
+endif
+include $(RWOPTIONS)
+
+checkopts:
+
+ifeq ("$(RWGDIR)", "")
+	@echo ERROR: RWGDIR undefined
+	@error
+endif #  ("$(RWGDIR)", "")
+
+ifeq ("$(RWGSDK)", "")
+RWGSDK = $(RWGDIR)/rwsdk
+endif
+
+ifndef RW31DIRS
+RW31DIRS = 0
+endif
+
+ifndef RWVERBOSE
+RWVERBOSE = 0
+endif
+
+ifndef RWSUPPRESSINLINE
+RWSUPPRESSINLINE = 0
+endif
+
+ifndef RWSUPPRESSOPTIMIZATIONPRAGMAS
+RWSUPPRESSOPTIMIZATIONPRAGMAS = 0
+endif
+
+ifeq ($(RWFULLPLATFORM), 1)
+RWPLATFORM    = $(RWOS)/$(RWCOMPILER)/$(RWTARGET)
+RWPLATFORMEXE  = $(RWOS)_$(RWCOMPILER)_$(RWTARGET)
+else
+RWPLATFORM    = $(RWTARGET)
+RWPLATFORMEXE  = $(RWTARGET)
+endif  # ifeq ($(RWFULLPLATFORM), 1)
+
+# all directories are defined relative to DEMODIR
+ifndef DEMODIR
+DEMODIR = $(CURDIR)
+# setting BASDEIR=$(CURDIR) enables absolute path names
+# which makes a better job of debug symbols for profiling. debugging etc.
+# see also http://www.fsf.org/software/make/make.html
+endif
+
+# RWOUTPUT
+ifeq ("$(RWOUTPUT)", "")
+RWLIBPATH = $(RWGSDK)/lib/$(RWPLATFORM)
+else
+RWLIBPATH = $(RWGSDK)/lib/$(RWPLATFORM)/$(RWOUTPUT)
+endif
+
+ifeq ($(RWMETRICS), 1)
+RWLIBDIR = $(RWLIBPATH)/metrics
+ifeq ("$(RWOUTPUT)", "")
+OBJDIR = obj/$(RWPLATFORM)m
+else
+OBJDIR = obj/$(RWPLATFORM)m/$(RWOUTPUT)
+endif
+CFLAGS += -DRWMETRICS
+PROJS = $(DEMO)_$(RWPLATFORMEXE)m$(EXE)
+else # RWMETRICS
+ifeq ($(RWDEBUG), 1)
+RWLIBDIR = $(RWLIBPATH)/debug
+ifeq ("$(RWOUTPUT)", "")
+OBJDIR = obj/$(RWPLATFORM)d
+else
+OBJDIR = obj/$(RWPLATFORM)d/$(RWOUTPUT)
+endif
+CFLAGS += -DRWDEBUG
+PROJS = $(DEMO)_$(RWPLATFORMEXE)d$(EXE)
+else # RWDEBUG
+ifeq ($(CPROFILE), 1)
+RWLIBDIR = $(RWLIBPATH)/profile
+ifeq ("$(RWOUTPUT)", "")
+OBJDIR = obj/$(RWPLATFORM)p
+else
+OBJDIR = obj/$(RWPLATFORM)p/$(RWOUTPUT)
+endif
+CFLAGS += -DCPROFILE
+PROJS = $(DEMO)_$(RWPLATFORMEXE)p$(EXE)
+else # CPROFILE
+ifeq ($(MSWST), 1)
+RWLIBDIR = $(RWLIBPATH)/mswst
+ifeq ("$(RWOUTPUT)", "")
+OBJDIR = obj/$(RWPLATFORM)wst
+else
+OBJDIR = obj/$(RWPLATFORM)wst/$(RWOUTPUT)
+endif
+PROJS = $(DEMO)_$(RWPLATFORMEXE)wst$(EXE)
+else # MSWS
+ifeq ($(RW31DIRS), 1)
+RWLIBDIR = $(RWLIBPATH)
+ifeq ("$(RWOUTPUT)", "")
+OBJDIR = obj/$(RWPLATFORM)
+else
+OBJDIR = obj/$(RWPLATFORM)/$(RWOUTPUT)
+endif
+else # RW31DIRS
+RWLIBDIR = $(RWLIBPATH)/release
+ifeq ("$(RWOUTPUT)", "")
+OBJDIR = obj/$(RWPLATFORM)r
+else
+OBJDIR = obj/$(RWPLATFORM)r/$(RWOUTPUT)
+endif
+endif #  RW31DIRS
+PROJS = $(DEMO)_$(RWPLATFORMEXE)$(EXE)
+endif # MSWST
+endif # CPROFILE
+endif # RWDEBUG
+endif # RWMETRICS
+
+ifeq ("$(RWTARGET)", "xbox")
+XBOXPROJS = $(patsubst %$(EXE),%.xbe,$(PROJS))
+endif
+
+ifeq ($(RWMEMDEBUG), 1)
+CFLAGS += -DRWMEMDEBUG
+endif
+
+ifeq ($(RWVERBOSE), 1)
+CFLAGS += -DRWVERBOSE
+endif
+
+ifeq ($(RWSUPPRESSINLINE), 1)
+CFLAGS += -DRWSUPPRESSINLINE
+endif
+
+ifeq ($(RWSUPPRESSOPTIMIZATIONPRAGMAS), 1)
+CFLAGS += -DRWSUPPRESSOPTIMIZATIONPRAGMAS
+endif
+
+RWINCDIR = $(RWGSDK)/include/$(RWPLATFORM)
+
+# Define Common Directories & Files
+
+
+SKEL   = $(RWGDIR)/shared/skel
+SKELPS = $(SKEL)/$(RWOS)
+COMMON = $(RWGDIR)/shared/democom
+SRC    = $(DEMODIR)/src
+
+ifeq ($(RWLOGO), 1)
+RWLIBS += $(RWLIBDIR)/$(LP)rplogo.$(L)
+CFLAGS += -DRWLOGO
+endif
+
+ifeq ($(RWSPLASH), 1)
+CFLAGS += -DRWSPLASH
+endif
+
+CINCLUDE +=						\
+	-I$(RWINCDIR)					\
+	-I$(COMMON)					\
+	-I$(SKEL)					\
+	-I$(SKELPS)					\
+	-I$(SRC)
+
+CFLAGS +=					\
+	-DRWTARGET_$(RWPLATFORMEXE)		\
+	$(CINCLUDE)
+
+ifeq ("$(RWGDIR)", "")
+	@echo ERROR: RWGDIR undefined
+	@error
+endif #  ("$(RWGDIR)", "")
+
+# Setup default CPROFILE and COPTIMIZE options
+
+# by default, C profiling is off
+ifndef CPROFILE
+CPROFILE = 0
+endif
+
+# by default, C optimisation is off when a C debug build is used.
+ifndef COPTIMIZE
+ifeq ($(CDEBUG), 0)
+ifeq ($(CPROFILE), 0)
+COPTIMIZE = 1
+else
+COPTIMIZE = 0
+endif # CPROFILE
+else
+COPTIMIZE = 0
+endif # CDEBUG
+endif # COPTIMIZE
+
+
+include $(RWGDIR)/shared/makeincl/rwos/$(RWOS)/rwcmplr/$(RWCOMPILER)/makecom
+include $(RWGDIR)/shared/makeincl/rwos/$(RWOS)/makeskel
+
+ifeq ($(RWTEST), 1)
+include $(RWGDIR)/tests/maketest/$(RWOS)
+endif
+

@@ -1,0 +1,221 @@
+--------------------------------------------------------------------------
+     RenderWare Graphics Viewer Program (win): World viewer
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The WRLDVIEW application may be used to load and explore BSP worlds.
+
+To load a world, the BSP file can be dragged-and-dropped onto the window
+or entered in the file "wrldview.ini" located in the same directory as 
+the BSP file. On startup the viewer reads the "wrldview.ini" file and 
+loads the specified BSP file. If multiple files are listed only the 
+first one is loaded and the rest are ignored.
+
+When a world is loaded, the viewer will look for a texture dictionary
+file (TXD) in the same directory as the BSP file. As there are platform
+dependencies, the texture dictionary file must be identified as such,
+and it is assumed that the file name includes "_d3d8" for D3D8, "_ogl"
+for OpenGL, etc. So, for example, the texture dictionary file for a BSP 
+called "world.bsp" running on D3D8 should be called "world_d3d8.txd". If 
+no texture dictionary file is available, textures are loaded from 
+individual image files, and it is assumed the image files reside in a 
+directory located with the BSP which is either named according to the 
+BSP's name or is simply called "textures". Texture dictionaries can be 
+saved from the viewer to a disk file using the naming convention 
+described above.
+
+The viewer also looks for a SPL file in the same directory as the world 
+which contains a RW spline path. It is assummed the spline has the same 
+name has the world. If a spline file is found, it is loaded and may be 
+used as the basis of all camera navigation. If no spline is found and 
+loaded, the camera can be navigated freely within the world.
+
+The viewer can be used to generate PVS data for the world and the PVS 
+data can be saved out to a new BSP file. A generic method for the
+calculation of PVS data is used, unless a spline is loaded in which case
+sample points from along that spline are used. The saved BSP is called
+"new.bsp" and is located in the same directory as the original BSP.
+
+Rendering of the world can be controlled via the menu. It can be
+rendered in solid or wire-frame, with vertex normals, with world
+sector bounding boxes, or in any combination of the above. For 
+wire-frame, vertex normals and world-sector boxes, a coloring scheme 
+is employed to aid the viewing of PVS data:
+
+  Wire-frame ....... Visible in CYAN, culled in RED.
+
+  Vertex normals ... Visible in GREEN, culled in MAGENTA.
+
+  Sector boxes ..... Visible in YELLOW, culled in BLUE.
+
+Rendering statistics for world-sectors and triangles are displayed in the
+upper-left corner of the screen in the format ZZZ/YYY/XXX, where 
+
+  XXX = total number in the world,
+  YYY = total number in the camera's view frustum,
+  ZZZ = total number in the view frustum after PVS culling.
+
+Individual world-sectors can be similarly rendered by selecting the 
+'Single sector' menu item and using the TAB key to navigate from one
+world-sector to the next. Note that the displayed world-sector ID is for
+user convenience only. The ordering of world-sectors in a world should
+not be relied upon if, for example, the BSP is re-exported.
+
+The World View document, clmpviewwrldview.pdf, can be found in 
+docs\viewers in the RenderWare Graphics directory.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button drag   - Tilt and turn the camera, while maintaining its
+                           position. Tilt is a rotation about the camera's 
+                           'right' vector; turn is a rotation about the 
+                           world y-axis.
+
+Right mouse button drag  - Translate the camera along its 'at' vector
+                           while maintaining its orientation.
+                           Also see the 'Translate sensitivity' menu item.
+
+TAB                      - In 'single sector' rendering mode, make the 
+                           next world-sector the current one.
+
+CTRL + TAB               - In 'single sector' rendering mode, make the 
+                           previous world-sector the current one.
+
+SPACE                    - Toggle menu/help/plain mode.
+
+ESC                      - Exit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+RESET CAMERA          - Resets the camera's position, orientation and
+                        view-frustum to that when the world was first
+                        loaded.
+
+RESET ON SPLINE       - Sets the camera's frame to be coincident with
+                        the base-frame on the spline.
+
+FIELD OF VIEW         - Sets the camera's horizontal field-of-view.
+
+FAR CLIP PLANE        - Sets the distance of the far clip-plane.
+
+NEAR CLIP PLANE       - Sets the distance of the near clip-plane.
+ 
+CAMERA FLY            - Toggles camera momentum. If the world has a spline
+                        the camera runs along it, otherwise it moves in 
+                        the direction of camera's 'at' vector.
+
+FLYING SPEED          - Sets the camera fly speed. If the world has a 
+                        spline, the speed is specified in parameter-space,
+                        otherwise in world-space.
+
+TRANSLATE SENSITIVITY - Sets the sensitivity of mouse movement when the 
+                        camera is translated.
+
+TRIANGLES             - Toggles rendering of world-triangles (solid mode).
+
+WIRE-FRAME            - Toggles wire-frame rendering of world-triangles.
+
+NORMALS               - Toggles rendering of vertex normals.
+
+SCALE NORMALS         - Sets scale factor used to render vertex normals.
+
+MESH                  - If the world sectors are tristripped renders each
+                        mesh that is a collection of tristrips and
+                        degenerates in a separate color.
+
+TRISTIP WITHOUT
+DEGENERATES           - Renders each tristrip in a separate color.
+
+HIGHLIGHT TRISTRIP    - Highlights in red any tristrips that are n
+                        triangles in length. The length is set by the menu
+                        option "Tristrip length".
+                        e.g. if the length is 5 all strips with 5
+                        triangles or less will be highlighted. You want to
+                        try and eliminate the strips that are highlighted.
+
+TRISTRIP LENGTH       - Select the number of triangles in a tristrip to
+                        highlight for the menu options "Hihglight
+                        tristrip"
+
+WORLD-SECTORS         - Toggles rendering of world-sector bounding-boxes.
+
+SINGLE SECTOR         - Render only the current world-sector. The current
+                        world-sector may be selected using the TAB key.
+
+SPLINE                - Toggles rendering of the spline path.
+
+FACE CULLING          - Sets the face culling mode: FRONT, BACK or NONE.
+
+GENERATE PVS          - Commences the generation of PVS data. Previous 
+                        data is destroyed before generation starts. 
+                        NOTE: Once started the process cannot be stopped 
+                        and must be run to completion.
+
+REPAIR PVS            - Updates the PVS data using visibility data 
+                        obtained from a sample point coincident with the 
+                        current position of the camera.
+
+USE PVS               - Toggles use of the PVS data.
+
+DUMP WORLD            - Saves a copy of the world to the file "new.bsp"
+                        in the same directory as the original BSP.
+
+DUMP TEX DICT         - Saves a copy of the current texture dictionary
+                        in the same directory as the BSP.
+
+AMBIENT LIGHT         - Toggles the use of a white ambient light.
+
+AMBIENT INTENSITY     - Sets the intensity of the ambient light.
+
+MAIN LIGHT            - Toggles the use of a white directional light.
+
+MAIN INTENSITY        - Sets the intensity of the main light.
+
+ON SCREEN INFO        - Toggles display of the rendering statistics and 
+                        the position of the camera.
+
+FPS                   - Toggles display of the number of frames per
+                        second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+MOUSE WHEEL             - Scroll two lines at a time.
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+--------------------------------------------------------------------------
+This Viewer Program is copyright Criterion Software Limited 2001. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+Viewer Program.
+
+This Viewer Program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+Viewer Program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

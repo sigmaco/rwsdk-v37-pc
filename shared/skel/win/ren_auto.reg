@@ -1,0 +1,5 @@
+REGEDIT4
+; File to set renderer selection mode for RenderWare demos
+
+[HKEY_LOCAL_MACHINE\Software\Criterion\RenderWare]
+"AutoRenderer"=dword:00000001

@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Image format
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The IMAGE FORMAT example illustrates how RenderWare Graphics can be
+extended to read other image file formats that are not part of the SDK.
+
+In this particular example read and write functions for the TGA image file 
+format have been implemented. The example is restricted to the reading and
+writing of both uncompressed and RLE compressed 24-bit RGB images. 
+
+To show that the image has been loaded correctly it is textured onto a 
+simple rotating cube.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+Test TGA read/write     - Read in a TGA file then write out the file. 
+                          Reads and writes both uncompressed and RLE 
+                          files.
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

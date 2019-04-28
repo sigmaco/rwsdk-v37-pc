@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Mipmap
+--------------------------------------------------------------------------
+
+
+PURPOSE
+
+The MIPMAP example shows a buckyball that can be moved toward or away 
+from the camera.
+
+It  demonstrates the use of mipmaps in RenderWare. A clump is loaded
+that uses two textures, one that uses auto-generated mipmaps, and one
+that uses mipmaps generated from user-supplied mip level images.
+For the latter type of texture, each mipmap level image is numbered to 
+indicate the level currently displayed (level 0 being the top level).
+
+The text at the bottom right of the window shows the total number of
+mipmaps in operation. This number will vary between platforms, the 
+maximum being determined by the resolution of the top-level mipmap. 
+A sufficient number of mipmap images are supplied to give mipmap 
+resolutions down to 1x1.
+
+The example also gives a good illustration of the various texture
+blending modes:
+  rwFILTERNEAREST
+  rwFILTERLINEAR
+  rwFILTERMIPNEAREST
+  rwFILTERMIPLINEAR
+  rwFILTERLINEARMIPNEAREST
+  rwFILTERLINEARMIPLINEAR
+      including some text at the bottom right of the window.
+
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button drag   - Rotate clump.
+
+Right mouse button drag  - Translate the clump to and from the camera.
+
+SPACEBAR                 - Toggle menu/help/plain mode.
+
+ESC                      - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FILTER MODE          - Allows the user to select the type of filtering
+                       (mipmap and non-mipmap) to be applied to all
+                       textures on the clump.
+
+FPS                  - Allows the user to read the number of frames per
+                       second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

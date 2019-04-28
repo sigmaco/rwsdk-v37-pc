@@ -1,0 +1,70 @@
+conlysrc =  $(filter %.c,$(CSRC))
+cpponlysrc =  $(filter %.cpp,$(CSRC))
+
+OBJ += $(patsubst %.cpp,$(OBJDIR)/%.$(O),$(notdir $(cpponlysrc) ))
+OBJ += $(patsubst %.c,$(OBJDIR)/%.$(O),$(notdir $(conlysrc) ))
+
+OBJ += $(SKELOBJ)
+
+ifeq ("$(RWTARGET)", "xbox")
+TARGET = $(XBOXPROJS)
+else
+TARGET = $(PROJS)
+endif
+
+# VALIDATE will be done first, if set.
+demo:  $(VALIDATE) $(OBJDIR) $(TARGET)
+
+$(OBJDIR):
+	$(MD) $@
+
+# RWLIBGROUPSTART and RWLIBGROUPEND were added so that a linker can be given extra arguments to
+# allow it to resolve link dependencies within the RWLIBS. This was primarily useful for GCC which
+# is link order dependant.
+$(PROJS): $(OPTPROJ) $(OBJ) $(RWLIBS)
+	$(LD) $(SYSOBJ) $(OBJ) $(RWLIBGROUPSTART) $(RWLIBS) $(RWLIBGROUPEND) $(SYSLIBS) $(LOUT)$@ $(LFLAGS)
+
+run: demo
+	$(RUN) $(PROJS)
+
+doscheck:
+	cygfind . -print | doschk
+
+distclean: clean $(OPTDISTCLEAN)
+	$(RM) *.dsw *.ncb *.opt *.plg *.old*.mcp *.exe *.xbe *.elf
+	$(RM) *.ilk *.lst *.prf crt0.* *.trg .map *.map *.MAP *.idb *.pdb *.pch
+	$(RM) _link.txt _ngccc.txt _VC6Temp.txt
+	$(RM) -r obj $(DEMO)_*Data
+
+clean:
+	$(RM) $(OBJ) $(OPTPROJ)
+
+# Rules
+
+$(OBJDIR)/%.$(O): $(SKEL)/%.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+$(OBJDIR)/%.$(O): $(SKELPS)/%.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+$(OBJDIR)/%.$(O): $(COMMON)/%.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+$(OBJDIR)/%.$(O): $(SRC)/%.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+$(OBJDIR)/%.$(O): $(SRC)/%.cpp
+	$(CC) $(CXXFLAGS) $(COUT)$@ $<
+
+$(OBJDIR)/%.$(O): $(SRC)/$(RWOS)/%.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+%.$(O) : %.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+%.$(O) : %.cpp
+	$(CC) $(CXXFLAGS) $(COUT)$@ $<
+
+# $(OBJDIR)/%.$(O): $(FXNODES)/%.c
+# 	$(CC) $(CFLAGS) $(COUT)$@ $<
+

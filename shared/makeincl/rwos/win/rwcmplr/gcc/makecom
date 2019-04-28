@@ -1,0 +1,158 @@
+###########################################################################
+#
+# File :     makecom/gcc
+#
+# Abstract : sky gcc specific compile time options. 
+#
+#            See
+#            o GCC homepage
+#               http://www.gnu.org/software/gcc
+#            o GCC compilations flags
+#               http://www.gnu.org/software/gcc/onlinedocs/gcc_2.html
+#
+#            This file is included from a generic top level makefile when
+#            the GCC compiler is selected
+#
+###########################################################################
+#
+# This file is a product of Criterion Software Ltd.
+#
+# This file is provided as is with no warranties of any kind and is
+# provided without any obligation on Criterion Software Ltd. or Canon Inc. 
+# to assist in its use or modification.
+#
+# Criterion Software Ltd. will not, under any circumstances, be liable for 
+# any lost revenue or other damages arising from the use of this file.
+#
+# Copyright (c) 1999 Criterion Software Ltd.
+# All Rights Reserved.
+#
+# RenderWare is a trademark of Canon Inc.
+#
+###########################################################################
+
+# Indicate that compiler options have been included
+MAKECOM=1
+
+ifeq ($(SMALLCODE), 1)
+C_OPT = -Os
+else
+C_OPT = -O3
+endif
+
+
+ifeq ($(COPTIMIZE), 1)
+CFLAGS += $(C_OPT) -DNDEBUG  -Wuninitialized
+else
+CFLAGS += -O0
+#----------------
+# # gcc requires the generation of a dependency tree, and hence at least -O1,
+# # to detect any use of uninitialized variables
+# so build optimised then. Code generation options win.
+endif
+
+ifeq ($(CDEBUG), 1)
+CFLAGS += -g
+endif
+
+CFLAGS += -DRW_USE_SPF
+
+# These seem to be platform specific, not compiler specific
+
+ifeq ($(NOASM), 1)
+CFLAGS += -DNOASM 
+endif
+
+CFLAGS += -DWIN32
+
+ifeq ("$(COMPILER)", "")
+COMPILER=cc
+endif
+
+ifeq ("$(LINKER)", "")
+# It should be this, but we have a rather strange idea of LINKER
+LINKER=link.exe
+endif
+
+ifeq ($(RWDEBUG), 1)
+ifeq ($(RWMEMDEBUG), 1)
+SYSLIBS += -L$(RWLIBDIR) -lrtdbmalloc
+endif # ($(RWMEMDEBUG), 1)
+endif # ($(RWDEBUG), 1)
+						
+CWARNINGS = \
+    -Wall \
+    -W \
+    -Wcast-qual \
+    -Wchar-subscripts \
+    -Wcomment \
+    -Wformat \
+    -Wid-clash-32 \
+    -Wimplicit \
+    -Wimplicit-function-declaration \
+    -Wimplicit-int \
+    -Winline \
+    -Wlong-long \
+    -Wmain \
+    -Wmissing-noreturn \
+    -Wmultichar \
+    -Wnested-externs \
+    -Wparentheses \
+    -Wpointer-arith \
+    -Wreturn-type \
+    -Wsign-compare \
+    -Wswitch \
+    -Wtrigraphs \
+    -Wunknown-pragmas \
+    -Wunused \
+    -Wwrite-strings 
+
+#    -ansi
+#    -pedantic
+#    -Waggregate-return
+#    -Wbad-function-cast
+#    -Wcast-align
+#    -Wconversion
+#    -Werror
+#    -Wlarger-than-len 
+#    -Wmissing-declarations /* sce include files fire these warnings*/
+#    -Wmissing-prototypes   /* sce include files fire these warnings*/
+#    -Wredundant-decls
+#    -Wshadow 
+#    -Wstrict-prototypes    /* sce include files fire these warnings */
+#    -Wtraditional
+#    -Wundef
+#    -Wuninitialized
+
+CC        = cc
+CPP       = $(CC)
+COUT      = -o
+LOUT      = -e
+SOUT      = -S -o $@
+CPPOPT    = -E -P
+CFLAGS   += $(CWARNINGS) -fno-common -c
+LD        = cc
+LFLAGS   = -g -L/usr/lib -L/usr/X11R6/lib -lGL -lXxf86vm -lm
+LOUT = -o
+
+AS        = cc
+AOUT      = -o
+ASFLAGS   = -c -xassembler-with-cpp
+ASFLAGS  += -Wa,-al=$*.lsa
+
+ifeq ($(CDEBUG), 1)
+ASFLAGS     += --gstabs
+endif
+
+# Define some compiler/platform specific parameters for the naming of object
+# and library files
+
+O = o
+L = a
+LP = lib
+EXE = 
+
+# Directory creation
+ifndef MD
+MD = mkdir -p
+endif

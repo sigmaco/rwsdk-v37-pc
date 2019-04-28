@@ -1,0 +1,3679 @@
+04/02/04 3Ds Max Particles Guide
+  Updated the document WRT the renaming of the Emitter Object.
+
+03/02/04 PVS Editor Tool Guide
+  Updated the document's loading and saving sections. To reflect the support 
+  for loading and saving full RenderWare Streams.
+
+20/01/04 OpenGL known issues
+  ATI texel corruption, and VAO performance issues; both resolved with the release of
+  Catalyst 4.1. Removed comments regarding BZ#7099 in the source too.
+
+09/01/04 Build tool user guide
+  GNU make URL was out of date. Now refers to the top-level gnumake URL rather than
+  a specific version's manual.
+
+06/01/04 BZ#8035 - RpPtank D3D9
+  Changed the d3d9 specific documentation : added rpPTANKDFLAGCNSVTX2TEXCOORDS
+  to the list of the support flag for point sprite and added a note concerning 
+  the use its use.
+
+06/01/04 D3D9 BZ#8063
+  RwD3D9DrawIndexedPrimitive, RwD3D9DrawPrimitive, RwD3D9DrawIndexedPrimitiveUP and
+  RwD3D9DrawPrimitiveUP, fixed documentation about the parameter "primitiveCount".
+
+31/12/03 Release notes BZ#8031
+  Removed issue with OpenGL Imshadow and the background to the menu help screen.
+
+30/12/03 RenderWare Graphics Build Tool (BZ#8030 enhancement)
+  Output options are now stored persistently in the configuration file.
+  Changes to the tools document.
+  Additional section in the resources chapter, and a note about persistency in
+  the output menu description.
+
+29/12/03 Softras RwMetrics; numTextureUploads and sizeTextureUploads
+  Missing documentation
+
+18/12/03 Release notes
+  Added release note about providing a new COM interface for rf3
+  translation.
+
+16/12/03 Top level readmes (all platforms)
+  Directory structure for 3.7 with respect to OpenExport has changed.
+
+16/12/03 Visualizer guide
+  Corrected a bad link
+
+16/12/03 Technical Artist Guide
+  Fixed Playstation 2/PlayStation 2
+
+15/12/03 Visualizer guide
+  Fixed Error messages and removed section on Gamecube specific problems
+
+15/12/03 Maya Reference guide
+  Fixed table crossing pages 78/79
+
+15/12/03 Maya Reference guide
+  Fixed broken link between image and text box
+
+14/12/03 Max Reference guide
+  Updated note in lightmapping section to recommend use of UV slot 4
+  when generating lightaps under 3ds max 6.
+
+11/12/03 Release notes
+  Updated release notes in API reference.
+
+11/12/03 Max & Maya Reference guides
+  Added details of Visualizer setup wizard
+
+11/12/03 Rf3cc updates
+  Minor text changes to remove Word grammar problems. Table of contents update.
+
+11/12/03 Max & Maya Reference guides
+  Updating the registry section corrected.
+  Maya Object Settings dialog bitmap updated.
+  Reference to "3dx max directory" corrected.
+
+10/12/03 Max reference guide
+  Updated the What's New section.
+  Updated the lightmapping section with information for 3ds max 6.
+
+10/12/03 Maya reference guide
+  Updated the What's New
+  Updated the lightmapping section with information about the new lightmapping
+  per-object setting.
+
+10/12/03 Technical artist guide
+  Added the new resolutions to the lightmap generation option.
+  Added the embed background color option.
+
+10/12/03 Exporter API reference
+  BZ#7685 Documented AttachCustomRwPlugin
+
+10/12/03 Exporter API reference
+  Updated "Installing and using debug OpenExport binaries" section.  (This section 
+  satisfies the request in BZ#5138 for documentation of "Install of the debug exporters")
+
+09/12/03 MayaReferenceGuide
+  Updated "layered texture settings" section and screenshot in "dual pass" to reflect 
+  new light map flag.
+
+08/12/03 Technical Artist guide
+  BZ#7637 Darkmap export does not work correctly.  Documentation updated
+
+08/12/03 Max & Maya reference guides
+  BZ#7833 Inaccuracy in Artist docs fixed
+
+08/12/2003 Core (BZ#7787) 
+  Removed outdated unsupported function RwRGBAGetRasterPixel.
+
+08/12/03 RF3CC.doc
+  Tidied up some bits relating to graphics/audio.
+
+08/12/03 Max and Maya artist reference guides
+  Updated "Object Grouping for Lightmapping" (Changelist 145053).
+
+08/12/03 Maya artist reference guide
+  Updated "Using the Bonus Game pack to generate lightmaps" (Changelist 145039).
+
+05/12/03 RF3CC.doc
+  The doc has been changed so it covers audio as well as graphics. 
+  Also tidied up the style.
+
+04/12/03 RpMaterialCallBack API reference
+  Added clarification that returning NULL terminates further callbacks.
+  Will be implemented for all similar callbacks, if time permits.
+
+02/12/03 Max and Maya reference guides
+  Added details of background color when exporting and viewing
+
+02/12/03 Exporter guides
+  Updated version numbers ready for 3.7 and replaced some references to 
+  3.6 with "latest version", or similar.
+  Renamed ConvertingExportsFrom34To36 to ConvertingExportsFrom34.
+
+02/12/03 Exporter API Ref
+  Added details of available examples and suggested use as templates
+
+02/12/03 RwCriterionCoreID
+  Re-formatted the list of enumeration values
+
+27/11/03 Visualizer docs
+  New Wyvern version of Visualizer docs for 3.7 (based on Granite version).
+
+20/11/03 static RwFrame support (BZ#6206) API Reference
+  Removed RwFrameInit, RwFrameDeInit and RwFrameSetStaticPluginSize API Ref.
+
+18/11/03 RpGeometryAddRef
+  RpGeometryAddRef is now API and includes appropriate API ref documentation.
+
+18/11/03 RenderWare Graphics Build Tool
+  GDEV and GAMEOPTIX configurations added under GameCube builds in the user guide.
+
+17/11/03 Technical Artist Guide and Converting Exports from 3.4 to 3.6
+  Added reference to Convert Axis System.
+
+12/11/03 Generic examples (BZ#7515)
+  Adding font to the list of examples.
+
+11/11/03 RenderWare Graphics Build Tool (BZ#7401)
+  Compiler sanity check; introduction and resources expansion updated.
+
+11/11/03 RpCollis API ref
+  RpSectorLineItInit and RpCollSectorLineItInit take a new parameter.
+
+10/11/03 Memory allocation function __FILE__ and __LINE__ recording
+  Retrieval functions RwMemoryGetLastAllocFile and RwMemoryGetLastAllocLine have been
+  added to the "Memory and File Interface" section of the API reference.
+
+10/11/03 RpSkyGetModeStructurePtr in API reference (BX#7305)
+  Added more information about RpSkyGetModeStructurePtr and when it should
+  be used.
+
+07/11/03 Open Export API reference (BZ#7294)
+  Added documentation for RwMaxRwMaterialCreator.
+
+07/11/03 Rt2dPath overview in API reference (BZ#7288)
+  Added that rectangles and ovals must be created on an existing path.
+
+06/11/03 Rt2dShapeAddNode in 2D Graphics Toolkits chapter (BZ#7265)
+  Corrected the order of Rt2dShapeAddNode parameters, and made the flag
+  parameter more meaningful.
+
+06/11/03 Debugging an Open Export plugin (BZ#7254)
+  Removed the instructions to register the OutputPaneld.dll ActiveX control.
+
+06/11/03 Changing video mode docs RwEngineStart (BZ#7190)
+  Corrected partial restart procedure from 'RwEngineOpen and RwEngineInit' to
+  'RwEngineOpen and RwEngineStart'. Initialization is not required because
+  the engine has not been terminated.
+
+06/11/03 RxPipelineNodePS2AllSetCallBack in PS2 API reference (BZ#7169)
+  Updated reference to time anomaly that occurs when modifying instance
+  data in-place. DMA runs only one frame behind the CPU, not three frames.
+
+06/11/03 2DGraphicsToolkits chapter of user guide
+  Replaced Rt2dObjectAddChild with Rt2dSceneAddChild, Rt2dObjectAddChild
+  does not exist.
+
+31/10/03 RenderWare Graphics Build Tool
+  User guide describes the use of the "Explore" option on the content menus.
+
+23/10/03 Various FX pack, Exporter, dPVS and examples docs
+  Corrected heading levels for table of contents formatting.
+
+21/10/03 PS2 VCN Overview chapter of user guide
+  The PS2 Vector Code whitepaper has been superseded by the PS2 VCL Pipes 
+  whitepaper, so updated the user guide references accordingly.
+
+17/10/03 RenderWare Graphics Build Tool (BZ#7160)
+  To ease the manipulation of build output, an option, in the File menu, to
+  send the output directly to a text editor has been added.
+
+15/10/03 Maestro chapter of user guide (BZ#5683)
+  Revised recent update to maestro docs, adding that vector-based 
+  art can consume large amounts of memory so memory budgeting should
+  be done early in the design phase of development.
+
+15/10/03 VCL pipeline API reference (BZ#6968)
+  Added new clipping information to each VCL pipe definition, 
+  and re-worded VCL_Generic and VCL_Skin overviews to say that 
+  all pipeline structures are the same, so see the documented 
+  example pipeline for further information.
+
+15/10/03 Maestro chapter of user guide (BZ#6502)
+  Added recommendation about using bitmap-based artwork, as opposed
+  to vector-based artwork, and a note stating that slanting 
+  transforms on text are not supported by RenderWare Graphics.
+
+15/10/03 RwRenderstateSet API reference (BZ#6983)
+  Added link to Device Cache section in RwRenderstateSet description
+  for d3d8 and d3d9 because the renderstate is not set by DirectX 
+  immediately.
+
+15/10/03 Open Export API reference (BZ#7110)
+  Corrected paths to plugin directorys for 3ds max and Maya.
+
+15/10/03 Open Export Programmer's Guide
+  Document removed from doclist because it was been superseded by the 
+  Open Export API reference.
+
+14/10/03 Technical Artist Guide (BZ#6957)
+  Changed ADC Processing description to say that it controls whether 
+  the RpAtomics exported are processed to support ADC flags, as opposed to
+  RpWorldSectors, because no world sector ADC pipeline is provided.
+
+14/10/03 OpenExport Programmer's Guide (BZ#7110)
+  Corrected paths to plugin directorys for 3ds max and Maya.
+
+13/10/03 OpenGL source and destination blend functions (BZ#7082)
+  Added support for the GL_NV_blend_square extension that allows
+  rwBLENDSRCCOLOR, rwBLENDINVSRCCOLOR to be used as source blends, and
+  rwBLENDDESTCOLOR, rwBLENDINVDESTCOLOR to be used as destination
+  blend functions.
+
+13/10/03 OpenGL offscreen rendering (BZ#7082)
+  Clarification of what an offscreen rwRASTERTYPECAMERATEXTURE raster is.
+
+09/10/03 Rt2d (BZ#6986)
+  Added extra comments to Rt2dFontRead. Metric files must be newline terminated.
+
+06/10/03 OpenGL vertex arrays and multitexturing
+  Prototype and usage of RwOpenGLSetActiveTextureUnit changed.
+  Prototype of RwOpenGLGetActiveTextureUnit changed.
+  Vertex array overview updated.
+  RwOpenGLVASetMultiTexCoord and RwOpenGLVASetMultiTexCoordATI updated.
+  RwOpenGLVADisableTexCoord updated.
+  OpenGL whitepaper updated in the multitexturing and vertex array sections.
+
+03/10/03 Examples documents
+  Added TEXDICT to list of generic examples, and removed it from 
+  the win, ps2 and xbox examples lists (because it is a useful 
+  example for GameCube developers, even if they can't run it).
+
+03/10/03 Updated vclpipes whitepaper to state that tri-list face culling
+  is not supported.
+
+01/10/03 3ds max and Maya reference guides
+  Revised Connect Vertices section with some information from Gaps in
+  Geometry section, then removed the gaps section. Revised the Scale
+  and Clipping Planes section to include correct near/far clip plane 
+  ratio.
+
+01/10/03 OpenGL normal rasters (BZ#6954)
+  Normal rasters are constrained to be power-of-two sides in OpenGL.
+
+01/10/03 Rt2dFontFlow/Show (BZ#6823 & BZ#5863)
+  Added information to API reference descriptions about brush usage
+  and clarified that all strings to be rendered must reside in 
+  read/write memory.
+
+01/10/03 RpLODAtomicSetCurrentLOD (BZ#6288)
+  Revised description in API reference to say that setting the LOD
+  using this function disables automatic switching of the LOD 
+  during rendering.
+
+01/10/03 Rt2dFontShow (BZ#5931)
+  Added note to Rt2dFontShow description in API reference stating
+  that Rt2dFontShow will ignore any characters that haven't been 
+  defined in the .met file.
+
+01/10/03 RwChunkGroupBeginStreamRead (BZ#6516)
+  Replaced all instances of rwID_CHUNKGROUPBEGIN with rwID_CHUNKGROUPSTART
+  because rwID_CHUNKGROUPBEGIN does not exsist.
+
+30/09/03 RwD3D9DDSTextureRead (BZ#5947)
+  Added note to RwD3D9DDSTextureRead and RwD3D8DDSTextureRead 
+  descriptions in API reference to state that these functions
+  append a .dds file extension to the file name.
+
+30/09/03 RpClumpAddLight (BZ#6092)
+  Removed some confusing and misplaced information from the description
+  of RpClumpAddLight in the API reference.
+
+30/09/03 RtWorldImportGuideKDAddPartition (BZ#6259)
+  Added note to API reference informing users to setup the global import
+  parameters, by using RtWorldImportParametersSet, in order to 
+  use this function.
+
+30/09/03 3ds max & Maya reference guides (BZ#6324)
+  Removed entire "Texture UV Animation" section because the information
+  was not relevant to artists.
+
+30/09/03 3ds max & Maya reference guides (BZ#6324)
+  Removed entire "Texture UV Animation" section because the information
+  was not relevant to artists.
+
+30/09/03 RwStreamWriteChunkHeader (BZ#6125)
+  Changed description of developer's ID, stating that it can now be 
+  any three digit ID that does not clash with RwPluginVendor in
+  rwplcore.h.
+
+30/09/03 RtMipK*CalculateKValues (BZ#6125)
+  Added clarification to API reference about setting the current texture
+  dictionary to be the correct texture dictionary before calling any
+  RtMipK*CalculateKValues functions.
+
+30/09/03 Rt2dMaestroStreamRead (BZ#6492)
+  Revised code example in API reference to match the actual parameters
+  called by Rt2dMaestroStreamRead.
+
+30/09/03 RwCommBuilder (BZ#6327)
+  Corrected endcode tag so that the code example and explanatory text 
+  are displayed correctly.
+
+30/09/03 User guide chapter numbering
+  Updated "Start at" number for volumes two and three of the user
+  guide.
+
+30/09/03 RpGeometry & Toon Editor
+  Removed brackets from RpGeometry in User Guide, and changed text
+  about help button in Toon editor help file.
+
+12/09/03 RpPrtStd (BZ#5682)
+  Fixed the passing of the user data pointer down the to the callbacks.
+  RpPrtStdEmitterCreate has been changed to accept the new parameter.
+
+28/08/03 PS2 Driver - API Reference :
+  Fixed a typo RpSkyRenderStateGet and RpSkyRenderStateSet.
+  Added the warning block from RpSkyRenderStateGet to RpSkyRenderSet.
+  
+28/08/03 RpPTank PS2 (BZ#5834) - API Reference : 
+  Added warning concerning the use of RpPTankAtomicSkyRenderStateSet and 
+  RpPTankAtomicSetBlendModes during the same frame.
+
+20/08/03 OpenGL raster update
+  OpenGL whitepaper updated with an additional section on raster support.
+
+  API reference overviews updated for
+    Raster 2D Functions
+    OpenGL MatFX
+
+  API reference overviews added
+    Raster Formats
+    Compressed Rasters  
+    Hardware Mip Generation
+    Cube Map Rasters
+    
+  API functions added:
+    RwOpenGLRasterStreamReadDDS
+    RwOpenGLDDSTextureRead
+    RwOpenGLRasterSetGenericTextureCompression
+    RwOpenGLRasterGetGenericTextureCompression
+    RwOpenGLRasterIsCubeMap
+
+18/08/03 RpDMorphAtomicInitialize API ref
+  updated
+
+30/07/03 Maya Reference Guide
+  Added information to rpMATFXEFFECTUVANIM and rpMATFXEFFECTDUALUVANIM, 
+  removed note in Texture Maps section and revised note about not being able
+  to view sub-hierarchy animations in the Visualizer.
+
+29/07/03 3ds max Reference Guide
+  Added information to rpMATFXEFFECTUVANIM and rpMATFXEFFECTDUALUVANIM, 
+  removed note in Texture Maps section, revised note about not being able
+  to view sub-hierarchy animations in the Visualizer and changed references
+  to UV "channels" and "sets" to "mapping channels".
+
+28/07/03 Memory hinting - RwMemoryHintGetChunkID information, changed
+  chinkId to chunkID
+
+24/07/03 RtFSyst - gcn
+  Added broadband adaptor support : rtfsgeth.c/rtfsgeth.h, modified API 
+  reference accordingly.
+
+24/07/03 FXpack readme
+  Removed reference to non-existant RpPrtAdv.chm, revised API reference section
+
+23/07/03 strdump & template tool readmes
+  Reformatted to look the same as the other tool readmes
+
+11/07/03 Readmes & API release notes
+  Added Rt2dFontTexDictionaryGet & Rt2dFontTexDictionarySet to list
+  of added functionality.
+
+10/07/03 3ds max Reference Guide
+  Renamed "Exporting Multiple Animated Hierarchies" section to 
+  "Automatically Creating Animated Assets"
+
+10/07/03 Font example readmes
+  Changed doc/WhitePapers/generic/unicode.doc to docs/whitepapers/unicode.pdf 
+
+09/07/03 Examples docs
+  Updated the introductions in each examples document, and changed reference to 
+  tutorials from "doc/tutorials" to "API reference".
+
+08/07/03 Technical Artist Guide
+  Added CustomExportFile to node Creating Assets sections.
+
+08/07/03 New tools readmes.txt
+  Consistency and editorial updates
+
+07/07/03 ExamplesGeneric.doc
+  Updated description of uvanim example
+
+07/07/03 BZ#5499 RwIm2DVertexGet() does not exist for d3d8
+  Removed RwIm2DVertexGet, RwIm2DVertexGetQuantity & 
+  RwIm2DVertexGetNext from the API reference.
+
+07/07/03 Exporter tutorials and RpTeamArtistGuide
+  Removed Character Studio reference from pointer to 
+  Maya tutorials document. 
+  Update to Creating a character using 3ds max section.
+  ConvertingExportsFrom34to35.pdf -> ConvertingExportsFrom34to36.pdf
+
+04/07/03 BZ#5507 Technical Artist Guide
+  Updated Optimize Hierarchy section.  
+
+04/07/03 Rt2dAnim
+  Added new API function, Rt2dAnimSetFreeListCreateParams.
+
+02/07/03 Known Issues list in Readmes
+  All issues removed from Known Issues section. The section
+  now points to the known issues list on the FMSS:
+  https://support.renderware.com/products_main.asp
+
+01/07/03 Artist and Technical artist reference guides
+  Added information on the lightmap color depth and mipmapping template
+  options.
+
+27/06/03 Introduction user guide chapter
+  Note that using the NULL static libraries from a RenderWare Graphics 3.5 (and above)
+  installer, in an application, requires the use of the multithreaded DLL runtimes.
+
+27/06/03 UVAnim chapter of user guide
+  Technical review updates
+
+26/06/03 RpTeam - Adding RpTeamRenderMode flags to RpTeamRender function.
+  Updated RpTeamRender function to describe new flags.
+
+26/06/03 Command line tools and readmes
+  Editorial updates to new command line tools. Added information
+  to readmes and API reference release notes.
+
+25/06/03 MayaReferenceGuide.doc
+  Added section on NURBSpline usage.
+
+25/06/03 readmes & releasenotes
+  Editorial & formatting updates
+
+25/06/03 Exporter Documentation
+  Added section on RwTexture using diffuse map name after map merge.
+
+25/06/03 Visualizer guide
+  Added explanatory note about DHCP & IP addressing, and included
+  Network Adapter in PS2 setup procedures.
+
+25/06/03 BZ#5399 RwTextureStreamGetSize
+  Added that RwTextureStreamGetSize does not include the size 
+  of the texture's pixel data.
+
+24/06/03 examples text files
+  Editorial updates
+
+24/06/03 readmes, releasenotes & examples
+  More information added, including addition of new examples
+
+24/06/03 Exporters Documentation
+  Changes to sub-hierarchy animations section, with updated
+  screen shots.
+
+24/06/03 readmes
+  Editorial changes, and re-formatting
+
+24/06/03 LtMap - Added density evaluation functions :
+  added RtLtMapWorldCalculateDensity API Reference.
+  added RtLtMapAtomicCalculateDensity API Reference.
+
+24/06/03 API Ref: Collision Plugin
+  Many changes. More detail on iterator API, code examples etc. Improved 
+  explanations for the old style API, and included cross-references to 
+  iterators.
+
+23/06/03 OpenGL whitepaper
+  Added information on the use of display lists and the ATI vertex array object
+  extension.
+
+23/06/03 BuildRW whitepaper
+  Added D3D9 references where appropriate. Also changed default Direct3D target
+  to D3D9 (from D3D8).
+
+23/06/03 ClmpViewWrldView document
+  Added D3D9 targets.
+
+23/06/03 Unicode white paper	
+  Removed duplicated information about downloading .met and .png files 
+  from FMSS, & some editorial updates too.
+
+23/06/03 BZ#5344 API ref for RpXboxVtxFmtSetBinormalTangent
+  Changed RpXboxVtxFmtSetBinormalTangent description.
+
+23/06/03 BZ#5341 D3D8 metrics numTextureUploads
+  Added platform-specific information for d3d8, d3d9 & opengl
+
+22/06/03 Technical Artist Guide
+  Added information about asset parenting to the MAXScript section.
+
+20/06/03 RpPrtStd
+  Added docs so some RpPrtStdEmitterPTank field.
+  Added Synchronisation paragraph to PS2 section.
+
+19/06/03 PS2 PTank - buffer usage check functions
+  RpPTankAtomicSkySwapFrames API reference updated to reflect function 
+  change: return value changed from void to RwBool.
+  Added RpPTankAtomicSkyCurrentBufferStatus functions API reference.
+
+19/06/03 readmes
+  Added items to functionality lists, palquant visibility notice
+  custom dictionary info and UVAnim plugin reference
+
+19/06/03 TechnicalArtistGuide
+  Structural & formatting edits
+
+18/06/03 gcn, ps2, win & xbox readmes
+  Added descriptions of dictionary toolkit 
+  and UV anim plugins
+
+18/06/03 FileSystems chapter of user guide
+  Editorial updates to new sections
+
+18/06/03 3dsmaxReferenceGuide & MayaReferenceGuide
+  Added new sections "Installing the Exporter Manually"
+
+17/06/03 TechnicalArtistGuide
+  Editorial updates
+
+17/06/03 3dsmaxReferenceGuide
+  update info about supported max plugins, version numbers etc.
+
+13/06/03 API reference Changes/Additions
+  - Changed RpWorldSectorGetNumPolygons to RpWorldSectorGetNumTriangles
+  - Added RpWorldSectorGetTriangles
+  - Added RpWorldSectorGetVertices
+
+13/06/03 Direct3D white paper
+  Tech reviewed + formatting standardized.
+
+13/06/03 Toon Artist Guide
+  Renamed section 1.3.3 from "Crease Edges from flat polygons" to
+  "Generate Crease Edges from Smoothing Groups". It was referring to
+  an option name that did not exist.
+
+13/06/03 Technical Artist Guide
+ Moved the "Option Execution Order" section to a new main section,
+ changed its name to "Option Precedence" and updated its contents.
+
+12/06/03 Direct3D white paper
+  New document, editorially reviewed
+
+10/06/03 Open Export API
+  Added note about registering the correct debug ActiveX controls
+  when using the open export debug dlls
+
+10/06/03 Lightmap User Guide
+  Extended chapter 1.6 to include a section for manual conversion
+  of lightmaps to RenderWare format.
+
+09/06/03 plcore API ref
+  Editorial updates to new memory allocation macros, and 
+  RwOsGetMemoryInterface descriptions.
+
+09/06/03 Documenting RwFrameAddChildNoUpdate.
+
+06/06/03 Added rpuvanim user guide chapter + API ref
+
+06/06/03 Added rtdict user guide chapter + API ref
+
+06/06/03 Release Notes in API Ref
+  Added most of release note information to API reference, some
+  specific details still need adding.
+
+05/06/03 BZ#4824 PS2Metrics.doc The CPU metric measures the used CPU
+  time not the free CPU time so the old description was confusing.
+
+04/06/03 3dsmaxReferenceGuide.doc
+  added a quick note about setting the correct uv sets for
+  dual pass textures.
+
+04/06/03 RtDict.doc - User Guide Vol1
+  Editorial review updates of new material.
+
+04/06/03 Updated toon editor help file.
+
+04/06/03 Collision Plugin API ref: New API
+  RpSectorLineIt*
+  RpSectorBBoxIt*
+  RpCollSectorLineIt*
+  RpCollSectorBBoxIt*
+  RpCollisionGeometryGetCollTree
+  RpCollisionWorldSectorGetCollTree
+  RpCollTreeGetEntryMap
+  RpCollisionBuildParam*
+  RpCollisionBuildFlags
+  RpCollisionBuildSortCallBack
+  RpCollBBoxClipFlags
+
+03/06/03 Lightmap User Guide
+  Updated to include small section on exporting external lightmaps for
+  RenderWare.
+
+03/06/03 User Guide Vol1
+  Editorial review updates.
+
+03/06/03 File Systems chapter of User Guide Vol1
+  Added more information, as requested by technical reviewer.
+
+03/06/03 RtLtMapCnv
+  Editorial review of the API reference for the lightmap conversion
+  toolkits.
+
+03/06/03 Open Export API Reference
+  Customer feedback update of spline exporter definition
+
+02/06/03 User Guide Vol2
+  Grammar and style updates of Standard Particles chapter.
+
+02/06/03 BZ#5043 RwSurfaceProperties and specular
+  Specified that specular element is not used in RwSurfaceProperties
+  Struct Reference.
+
+02/06/03 RenderWare Graphics Build tool
+  Distclean option expanded to use the Win NULL target and visualc compiler.
+
+30/05/03 RtLtMapCnv
+  Added API reference to the lightmap conversion toolkits.
+
+30/05/03 TechnicalArtistGuide.doc
+  updated the update templates section.
+
+29/05/03 User Guide Vol2
+  Added UVAnim chapter.
+
+29/05/03 User Guide Introduction
+  Added descriptions for new plugin and toolkits to appropriate lists
+
+29/05/03 Added two new chapters to UserGuideVol1.doc: FileSystems.doc &
+  RtDict.doc
+
+29/05/03 (BZ#4214) Updated the GameCube specific docs on "Compressed Texture" to
+  state restrictions about using RwImageSetFromRaster or RwRasterSetFromImage.
+
+28/05/03 artist reference guides updated
+  Reference sections added for lightmapping
+
+28/05/03 User guide updates for rwRASTERPALETTEVOLATILE and
+         alpha test render states
+  RastersImagesTextures chapter updated with information on
+  rwRASTERPALETTEVOLATILE - noted that PS2 only does anything with it.
+
+  ImmediateMode document chapter updated with information on
+  rwRENDERSTATEALPHATESTFUNCTION and rwRENDERSTATEALPHATESTREF.
+
+27/05/03 Serialization User GUide.
+  Added Chunk Group section to RWS files chapter. This describes the
+  use of RwChunkGroup and example codes.
+
+27/05/03 TechnicalArtistGuide.doc
+  updated the light mapping options
+
+27/05/03 Memory Hints.
+  Readability review & edits to new MEMHINTS section of Generic
+  Examples doc.
+
+27/05/03 BZ#5024 RpTeam : RpTeamSetPersistentLight
+  Added sentence to team.c to notify user that RpTeamSetPersistentLight
+  must be called when using RpTeam.
+
+27/05/03 Memory Hints.
+  Readability review & edits to new Memory Hints section of User Guide.
+
+27/05/03 Lightmap User Guide.
+  Removed references to startSample, numSample and totalSamples in
+  progress tracking sections. These are replaces by startObj, numObj
+  and totalObj.
+
+23/05/03 2D User Guide
+  Added section for reading and writing a font to and from a stream.
+  Added section for the font's texture dictionary.
+
+23/05/03 Unicode Whitepaper
+  Rewrote the introduction. Added links to Unicode and UTF-8 web pages.
+
+22/05/03 OpenGL whitepaper
+  Removed OpenGL world functions that have been removed from the API.
+  This is linked to the change made on 02/04/03.
+
+21/05/03 For BZ#4963, added new section to 3d Max Reference Guide to
+  explain user defined object properties & minor re-word in equivalent
+  section of Maya Reference Guide. Re-built Technical Artist
+  Guide's TOC.
+
+21/05/03 For BZ#4996, in PrtStd chapter of userguide changed code
+  example by replacing RwChar * with RwUInt8 * (as you can't guarentee
+  an RwChar is going to be 8 bits).
+
+21/05/03 RwCore
+  Renamed RwGroup to RwChunkGroup. All related names are also renamed.
+
+20/05/03 Recommended Reading - updated & added books.
+
+20/05/03 RwCore
+  Added new chunk IDS, rwID_GROUPBEGIN and rwID_GROUPEND.
+  Added new core module, RwGroup, for supporting chunk identification in
+  a binary stream.
+  New RwGroup doc section in Streaming.
+
+19/05/03 Two new vector API functions have been added, RwV3dTransformVector
+  and RwV3dTransformPoint.
+
+19/05/03 RpSkin and Multi-Texturing Extension (BZ#4941)
+  Added new defgroup to define Multi-Texturing restrictions for
+  Xbox skinning page in API Reference.
+
+16/05/03 RenderWare Graphics Build Tool
+  Updated to sanity check the build environment to help identify
+  incorrect compiler set up.
+  Tool user guide updated in introduction and resource section.
+
+15/05/03 TechnicalArtistGuide and MayaReferenceGuide
+  Blind data section moved from MayaReferenceGuide to
+  TechnicalArtistGuide Mel Script section.
+
+15/05/03 TechnicalArtistGuide.doc
+  Added sections describing the updating of template files.
+
+14/05/03 RpSkySelectDeepZBuffer (BZ#4927)
+  Added clarity to RpSkySelectDeepZBuffer, to ensure
+  RpSkySelectDeepZBuffer is called directly after
+  RwEngineOpen.
+
+14/05/03 RwPalQuant
+  Added a new defgroup for the palette quantization functions in
+  the core. Also updated various bits of documentation for the
+  structures and functions.
+
+14/05/03 RpTeam - new Artist Guide
+
+14/05/03 Exporters Documentation (BZ#4932)
+  3ds max and Maya Reference Guides section 5.3 updated
+  Sub-Hierarchy Animations.
+
+14/05/03 RpPrtStd Overview updated to include information
+  about bias values.
+
+13/05/03 GCN multitexture editor (BZ#4937)
+  Spurious text had found it's way into the html source.
+
+09/05/03 Tutorial 6 (BZ#4903)
+  No mention of the requirement of rttoc.lib at link time was made. Also
+  to be more consistent, an extra instruction has been added to the reader
+  to ensure that the TOC loading code is working.
+
+09/05/03 PI texture dictionaries and auto mip generation (addition)
+  Also updated the Rasters, Textures and Images chapter in the user
+  guide, with similar information to the entry on 06/05/03 in the
+  API Reference.
+
+08/05/03 the "Limit UV's" option has changed to an enum
+  TechnicalArtistGuide.doc has been updated
+
+08/05/03 OpenGL state cache and multitexturing (BZ#4890)
+  Additional state tokens have been introduced, for
+  rwGL_TEXTUREn_2D, and rwGL_TEXTUREn_GEN_S|T|R|Q for n = 0,...,7.
+  rwGL_TEXTURE_2D and rwGL_TEXTURE_GEN_S|T|R have been removed.
+
+08/05/03 RWDMA_SPR_FREE()
+  This no longer opens a vif packet.
+
+07/05/03 Toon
+  The toon plugin has been broken into 2 parts, a plugin RpToon and a toolkit
+  RtToon.
+
+  The following API functions have been renamed.
+
+  RpToonGeoFindEdgeIndex          ->  RtToonGeoFindEdgeIndex
+  RpToonWorldOptimize             ->  RtToonWorldOptimize
+  RpToonGeoOptimizeEdgeInkIDs     ->  RtToonGeoOptimizeEdgeInkIDs
+  RpToonGeoGetInkIDFromName       ->  RtToonGeoGetInkIDFromName
+  RpToonGeoSetEdgeInkID           ->  RtToonGeoSetEdgeInkID
+  RpToonGeoGetVertexRemap         ->  RtToonGeoGetVertexRemap
+  RpToonGeoFindEdgeIndex          ->  RtToonGeoFindEdgeIndex
+  RpToonGeometryCreateToonGeo     ->  RtToonGeometryCreateToonGeo
+  RpToonWorldSectorCreateToonGeo  ->  RtToonWorldSectorCreateToonGeo
+  RpToonGeoGetNumEdges            ->  RtToonGeoGetNumEdges
+
+  RpToonGeoGetEdges               ->  RtToonGeoGetEdges
+
+  RtToon Overview has been added and the RpToon Overview modified.
+
+06/05/03 PI texture dictionaries and auto mip generation
+  Updated API reference:
+  PI texture dictionaries that contain textures with a single mip level but
+  a mipped texture filter now have their PS rasters created with the
+  rwRASTERFORMATAUTOMIPMAP flag set. This is useful for platforms that
+  support mip generation in hardware.
+
+06/05/03 GCN (BZ #4771)
+  RxGameCubeVertexAttr, RxGameCubeVertexBuffer and RxGameCubeDisplayList
+  documented.
+
+01/05/03 GCN and Xbox FXEditor chms
+  Connections screenshots updated for D3D9.
+  Preview page added to GCN FXEditor chm
+
+01/05/03 3ds max and Maya Tutorials
+  Launcher and Connections updated for D3D9.
+
+01/05/03 RwMemoryFunctions
+  Added comment about malloc alignment requirements. If this proves
+  hard to translate, mail me. RE.
+
+30/04/03 Updated Doxygen comments which affected the Audio API Ref.
+  Struct RwFreeList and struct RwMemory.
+
+29/04/03 API Reference Tutorials
+  case rsF1: modified. This affects the docs and the code.
+
+28/04/03 Maya Reference Guide:
+  2.3 RenderWare Exporter, menu options updated
+  4.3 Common Material Topics, UV Vertices section updated.
+
+  3ds max Reference Guide
+  4.3 Common Material Topics, UV Vertices section updated.
+
+28/04/03 3ds max and Maya Tutorials
+  Steps for Visualizing Partitions in the Hints and Partitions
+  tutorial reordered.
+
+  Removed obosolete references from Coordinate Systems tutorial
+  in the 3ds max tutorial.
+
+24/04/03 BZ# 4770 API Reference
+ Added Return Values:
+   * RxD3D8AllInOneInstanceCallBack
+   * RxD3D8AllInOneReinstanceCallBack
+   * RxD3D9AllInOneInstanceCallBack
+   * RxD3D9AllInOneReinstanceCallBack
+   * RwCameraCallBack
+   * RwFrameCallBack
+   * RpGeometryCallBack
+   * RxXboxSkinAllInOneEnumerateLightsCallBack
+   * RpTeamCameraTestSphere
+   * RpTeamPlayerRenderCallBack
+
+24/04/03 Technical Artist Guide
+  Deleting Asset and Project Templates added.
+
+24/04/03 BZ#4727 RpPrtStd API
+  Requirements section updated for RpPrtAdv.
+
+24/04/03 BZ#4739 Instance.pdf
+  1.2.3 Running instance from the command line
+  PlayStation2 -> PS2
+
+24/04/03 ExamplesWin doc - normmap example added
+  for D3D9
+
+23/04/03 RwRenderState & enum RwAlphaTestFunction
+  New members rwRENDERSTATEALPHATESTFUNCTION & rwRENDERSTATEALPHATESTFUNCTIONREF
+  New enum RwAlphaTestFunction
+
+23/04/03 enum RwRasterType
+  New member rwRASTERPALETTEVOLATILE
+
+22/04/03 3ds max and Maya Reference Guides
+  Potentially Visible Sets (Modeling Reference section) updated
+
+22/04/03 Xbox added function RpXboxPixelShaderSetFreeListCreateParams.
+
+22/04/03 BZ#4552 3ds max Tutorials - Partitions and Hints
+
+16/04/03 BZ#4552 Maya Tutorials - Partitions and Hints
+  section includes adds step to assign template to
+  asset.
+
+16/04/03 RwCameraForAllAtomicsInFrustum new function
+
+11/04/03 Update to particle exporter user guides
+  Added info on particle rotation
+  3dsmaxParticles.doc
+  MayaParticles.doc
+
+10/04/03 D3D API ref: Added
+  RwD3D8EngineSetMultiThreadSafe
+  RwD3D9EngineSetMultiThreadSafe
+
+10/04/03  3ds max and Maya Reference Guides
+  Updates to reflect movement of Normal Map options out of the Xbox specifc
+  section of the RenderWare material. Also added documentation for the new
+  Modulate Env Map option.
+
+10/04/03 GCN Visualizer docs (Viewers\RenderWareVisualizer.doc)
+  Added GCN broadband adapter support documentation
+
+10/04/03 Rt2d
+  Removed Rt2dFontCacheFlush.
+  Add Rt2dFontIsOutline.
+
+10/04/03 Build tool (BZ#4590)
+  Further information added to the compiler context section that
+  recommends a course of action if the build tool incorrectly identifies
+  contexts in the output.
+
+09/04/03 RwFree - added note that ANSI explicitly permits NULL passed
+                  to this
+
+09/04/03 Top-level readmes, all platforms (BZ#4332)
+         API reference 3.5 release notes
+  · Note added in the "What's new" section regarding the requirement
+    of multithreaded DLL run-times for applications using the pre-built
+    PC NULL libraries.
+
+08/04/03 Xbox top level readme - April 2003 XDK (Build 5455).
+
+08/04/03 BuildRW whitepaper
+  · Updated for changes to RWDLL build option.
+
+07/04/03 New white paper - Using Unicode
+   
+  New glossary entries:
+  unicode
+  ucs
+  utf
+  cjk
+
+02/04/03 API ref OpenGL team:
+  · Made the following corrections to the supported options:
+      Dual pass: Soft/Hard
+      Fog      : Yes
+
+02/04/03 API Reference updated:
+  Rt2d Object IDs
+  Rt2dFontStreamRead
+
+02/04/03 3ds max Reference Guide
+  Fixed small typos in the following sections:
+    Material Reference/Standard Material/General Settings
+    General Reference/Lightmaps
+    General Reference/Animation/Tension Continuity Bias (TCB)
+
+02/04/03 OpenGL
+   API ref: Added
+		RwOpenGLEnable
+		RwOpenGLDisable
+		RwOpenGLIsEnabled,
+            	RwOpenGLStateToken
+		RwOpenGLStateData.
+            Removed
+		RpOpenGLWorldDisableColorMaterial
+		RpOpenGLWorldDisableLighting,
+            	RpOpenGLWorldDisableNormalize
+		RpOpenGLWorldEnableLighting
+		RpOpenGLWorldEnableNormalize
+		RpOpenGLWorldIsLightingEnabled
+    
+   OpenGL white paper: Extended RenderState discussion.
+
+01/04/03 BZ#4462 rpWORLDMODULATEMATERIALCOLOR
+  * Dynamic Models User Guide chapter - Material colors section
+    updated.
+  * RpMaterialSetColor API function updated.
+
+01/04/03 BZ#4319 Pre-instancing and PVS
+  * World & Static Models User Guide chapter - note added to
+    Using RpWorldInstance() section.
+  * RpWorldInstance function updated
+
+01/04/03 BZ#4461 RpToon API Reference - PlayStation 2
+  PlayStation 2 Platform Specific information section within
+  RpToon, updated as face culling not supported.
+
+01/04/03 BZ#4480 World & Static Models User Guide chapter
+  World Offset section removed as RpWorldGetOrigin
+  already removed from API.
+
+01/04/03 BZ#4499 Fundamental Types User Guide chapter
+  1.8.1 Right-handed coordinates & Axis Naming Conventions
+  sections updated.
+
+01/04/03 PTank3 example readmes, description updated.
+
+31/03/03 TechnicalArtistGuide - Added a section about creating rw
+  assets in 3ds max using max script.
+
+31/03/03 Images in API Reference now have explanative tooltips.
+
+31/03/03 BZ#4318 PTank User Guide Chapter - rpPTANKFLAGSTRUCTURE 
+  and rpPTANKFLAGARRAY. Descriptions had been swapped.
+  1.2.1 Organization Flags 
+  1.2.2 Particle Tank 
+
+31/03/03 BZ#4491 RpSplineFindPosition tangent parameter:
+  If the tangent parameter is not required to be computed, 
+  its value can be set to NULL.
+
+27/03/03 Visualizer documentation + screenshots includes D3D9 target
+
+26/03/03 Technical artist guide
+  Added section describing how to create RenderWareAsset nodes
+  in Maya using standard MEL commands.
+
+26/03/03 RtLtMap
+  Replaced startSamples and numSamples with startObj and numObj in the
+  lighting session data structure respectively.
+  Updated API reference for RtMapLightMapIlluminate.
+
+25/03/03 GCN
+  Compressed Vertex Format Overview updated.
+
+25/03/03 BZ#4353 API Reference
+  Add new section "Integrating HXS with MSDN Collection" to
+  Documentation Section.
+
+25/03/03 PS2 top level readme updated:
+  Sony libraries Release 2.7.0.
+
+24/03/03 BZ#4331 VCL white paper incorrectly stated that the VCL pipes
+  didn't support clipping.
+
+24/03/03 BZ#4420 Max and Maya Reference Guides, 
+  Animation Asset Properties -> Dynamic Key Frame Generation 
+  although it is may be -> although it maybe 
+
+20/03/03 RpPrtStd
+  Added new API functions.
+    RpPrtStdPropTabGetByProperties
+    RpPrtStdEClassGetByPropTab
+    RpPrtStdPClassGetByPropTab
+
+20/03/03 BZ#4285 Error in Maya Reference Guide
+  The texture repeats section was incorrectly referring to PS2 texel
+  limits of +-1024. The section now correctly refers to limits of
+  +-2048.
+
+20/03/03 Optimizing Static Geometry white paper
+  Added paragraph about performance benefits of mipmapping on PS2.
+
+19/03/03 BZ#4370 Typo in TechnicalArtistGuide - Decimation Mode
+  buy -> but
+
+14/03/03 Example readmes:
+  * All dates changed to 2003.
+  * Camera GameCube readme, first RIGHT TRIGGER + RIGHT ANALOG stick 
+    should read LEFT TRIGGER + LEFT ANALOG stick
+  * Frame's GCN readme win -> GameCube
+  * Lights' PS2 readme - First control changed to Left Analog Stick
+
+13/03/03 Rt2d
+  Added support for font streaming. New APIs are added for this.
+      Rt2dFontStreamRead
+      Rt2dFontStreamWrite
+      Rt2dFontStreamGetSize
+  Texture dictionary is now used for bitmap fonts. New APIs for setting and query the
+  font's texture dictionary.
+      Rt2dFontTexDictionaryGet
+      Rt2dFontTexDictionarySet     
+
+06/03/03 RpPrtStd
+  Added new API, RpPrtStdPropTabAppend.
+
+06/03/03 API Reference - other documentation section added to top level 
+  overviews i.e Fundamental Types, Math Tools, Geometry etc. 	
+  With the addition of pdf hyperlinking, this new section is a 
+  quick reference to the User Guide pdfs.
+
+05/03/03 Integrating CHI with MSDN steps modified to enable
+  pdf hyperlinking to work
+
+05/03/03 RpSkinAtomicSetHAnimHierarchy attached -> attached
+
+04/03/03 OpenGL NVIDIA vertex array range & remapped vertex data (BZ#4222)
+  remapVertexData element added to RxOpenGLMeshInstanceData
+  
+  OpenGL whitepaper updated with two notes in section 1.5.3
+  giving more information on what to do when the vertex array
+  pool is exhausted.
+
+28/02/03 RpPrtStd
+  Added API RpPrtStdEmitterCreatePTank.
+
+27/02/03 BZ#4226 API Reference Tutorial 5 - screenshots updated
+
+27/02/03 RpPrtAdv integrated into main api reference.
+
+26/02/03 API Reference has hyperlinks to pdfs. This enables pdfs and 
+  to be opened directly from the chm and temporarily "embedded" in 
+  the chm. 
+
+25/02/03 22:00:00=============================================[80 Characters]==
+  RW35Active branch created.
+
+25/02/03 BZ#4175 RpWorldInstance example code updated.
+
+21/02/03 RpTeamSetDictionary api ref
+  Team dictionary may not be attached to multiple team objects.
+
+21/02/03 RwPalQuantSetMaxDepth & RwPalQuantGetMaxDedpth
+  New functions in the Texture group.
+
+20/02/03 RpPatchMeshStreamRead api ref
+  Added example code to demonstrate RpPatchMesh streaming.
+
+19/02/03 User Guide volumes 1 to 3 all chapters 
+  now indexed.
+
+19/02/03 Fundamental Types for Animation summary
+  updated.
+
+19/02/03 Initialization&ResourceManagement UserGuide.
+  Updated section Setting the Video Mode to correctly list the
+  platform specific video modes flags.
+
+19/02/03 RpGeometryUnlock api ref
+  Small change to indicate that all triangles need materials for
+  this function to be called.
+
+18/02/03 ArtistGuideTemplate.dot heading 2 numbering added.
+
+18/02/03 2dConverter tools doc updated. Now refers to
+  User Guide chapter Maestro.
+
+18/02/03 OptimizingStaticGeometry Artists Whitepaper updated
+
+18/02/03 New generic white paper:
+  UpdatingYourRWGAssets.doc
+  Added to API reference in RWG3.5 release notes, and documentation section.
+  Added to top level readmes for all platforms.
+
+18/02/03 User guide introduction
+  - Minor tidy-up and consistency check of the exporters section.
+
+18/02/03 RpToon User Guide updates
+  - Mention that .dff, .bsp's are considered legacy file types now
+    but that RenderWare Graphics still supports them.
+
+18/02/03 Hanim User Guide
+  Added section for compressed keyframes.
+
+18/02/03 Minor updates to RpToon artist guide for consistency.
+
+17/02/03 Added text about legacy formats to:
+  - 3dsmaxReferenceGuide exporting section
+  - MayaReferenceGuide exporting section
+  - ArtistGuideGlossary
+  - TechnicalArtistGuide
+  - API Reference Glossary
+
+17/02/03 Update RpToon docs to reflect chages to 3.5
+- updated the RpToonEd.chm help file
+- updated the RpToonArtistGuide.doc
+
+17/02/03 Example files updated
+  - ExamplesGeneric, ExamplesPS2, ExamplesWin, ExamplesXbox
+  - gcond readmes
+  - texdict readmes
+  - vshader readmes
+  - world readmes
+
+17/02/03 2dconvrt tool guide updated
+  - Mention that .dff, .anm's are considered legacy file types now
+    but that RenderWare Graphics still supports them.
+  - The help for the tool is now that same as that is output with the tool executable.
+
+17/02/03 Glossary additions
+  - .pnt and .ink file types for RpToon (probably legacy now)
+
+17/02/03 RpPTANK & RtCmpKey.
+  Updated docs for pTank flags. rpPTANKDFLAGSIZE is ignored for matrix particles.
+  Updated docs for RtCmpKey.
+
+15/02/03 Rt2d
+  - Added note to Rt2dShapeAddNode API ref
+    ("Shapes with color-gradient brushes do not support dynamic update of colors")
+
+14/02/03 Crowd User Guide chapter update
+  - References to internal sections changed to italics, and removed the word "sections" prefixing them.
+    Also added the reference title if necessary.
+  - Legacy file types, .dff, etc. replaced with references to chunk IDs and binary streams in general.
+  - Note to say that legacy files are still supported and can be read and no need to re-export artwork.
+
+14/02/03 GameCube Multitexture Effects User Guide Chapter updated
+  - References to internal sections changed to italics and including the section name for consistency.
+  - Updated NBT generation will work with compressed vertex formats.
+  - Updated use of color channels on TEV stages.
+  - Removed reference to non-existant example .dff with effect editor.
+  - Reference to world and clump viewer only reading legacy file types.
+  - Note to say that legacy files are still supported and can be read and no need to re-export artwork.
+
+14/02/03 GameCube Multitexture Editor HTML help
+  - Updated use of color channels on TEV stages.
+
+14/02/03 RpSkyTexGetTex1 -> RpSkyTexCalcTex1
+  Name change reflected in docs and ps2 readme.
+
+14/02/03 Skinning User Guide Chapter Updated
+  - Legacy file types, .bsp, .anim, etc. replaced with references to chunk IDs and binary streams in general.
+  - RpHAnimAnimation changed to RtAnimAnimation.
+  - Added references to rpSKINTOON RpSkinType option, and rpskintoon.lib.
+  - Added hanim4 and hanimsub to the list of hanim examples that use skinning.
+
+14/02/03 RtLtMap
+  Added RtLtMapLightingSessionDeInitialize to match the initialize
+  function.
+
+14/02/03 GCN see also references added to
+   RpWorldInstance and RpAtomic Instance
+
+14/02/03 BuildRW.doc
+  Added PS2_DRIVE and IOPPATH to options.mak file section
+
+14/02/03 Hanim User Guide Chapter updated
+  - Legacy binary file types, .dff, .anm changed to refer to chunk IDs and binary streams in general.
+  - Few grammar fixes.
+  - Function names post-fixed with ().
+  - Some inconsistent use of styles fixed.
+
+13/02/03 Morph User Guide Chapter updated
+  - Legacy binary file types, .dff, .dsp, etc.
+  - New default binary file type, .rws.
+  - Note to say that legacy files are still supported and can be read and no need to re-export artwork.
+  - Few minor grammar changes.
+
+13/02/03 DMorph User Guide chapter updated
+  - Legacy binary file types, .dff, .dsp, etc.
+  - New default binary file type, .rws.
+  - Note to say that legacy files are still supported and can be read and no need to re-export artwork.
+  - Pre light & pre-light --> prelight
+  - () postfixed to function names
+  - Bold removed from codefrags for consistency.
+
+13/02/03 GCN
+  Updated all GCN API Ref documentation.
+
+13/02/03 Lightmaps User Guide chapter updated
+  - New default binary file type, .rws.
+  - "Callback functions" - sampleCallback was incorrectly specified
+  - Updated exporter option to export lightmaps: now "Generate RtLtMap UVs"
+
+13/02/03 Multitexturing in MatFX User Guide chapter updated
+  - New default binary file type, .rws.
+  - texture->effect dictionary in "Creating effect dictionaries"
+
+13/02/03 Dynamic Models User Guide chapter update, affecting
+  - Legacy binary file types, .dff, .bsp etc.
+  - New default binary file type, .rws.
+  - Note to say that legacy files are still supported and can be read and no need to re-export artwork.
+  - The way to launch the Visualizer from a modeler.
+  - References to objects not capitalized.
+  - Morph targets: location of UV and prelight data.
+  - Rewrite of "texture coordinates" - lots of obsolete information removed
+  - Removal of "no prelighting supported in modelers" in prelighting section
+  - PS2 -> PlayStation2
+  - Geometry->lock/unlock for material changes: added PC exception.
+  - Mention of use of hardware video memory in instancing.
+  - Removal of PS2 only support of preinstanced matfx data. (Should work on GCN and Xbox ok)
+  - Removal of reference to exporter source code. We don't ship it.
+  - Reference to PI texture dictionaries in converting non-RW models to RW.
+  - Screenshot of "world" updated with D3D8 metrics.
+
+13/02/03 OpenGL Ptank overview added to API reference.
+
+13/02/03 New doc: Converting Exports from 3.4 to 3.5
+
+13/02/03 3ds max and Maya tutorials updated and substantially
+  rewritten for 3.5
+
+13/02/03 Instance tool document updated after review
+
+12/02/03 RenderWareVisualizer.doc
+  updated introduction
+  added more screenshots
+  added summary
+
+11/02/03 RtLtMap
+  RtLtMap overview changed to include references to RpRandom.
+
+11/02/03 RtLtMap & RpLtMap
+  Redone lightmap supersampling slightly. Supersampling is now selected during
+  illumination with RtLtMapIlluminate, rather than during creation stage with
+  RtLtMapLightMapsCreation.
+  The user guide has been updated for this change.
+
+11/02/03 RenderWareVisualizer.doc
+  updated pictures (BZ#1790)
+  updated format information (non-rws files now legacy)
+  added reference to Sony's site re cdvd2iso.exe (BZ#3775)
+  updated list of files with which to create CD image
+  added description of animation speed control
+  added description of .rf3 visualization
+
+11/02/03 Instancer documentation
+  Instance tool doc
+     Updated list of RenderWare objects that don't instance
+     Updated command-line switch descriptions
+     Updated description of custom instancers to include skin split and dds
+     texture support
+  Removed known issue with instancer in top level readmes for PlayStation2, Xbox
+  and GameCube
+
+11/02/03 Notebox added to SearchPDFs. Index.pdx has been renamed
+  index<platform>.pdx
+
+11/02/03 Serialization user guide chapter
+  - References to .bsp and .dff termed legacy and replaced with .rws.
+  - Note to say that legacy files are still supported and can be read and no need to re-export artwork.
+
+11/02/03 RpWorldStreamWrite (API ref)
+  Streamed file now uses the .rws extension.
+
+11/02/03 HAnim overview (API ref)
+  Removed references to .dff's and .anm's and replaced with references to
+  .rws files and the rwID_CLUMP and rwID_HANIMANIMATION chunks in the .rws file.
+
+10/02/03 OpenGL MatFX environment mapping optimization
+  Updates the MatFX OpenGL overview to indicate a further requirement that
+  fogging must be disabled to use the optimization.
+
+10/02/03 RxxxxSetFreeListCreateParams functions corrected changing reference of
+  RwFreeListCreate to RwFreeListCreateAndPreallocateSpace.
+
+  Return type of RwTexDictionaryCallBack in RwTexDictionaryForAllTexDictionaries
+  corrected to RwTexDictionary *.
+
+08/02/03 ExamplesGeneric.doc
+  Added GCond Example.
+
+07/02/03 World&Static Models chapter.
+  Changed references to RtWorldImportParametersInit function which
+  works differently now.
+
+07/02/03 RWSView example added
+  Examples.generic document updated.
+
+07/02/03 PS2 vector code white paper has now be replaced by the 
+  vcl pipes white paper.
+
+07/02/03 PlayStation 2 API Platform Specific section restructured
+  * Video mode information can be found in RwEngine
+  * Alpha blending info can be found in RwRenderState
+  * New group for Texture Cache functions & overview
+  * RpMipmapKL PS2 functions moved to RpMipmapKL, added overview
+
+07/02/03  Typedefs moved to different groups (on all platforms):
+  * RwIm2DVertex -> RwIm2DVertex
+  * RxVertexIndex -> Generic Core PowerPipe
+  * RwImVertexIndex -> Generic Core PowerPipe
+  * RwIm3DVertex -> RwIm3DVertex
+  * RxObjSpace3DVertex -> Generic Core PowerPipe
+  * RxObjSpace3DLitVertex-> Generic Core PowerPipe
+  * RxScrSpace2DVertex -> Generic Core PowerPipe
+  * RxColorUnion (PS2 only)
+  Only typedefs documented as structures opaque
+
+06/02/03 RtLtMap & RpLtMap
+  Upated docs to lightmaps for the introduction of supersampling.
+  RtLtMapLightMapCreate now accepts an additional parameter for setting
+  the supersample value. The lightmap userguide has also been updated.
+  Changed the docs for the lightmap clearing. The functions now just clear
+  the lightmap display texture. The lightmap sample images are no longer
+  created.
+  Updated the txt files in the lightmap examples to include the supersample
+  value.
+
+06/02/03 RpLogo and RwPlugin.
+  Added overviews for RpLogon and RwPlugin.
+
+06/02/03 Build tool user guide
+  Removed reference of RenderWare Graphics 3.4 in the introduction.
+
+05/02/03 New document - Exporters:
+  ConvertingExportsFrom34To35.pdf
+
+05/02/03 HAnim4 added to ExamplesGeneric doc. Plugins/toolkits required
+  updated for all HAnim examples.
+
+05/02/03 PS2 timing white paper
+  Small changes to clarify: Maximum of 2 frames queued, "wasted" time callback
+
+05/02/03 Top level overviews for each folder added to API.
+
+05/02/03 PS2 white paper ps2mem
+  Removed section "The Powerpipe Execution Heap"
+
+05/02/03 PS2
+  Changes to _rwDMAClosePkt docs.
+
+04/02/03 RwPlCore
+  Updated RwStreamFindChunk doc. It now inform the user warning messages 
+  may appear if old binary files are read in.
+
+04/02/03 RpPatch API ref
+  Added RpPatchLODCallBack documentation
+
+04/02/03 Glossary updates, including addition of bumpmap, changes to normal map,
+  removal of .spl support on Visualizer... and lots of minor updates.
+
+03/02/03 BuildRW.doc
+  Minor updates, including list of available plugins and compilers.
+
+03/02/03 Recommended Reading chapter: Japanese websites added
+
+03/02/03 Tutorials
+  - Tutorial 5 docs, changed references from .bsps to .rws' for use in the example
+    Added link to tutorial 6 in the conclusion.
+  - Tutorial 6 added
+
+31/01/03 OpenGL - New function added RwOpenGLChangeVideoMode (Win32 only)
+
+31/01/03 (BZ#3649) PITexDicts and texture plugin data
+  API ref overview extended for texture plugin data.
+  User guide RastersImagesTextures chapter updated.
+
+31/01/03 PVSEdit.doc
+  References to .KD files removed.
+
+30/01/03 D3D8 - New function added RwD3D8ChangeVideoMode.
+
+30/01/03 Lightmap User Guide
+  Added section on converting lightmaps to darkmaps for PlayStation 2.
+  Darkmap conversion is no longer automatic. A user must now explicitly
+  convert a lightmap to a darkmap for PlayStation 2.
+  New functions added
+      RtLtMapLightingSessionLightMapProcess
+      RtLtMapSetLightMapProcessCallBack
+      RtLtMapGetLightMapProcessCallBack
+      RtLtMapSkyLumResetCallBack
+      RpLtMapRasterGetFormat
+      RpLtMapRasterSetFormat
+
+30/01/03 NBT and ADC added to API Glossary
+
+30/01/03 See also references amended
+ * RpMultiTextureGetGameCubeMTCallBacks
+ * RpMultiTextureSetGameCubeMTCallBacks
+
+28/01/03 top level readmes moved to doc/readme/
+
+28/01/03 Glossary:
+  Amended G3, Added G3x and PDX Format.
+
+28/01/03 API Reference:
+  Removed About RenderWare Graphics and About the API Reference
+  Added Introduction section and updated main page includes some
+  information from removed sections.
+  New sections added:
+  * Getting Started
+  * Structure
+  * Documentation and Examples.
+
+28/01/03 Geometry Conditioning Chapter.
+  The first draft of this new chapter is completed.
+
+28/01/03 2DGraphicsToolKits Chapter.
+  Updated 2D font section to include Unicode.
+  Updated font format section to include Unicode.
+
+27/01/03 Updated RpTriStripTunnelData struct.
+
+27/01/03 Removed item: 07/01/03 win.txt files for examples, demos and viewers updated to describe
+  the common FPS limiter.
+
+27/01/03 API functions added:
+  RpSkyTexGetTex1
+  RpMatFXMaterialSkyRenderStateSet
+  RpMatFXMaterialSkyRenderStateGet
+
+27/01/03 RpSkyTexGetMiptbp1 return value updated
+
+27/01/03 MatFX UVTransform effect
+  Userguide updates:
+    .1.2 RpMatFX Features
+    .2.1 Selecting The Effect
+    .2.2 Initializing Effect Data
+	 Single and dual-pass with UV Transformation
+    .4.1 Supported Effects
+  API ref updates:
+    RpMatFXMaterialSetUVTransformMatrices
+
+27/01/03 OpenGL various API updates
+  - RwOpenGLSetActiveTextureUnit
+  - RwOpenGLGetActiveTextureUnit
+  - RwOpenGLSetTexture
+  - RwOpenGLSetStencilClear
+  - RwOpenGLGetStencilClear
+  - RwOpenGLVAxxxx (all of them)
+  - RwOpenGLExtensions (max texture units)
+  - Platform specific
+     - Added matfx overview link
+     - Added restrictions
+     - Added multitexturing and vertex array features
+  - Adding "The RpWorld plugin must be attached..." where appropriate.
+
+24/01/03 RpPDS API
+  Updated RpPDSPluginAttach API reference and PDS UserGuide to reflect
+  the RpTeam pipelines have been moved into the PDS.
+
+24/01/03 RpPDS API
+  Updated pipeline terminology.
+  Updated skin splitting pipeline definitions.
+
+24/01/03 Glossary - API Reference
+  New entries: Toc, OpenExport, RwComm, RwExp, RwExpMgr, RwMax,
+  RwMaya
+  Updated entries: ANM Format, BSP Format, DFF Format, DMA Format,
+  SPL Format, Asset Templates, Bone Limits, Normal Maps, RpSkin,
+  RpHAnim, Visualizer
+
+23/01/03 MatFX UVANIM effects renamed to UVTRANSFORM
+  API changes:-
+    rpMATFXEFFECTUVANIM -> rpMATFXEFFECTUVTRANSFORM
+    rpMATFXEFFECTDUALUVANIM -> rpMATFXEFFECTDUALUVTRANSFORM
+    RpMatFXMaterialSet/GetUVAnimTransforms ->
+	RpMatFXMaterialSet/GetUVTransformMatrices
+  This affects API reference for:
+	MatFX Overview
+	RpMatFXMaterialFlags
+	RpMatFXMaterialSetEffects
+	RpMatFXMaterialSet/GetUVAnimTransforms
+
+23/01/03 RpPDS API
+ Terminology page added. Pipelines page moved to pipelines section
+
+23/01/03 User Guide Introduction chapter - Plugin and Toolkit lists updated.
+
+22/01/03 OpenGL MatFX - Added OpenGL specific overview
+
+17/01/03 BZ#3297 Rt2dSceneDestroy - note added.
+
+17/01/03 example docs updated with new examples
+  ExamplesGeneric - prtstd2
+  ExamplesPS2 - vclgenp, vclpipes
+  ExamplesXbox - normmap
+
+17/01/03 Artist Guides substantially updated:
+ * 3ds max Reference Guide
+ * Maya Reference Guide
+ * Technical Artist Guide - new document explaining exporter options
+
+17/01/03 RwTextureSetMipmapping updated.
+
+17/01/03 ArtistGuideGlossary - substantial updates.
+
+17/01/03 PS2
+  New functions RpSkyGetDisplayBufferRaster & RpSkyGetDrawBufferRaster
+
+17/01/03 RpPrtStd
+  Update docs for RpPrtStdAtomicUpdate.
+
+17/01/03 API Reference now strips the single subtopics from identifiers
+in the generated .chm.
+
+Apart from tidying up the index generally, this has the effect that when
+it's integrated into the MSDN collection you can get help on a selected
+identifier by hitting <F1>, which immediately jumps to the relevant page.
+
+16/01/03 Softras and D3D8
+  Matfx D3D8 spelling mistake in D3D8 specific overview: trough -> through
+  Added single and dual-UV animation to the supported matfx types under softras.
+
+16/01/03 GCN RwGameCubeMinRetraceCountSet
+  RwGameCubeMinRetraceCountSet has been added.
+
+15/01/03 RwCameraForAllClumps*
+  Removed function RwCameraForAllClumpsNotInFrustum, docs affected:-
+  User Guide -> Dynamic Models section 6.3
+  User Guide -> Cameras section 9.3
+  API ref -> minor updates to RwCameraBeginUpdate, RwCameraFrustumTestSphere,
+    RpClumpGetCallBack, RpClumpSetCallBack, RpClumpCallBack,
+    RwCameraForAllSectorsInFrustum
+  Rewrite of API ref -> RwCameraForAllClumpsInFrustum
+
+15/01/03 RtLtMap
+  Added new functions to select and replace the luminance calculation function
+  during texture processing on the PS2.
+  The set of new functions
+    RtLtMapSkyLumCalcMaxCallBack
+    RtLtMapSkyLumCalcSigmaCallBack
+    RtLtMapSkySetLumCalcCallBack
+    RtLtMapSkyGetLumCalcCallBack
+  New callback type
+    RtLtMapSkyLumCalcCallBack
+
+14/01/03 RenderWare Graphics Build Tool User Guide
+  Updated to reflect the removal of the exporters from the build options.
+
+14/01/03 rf3cc tool user doc
+intial version
+
+13/01/03 RtTOC - mention in the API reference that the exporters now
+  provide the GUID for each entry.
+
+13/01/03 (some of)BZ#2789 - RWS files - User guide - Serialization
+  Added a section on RWS files and TOCs. Also added a summary point.
+
+10/01/03 BZ#3435 - PTank - API Reference
+Added a platform specific overview for PlayStation 2 and GameCube.
+\sky2\ptankplatform.h : added a platform specific overview
+\gcn\ptankplatform.h : added a platform specific overview
+
+10/01/03 BZ#3382 - BZ#3384 - PTank - API Reference.
+\ptank.h : added rpPTANKIFLAGALPHABLENDING flag in RpPTankInstanceFlags
+\sky2\ptankplatform.h : added RpPTankSkyRenderState
+\sky2\ptanksky.c : added RpPTankAtomicSkyRenderStateSet
+\sky2\ptanksky.c : added RpPTankAtomicSkyRenderStateGet
+
+10/01/03 RpToonGeoGetInkIDFromName param text amended
+
+09/01/03 OpenGL whitepaper
+  Title changed.
+  Sections added on Vertex Array State Caching Wrappers, Retained mode wrappers,
+  Multitexturing.
+  _rwOpenGLVertexHeapDynamicMarkForReuse replaced with _rwOpenGLVertexHeapDynamicDiscard.
+  Various other updates.
+
+09/01/03 RpPrtStd
+  Updated docs for RpPrtStdAtomicUpdate to include more details on when it
+  can be used and possible conflict with hardware resource usage.
+
+07/01/03 API ref : Textures
+  RwTextureCallBackFind - added
+  RwTextureSetFindCallBack - added
+  RwTextureGetFindCallBack - added
+  RwTextureRead - modified
+
+07/01/03 Circular reference to RtTOC and RWS files in the glossary.
+  Added a code fragment in the RtTOC overview to explain how to read particular
+  chunks from an .rws file using the TOC to locate them.
+
+07/01/03 win.txt files for examples, demos and viewers updated to describe
+  the common FPS limiter. (OBSOLETE, see 27/01/03 entry.)
+
+06/01/03 typos:
+  Rt2dTriVertSetFreeListCreateParams
+  Rt2dShape Overview
+  Rt2dDeviceGetStep
+  RxPipelineNodePS2MatBridgeGetVU1CodeArray
+  RxPipelineNodePS2MatBridgeSetVIFOffset
+  RxOpenGLAllInOneSetInstanceDLandVA
+
+06/01/03 RwFrameTransform, RwFrameTranslate
+  combineOp parameter docs updated
+
+03/01/03 RpSkyTexCacheSetReleaseCallBack RpSkyTexCacheGetReleaseCallBack
+  New functions.
+
+17/12/02 RtSkinSplit
+  Added small paragraph to mention only polygonal models can be split.
+
+17/12/02 RtGenCPipe - RxNodeUVInterpSettings documented.
+
+17/12/02 RtTOC updated - overview expanded and functions updated & corrected.
+
+16/12/02 GCN documentation changed for RpGXChannelID & RpGameCubeMTConfigFlag
+  enums in the MatFX plugin.
+
+16/12/02 Rt2dFontRead note added.
+
+13/12/02 Tools and viewers added to Glossary
+
+13/12/02 BZ#2835 - HAnim user guide
+  updated section 1.3.2 Setting Up a Hierarchy For Use with more details
+  concerning the use of rpHANIMHIERARCHYUPDATELTMS and
+  rpHANIMHIERARCHYUPDATEMODELLINGMATRICES. Added a note box concerning the use
+  of those flags when attaching a child object to animated hierarchy.
+
+12/12/02 Tutorial 5 updated to include rws file format.
+
+12/12/02 BZ#2789 Stream Viewer readme updated to include
+  rws file format.
+
+12/12/02 BZ#2872 - wrldviewers docs, *.txt
+  Updated fourth paragraph regarding PVS generation via splines.
+
+12/12/02 Glossary terms added: HHP Format, Normal maps, PDS
+
+11/12/02 BZ#2945 - API Ref
+ - Added RpPTankAtomicSkySwapFrames function
+ - Changed RpPTankSkyGetPreviousBuffer to RpPTankAtomicSkyGetPreviousBuffer.
+
+09/12/02 BZ#3249 RpLightDestroy docs amended.
+
+09/12/02 "Integrating CHI with MSDN Collection" docs changed.
+  Doxygen BINARY_TOC=YES
+
+  In Doxygen there are two options related to generating .chi
+  * GENERATE_CHI generates the CHI which enables a .chi added
+    to MSDN Collection to be searched
+  * BINARY_TOC enables a chi added to MSDN Collection to be
+    accessed through the "Contents" page of the MSDN Collection
+
+  If BINARY_TOC is disabled you can click on a folder in the
+  contents page and the contents of that folder are displayed.
+  With BINARY_TOC enabled you are unable to display the folder
+  contents by clicking on the folder name.
+
+09/12/02 OpenGL vertex array parameters changed slightly
+
+   RwOpenGLVASetPosition, RwOpenGLVASetPositionATI
+   RwOpenGLVASetNormal, RwOpenGLVASetNormalATI
+   RwOpenGLVASetColor, RwOpenGLVASetColorATI
+   RwOpenGLVASetTexCoord, RwOpenGLVASetTexCoordATI
+   RwOpenGLVASetMultiTexCoord, RwOpenGLVASetMultiTexCoordATI
+
+   See the memAddr or offset parameters.
+
+06/12/02 BZ#3130 RpIntersectionCallBackWorldTriangle docs amended.
+
+06/12/02 BZ#3101 RwEngineInit docs amended.
+
+06/12/02 RpPrtStd & RpSkin
+   Added ref links to RpAtomicSetPipeline and RpMaterialSetPipeline in skin
+   split section in RpSkin docs. Playstation 2 only. Updated docs in
+   RpPrtStdParticleStdUpdateSkyCB and RpPrtStdEmitterStdEmitSkyCB to mention
+   the PlayStation 2 ScratchPad memory and VU0 co-processor are used by these
+   functions.
+
+05/12/02 Glossary terms added:
+  2d Viewer, FLA Format, Maestro, Stream Viewer, SWF Format
+  Viewers updated
+
+05/12/02 OpenGL vertex arrays and world lighting new API functions
+
+   RwOpenGLVASetPosition, RwOpenGLVASetPositionATI, RwOpenGLVADisablePosition
+   RwOpenGLVASetNormal, RwOpenGLVASetNormalATI, RwOpenGLVADisableNormal
+   RwOpenGLVASetColor, RwOpenGLVASetColorATI, RwOpenGLVADisableColor
+   RwOpenGLVASetTexCoord, RwOpenGLVASetTexCoordATI, RwOpenGLVADisableTexCoord
+   RwOpenGLVASetMultiTexCoord, RwOpenGLVASetMultiTexCoordATI
+   RpOpenGLWorldEnableLighting, RpOpenGLWorldDisableLighting
+   RpOpenGLWorldIsLightingEnabled
+   RpOpenGLWorldSetMaterialProperties, RpOpenGLWorldDisableColorMaterial
+   RpOpenGLWorldEnableNormalize, RpOpenGLWorldDisableNormalize
+
+05/12/02 BZ#3112 RpPrtStd/RpPrtAdv : texture refcount was not properly updated
+  when destroying a streamed prtstd atomic. API Reference.
+  PrtStd - added RpPrtStdEmitterStdDestroyCB
+  PrtStd - updated RpPrtStdEmitterStdBeginUpdateCB
+  PrtStd - updated RpPrtStdEmitterStdCreateCB
+  PrtStd - updated RpPrtStdEmitterStdEmitCB
+  PrtStd - updated RpPrtStdEmitterStdEndUpdateCB
+  PrtStd - updated RpPrtStdEmitterStdRenderCB
+  PrtStd - updated RpPrtStdParticleStdUpdateCB
+  PrtAdv - updated RpPrtAdvEmtCircleCloneCB
+  PrtAdv - updated RpPrtAdvEmtCircleEmitCB
+  PrtAdv - updated RpPrtAdvEmtMultiPropCloneCB
+  PrtAdv - updated RpPrtAdvEmtMultiPropEmitCB
+  PrtAdv - updated RpPrtAdvEmtPrtEmtCloneCB
+  PrtAdv - updated RpPrtAdvEmtPrtEmtEmitCB
+  PrtAdv - updated RpPrtAdvEmtPtListCloneCB
+  PrtAdv - updated RpPrtAdvEmtPtListEmitCB
+  PrtAdv - updated RpPrtAdvEmtSphereCloneCB
+  PrtAdv - updated RpPrtAdvEmtSphereEmitCB
+  PrtAdv - updated RpPrtAdvEmtTexStepCloneCB
+  PrtAdv - updated RpPrtAdvEmtTexStepEmitCB
+  PrtAdv - updated RpPrtAdvPrtEmtUpdateCB
+  PrtAdv - updated RpPrtAdvPrtMultiPropUpdateCB
+  PrtAdv - updated RpPrtAdvPrtTexStepUpdateCB
+
+04/12/02 RpSkyTexCacheDisable
+  disable parameter documentation corrected.
+
+04/12/02 OpenGL texturing
+  Added documentation for the functions RwOpenGLSetTexture (new),
+  RwOpenGLSetActiveTextureUnit and RwOpenGLGetActiveTextureUnit (both promoted
+  from stealth to API status).
+
+03/12/02 PC Tutorials
+  included in API Reference, not as separate chm.
+
+03/12/02 RwTextureSetMipmapping API added note.
+
+02/12/02
+  Removed restriction on RpSkyTexCacheSetCallBack()
+  Added RpSkyTexCacheGetCallBack()
+
+02/12/02 BZ#2213 User Guide chapter - Immediate Mode
+  Added Perspective Projection section
+
+02/12/02 BZ#2587 PS2
+  Added _rwDMAYieldCallbackSet() and _rwDMAMinVsyncCntSet()
+
+28/11/02 MatFX API updates
+- Added page 'PlayStation 2 MatFX'
+- Updated page 'GameCube MatFX'
+- Following functions now describe details of matfx coefficients:
+	RpMatFXMaterialSetupBumpMap
+  	RpMatFXMaterialSetupEnvMap
+  	RpMatFXMaterialSetBumpMapCoefficient
+  	RpMatFXMaterialSetEnvMapCoefficient
+
+27/11/02 Bug No: 2838 Maya Particle Docs - confusing content
+FXPack/MayaParticles.doc
+resolved confusing content and moved some sections around.
+
+27/11/02 Bug No: 2830 Magnitude of Fields - particles Maya 4.x
+FXPack/MayaParticles.doc
+Added a note to the forces section explaining that volume forces are not supported by RenderWare particles
+
+26/11/02 BZ#2913 PS2 API Reference - RenderWare Graphics
+  Removed references to Renderware Audio in PS2 specific section:
+  "Potential conflicts in VU0 usage"
+
+26/11/02 PS2 FSAA0 & FSAA1 modes
+  Renamed rwVIDEOMODEFSAA0 mode to rwVIDEOMODE_PS2_FSAASHRINKBLIT
+  Renamed rwVIDEOMODEFSAA1 mode to rwVIDEOMODE_PS2_FSAAREADCIRCUIT
+
+26/11/02 BZ#2887 and BZ#2942 API Reference
+
+  enum RwCorePluginID documented in group RwStream
+
+  Code examples and see also added/amended:
+  RpAtomicStreamRead
+  RpClumpStreamRead
+  RpGeometryStreamRead
+  RpLightStreamRead
+  RpMaterialStreamRead
+  RpWorldStreamRead
+
+  RpDMorphAnimationStreamRead
+  RpMTEffectDictStreamRead
+  RpMTEffectStreamRead
+  RpPrtStdEClassStreamRead
+  RpPrtStdPClassStreamRead
+  RpPrtStdPropTabStreamRead
+  RpPrtStdGlobalDataStreamRead
+  RpSplineStreamRead
+  RpTeamDictionaryStreamRead
+
+  RwCameraStreamRead
+  RwImageStreamRead
+  RwMatrixStreamRead
+  RwTexDictionaryStreamRead
+  RwTextureStreamRead
+
+  RtAnimAnimationStreamRead
+  RtPITexDictionaryStreamRead
+  RtTOCStreamRead
+
+  Rt2dObjectStringStreamRead
+  Rt2dBrushStreamRead
+  Rt2dPathStreamRead
+  Rt2dPickRegionStreamRead
+  Rt2dSceneStreamRead
+  Rt2dShapeStreamRead
+
+  Rt2dAnimStreamRead
+  Rt2dKeyFrameListStreamRead
+  Rt2dMaestroStreamRead
+
+  added pages Rt2d Object IDs, Rt2dAnim Object IDs
+
+26/11/02 Added reference to RtPITexD in the RwTexDictionary overview.
+
+26/11/02 BZ#2911 Platform independent texture dictionaries not documented
+  in the user guide.
+
+25/11/02 BZ#2848 RwCameraSetXXX shouldn't be called inside CamBegin/End
+  Note added:
+  RwCameraSetNearClipPlane
+  RwCameraSetFarClipPlane
+  RwCameraSetFogDistance
+  RwCameraSetProjection
+  RwCameraSetViewWindow
+  RwCameraSetViewOffset
+
+25/11/02 BZ#2774 Serialization chapter - Endian-ness
+ This was changed in PR#2738. Table Headings swapped and following
+ paragraph amended.
+
+22/11/02 RpPrtAdv
+  Renamed many structures and functions to reduce their length and
+  fix some odd naming used.
+
+22/11/02 Changed overview name RtBezier -> RtBezPat
+
+21/11/02 PS2
+  RpSkyTexCacheValidateRaster Added missing line.
+  RpSkyTextureGetMipmapK      Set->get
+  RpSkyTextureGetMipmapL      Set->get
+
+20/11/02 typos:
+  RpTeamPlayerSetRenderCallBack params
+  Return values: RwImageAllocatePixels, RwImageRead, RwImageWrite
+  RwImageReadMaskedImage, RwRasterReadMaskedRaster, RwRasterUnlock
+  RwRasterGetParent, RwRasterUnlockPalette RxPipelineInsertDebugNode
+  struct RwV2d vlaue -> value
+  RtRas Overview greyscale -> grayscale
+  RtRas defgroup fule -> file
+  RtSlctPipeWorldSelectPipes ot -> or
+  RwFrameDeInit, RpMaterialStreamWrite errror -> error
+
+15/11/02 MatFX User Guide chapter. Added para to
+  1.2.2 Initializing Effect Data - Bumped Textures.
+
+15/11/02 Glossary added to API Reference. The majority of the information
+  is based upon existing information in UserGuideGlossary.pdf and
+  ArtistGuideGlossary.pdf.
+
+15/11/02 BZ#2335 Add notes to:
+  RpGeometryAddMorphTarget
+  RpGeometryAddMorphTargets
+  RpGeometryGetMorphTarget
+
+14/11/02 BZ#2592 1.5.1 Introducing Textures, Mipmaps section amended
+
+13/11/02 Xbox - RwXboxDeviceConfig structure changed.
+  Added the function RwXboxDeviceConfigGetDefaultValues.
+
+12/11/02 BZ#2747 - RtLtMapDefaultVisCallBack use a user modifiable value when
+  validating it's collision test.
+  Added RtLtMapSetVisCallBackCollisionScalar
+  Added RtLtMapGetVisCallBackCollisionScalar
+
+06/11/02 Xbox top level readme - November 2002 XDK (Build 5120).
+
+06/11/02 BZ#2570. RpPrtStd and RpPrtAdv.
+  Added RpPrtStdEmitterPrt2DRotate and RpPrtStdParticle2DRotate for 2D rotation
+  support in particles.
+  Removed RpPrtStdEmitterPrtAnimFrame and RpPrtStdParticleAnimFrame from RpPrtStd.
+  This is done in RpPrtAdv.
+
+05/11/02 BZ#2606 : All change in doxy comments.
+  Added RtAnimInterpolatorGetCurrentAnim
+  Added RpHAnimHierarchyGetCurrentAnim
+  Updated RtAnimInterpolatorSetCurrentAnim
+  Updated RpHAnimHierarchySetCurrentAnim
+  Updated RpHAnimHierarchyAddAnimTime
+  Updated struct RtAnimInterpolator
+
+05/11/02 RtAnimation user guide chapter
+  Removed 1.4.2:
+  * Flags (for future expansion/customization).
+  * The duration of the animation (the time elapsed between the
+  first and last keyframes).
+  Replaced 1.4.3
+  RtAnimAnimationSetCurrentTime -> RtAnimInterpolatorSetCurrentTime
+  RtAnimAnimationAddAnimTime -> RtAnimInterpolatorAddAnimTime
+  RtAnimAnimationSubAnimTime -> RtAnimInterpolatorSubAnimTime
+
+05/11/02 example/matfx1
+ - *.txt files updated to mention new uv transform effects
+   and also now list the src/dest blend menu options
+ - doc/Examples/ExamplesGeneric.doc -> MatFX1 mentions
+   new uv transform effects
+
+01/11/02 RwCamera API overview updated
+
+23/10/02 (Bug 2211) API Reference
+ * Requirement sections added to all RwCore and RpWorld overviews
+ * Amended Rt2dAnim requirements section
+
+22/10/02 Release Notes added to API reference for 3.4, 3.3, 3.2 and 3.10.
+
+21/10/02 Rt2d API docs
+  - Rt2dFontSetReadCallBack - new
+  - Rt2dFontCallBackRead - new
+  - Rt2dFontGetReadCallBack - new
+
+21/10/02 RpMatFX API docs
+ * RpMatFXMaterialSetUVAnimTransforms - new
+ * RpMatFXMaterialGetUVAnimTransforms - new
+ * rpMATFXEFFECTUVANIM - new effect RpMatFXMaterialFlags
+ * rpMATFXEFFECTDUALUVANIM - new effect RpMatFXMaterialFlags
+ * overview updated
+ * RpMatFXMaterialSetEffects updated
+
+21/10/02 RtCharset. Updated docs to RtCharsetSetColors
+
+16/10/02 OpenGL - Further removed RxOpenGLAllInOneInstanceFn related to
+  the change on 10/10/02.
+
+16/10/02 RwFreeListFree - Reference to _rwFreeListAllocReal changed to
+  _rwFreeListFreeReal.
+
+15/10/02 RpToonType enum docs removed. RpSkinType enum docs amended.
+
+15/10/02 (Bug #2181) RpPrtStdPropTabGet
+
+13/10/02 RpTriangle in group RpGeometry
+
+11/10/02 GCN RpGameCubeWorldGetVtxFmt & RpGameCubeGeometryGetVtxFmt modified
+  to include the paragraph,
+
+  Note that this function is used for debug purposes only and, for
+  efficiency, is available as a macro for final release versions of an
+  application.
+
+10/10/02 OpenGL all-in-one custom instancing function removed. References
+ to RxOpenGLAllInOneSetInstanceFn and RxOpenGLAllInOneGetInstanceFn removed.
+
+10/10/02 RpAtomicGetRenderCallBack note changed
+
+09/10/02 RenderWareVisualizer.pdf typo
+ "getting Visualizer" -> "get Visualizer"
+
+08/10/02 Added feedback hyperlink to footer of API Reference.
+
+08/10/02 Xbox top level readme - October 2002 XDK (Build 5028).
+
+07/10/02 Added a comment about attenuation in the forces chapter of
+the Maya particle document and converted to pdf.
+
+03/10/02 (PR#3886) Updated docs to including some missing flags.
+
+03/10/02 API Ref: Rt2d requirements section - RpWorld required
+
+03/10/02 RwMatrixRotate, RwMatrixTranslate, RwMatrixScale, RwMatrixTransform,
+ RwMatrixRotateOneMinusCosineSine return values
+
+03/10/02 1.13 Pipelines & Limitations Team docs updated.
+
+01/10/02 Max Tutorials completely re-written.
+
+27/09/02 Maya Reference Guide - updated:
+  * Export RpHAnim Data (.anm):" section of "Animation Options" in "Exporter Options"
+  * Dual pass material section in "Maya Material" in "Material Reference"
+
+27/09/02 (PR#3854) RpPrtStd & RpPrtAdv.
+  Added new API, RpPrtStdEmitterClone.
+  Added clone callbacks for emitter properties.
+
+25/09/02 Rt2d - Rt2dSceneCreate docs updated; scenes are locked by default
+
+25/09/02 Rt2d - Added Unicode support. UNICODE build is no longer required.
+  Updated docs on how Unicode is supported and enabled.
+  Added a Unicode doc section.
+  Added new API Rt2dFontIsUnicode.
+
+24/09/02 PS2 top level readme. PDS Example added to doc.
+  G3x-pipelines applied to tri-strips and tri-lists.
+
+20/09/02 D3D8, OpenGL and Xbox team API docs updated to ensure that the use
+  of RwCameraClear with stencil buffers is made clear.
+
+19/09/02 Xbox top level readme - September 2002 XDK (Build 4928.2).
+
+19/09/02 PR#3818 - Hanim - removed part of the RpHAnimHierarchy struct
+  documentation as it wasn't true anymore.
+
+13/09/02 PR#3836 RwXbSetSurfaceProperties, RwXbCreateVertexBuffer
+ RwXbReleaseVertexBuffer, RwXbVertexBufferLockDiscard in API Reference.
+
+13/09/02 Code fragment style - removed blank lines in formatting.
+  rwsdk/misc/stylesheet.css
+
+12/09/02 PR#3465 RpSkyRenderStateSet, RpSkyRenderStateGet, enum RpSkyRenderState
+  API docs.
+
+12/09/02 Xbox restrictions updated with texture stage usage information.
+
+12/09/02 PR#3804 MayaReferenceGuide - Blind Data heading promoted.
+
+12/09/02 PR#3831 RpClumpDestroy
+
+12/09/02 RpHAnimHierarchyFlag enum docs in API ref.
+
+12/09/02 Substantial changes to Maestro doc.
+
+12/09/02 Xbox top level readme - September 2002 XDK (Build 4928)
+
+10/09/02 PS2 texture cache
+  The function RpSkyTextureCacheSetState() has been removed as it is obsolete
+
+09/09/02 PVS user guide chapter: RpWorldWrite -> RpWorldStreamWrite
+
+09/09/02 worlds.doc/pdf Additional recommended reading website
+
+09/09/02 PDS user guide chapter, page 6 note: RwPDS -> rwPDS
+
+06/09/02 PR#3814 Xbox TRC Failure, updated documentation about video mode
+  selection.
+
+06/09/02 PR#3809 RpGeometryCreate rwMAXTEXTURECOORDS restricted to 8.
+
+06/09/02 API Reference updated: main page, conventions page, contact
+  information, plugins & toolkits list.
+
+06/09/02 Pipeline names transposed in both tables in PS2 top level readme.
+
+06/09/02 Rt2dAnim in API ref now explicitly states that it includes Maestro.
+
+03/09/02 PR#3769 RwD3D8GetCurrentD3DDevice and RwD3D8GetCurrentD3DRenderTarget
+  Added notes about reference count modifications.
+
+02/09/02 ======================================================[80 Characters]==
+  Branched to RW34Active.
+
+30/08/02 PR#3784 Visualizer doc connection properties
+
+30/08/02 PR#3403. RwRasterGetCurrentContext
+
+29/08/02 PrtStd - sky : two chapter in the sky specific overview :
+  Multi-Buffering and Maximum Batch Size.
+
+29/08/02 Artist Guide changes:
+ * Updated the 4 bitmaps that show the bsp or dff tristrip settings.
+ * Updated the table documenting tristrip settings.
+ * Updated the output window bitmap to reflect the latest output strings.
+ * Updated top level BSP/DFF option bitmaps and geometry specific BSP/DFF bitmaps to reflect new tunnel quality default value.
+ * Updated scene settings bitmap and text for pre-instance option.
+ * Updated connection editor bitmap and text for "enable instancing" option.
+ * Updated what's new section.
+ * Updated Installation and Setup\Files section to reflect common exporter files.
+ * Updated Software Used section to not refer to Windows NT.
+ * Removed all references to 3.3.
+
+29/08/02 OptimizeStaticGeometry tri-stripping updated.
+
+29/08/02 Tutorials screenshots updated. And their readmes. Next... links added.
+
+29/08/02 PlayStation 2 platform specific doc contains PS2All and PDS.
+
+28/08/02 User Guides Volumes I, II, III pdf'd for 3.4
+
+28/08/02 PR#3775 Im2d API Reference overview amended.
+
+28/08/02 User guide introduction index updated.
+
+28/08/02 BuildRW whitepaper
+  Updated to reflect changes to the environment variables setup by the RenderWare
+  Graphics installation: RWGDIR and RWGSDK.
+
+28/08/02 User guide chapter: Rasters
+  Updated mipmaps docs to indicate that rwRASTERFORMATMIPMAP is used to enable/
+  disable the use of mipmaps, and rwRASTERFORMATAUTOMIPMAP is used to inform
+  RenderWare Graphics to automatically generate mipmaps from a base texture.
+
+28/08/02 User guide chapter: Using Plugins
+  Updated the order in the RenderWare Graphics startup that plugins have to be
+  attached.
+
+28/08/02 ExamplesPS2 - PDS new example
+
+28/08/02 FX Pack top level readme for 3.4
+
+28/08/02 max and maya particle artist guides
+
+27/08/02 tools/2dconverter.doc updated
+-Added "-r" option and description (pages 6, 8)
+-Removed "-n" option (pages 6, 8)
+-.pngs are now exported by default (page 8)
+
+27/08/02 Rt2dShapeGetNewPath and Rt2dShapeGetNewBrush API functions removed;
+API updated accordingly. Rt2dPathCreate() and Rt2dBrushCreate() are to be used
+instead. Pages 14, 15, 18 of 2dGraphicsToolkits.doc updated to reflect changes.
+
+27/08/02 Maestro Major changes to maestro.doc, now incorporates most of
+"Using Flash In RenderWare" doc. Latter doc has been removed
+
+27/08/02 Maestro1 example added to ExampleGeneric.doc/pdf
+
+27/08/02 RwCameraClear note added to API docs.
+
+23/08/02 Top level readmes for GCN, PS2, Win and Xbox added for RWG3.4.
+
+22/08/02 RpHanim - Documentation :
+  - Removed RpHAnimAtomicGlobalVars struct and typedef API Ref as it 
+  should be exposed.
+  - added struct RpHAnimNodeInfo API Ref
+  - added struct RpHAnimFrameExtension API Ref
+  - added API Ref for param hierarchy, function RpHAnimHierarchyGetFlags
+  - added API Ref for param flags, function RpHAnimHierarchyCreate
+  - added API Ref for param hierarchy, function RpHAnimHierarchyDetach
+
+22/08/02 RpLtMap - Removed gamecube specific section of API ref as the code was 
+  fixed.
+
+22/08/02 Dynamic Models - Optimization section.
+
+22/08/02 Recommended Reading - DirectX8 - updated & added books.
+
+22/08/02 Lights Chapter - refers to lightmaps in introduction.
+
+21/08/02 ExamplesGeneric: prtadv
+
+21/08/02 : RpPrtStd
+  Added summary to user guide.
+
+21/08/02 General
+  Replaced the term 'PS2' with 'PlayStation 2'.
+  Replaced the term 'RWSKY2' with 'PlayStation 2 RenderWare Graphics'.
+  Replaced the term 'RWD3D8' with 'D3D8 RenderWare Graphics'.
+  Replaced the term 'RWOPENGL' with 'OpenGL RenderWare Graphics'.
+  Removed Rt2dFontCacheFlush and Clipping parameters in PS2 restriction section.
+  Added links to bone restrictions in PS2 restriction section.
+  Added paragraph on VU0 and Scratchpad usage on PS2 for RpPrtStd.
+
+21/08/02 Viewer readmes reference relevant pdfs.
+  2dviewer, clmpview, visualizer, wrldview
+
+20/08/02 Tool readmes reference relevant pdfs and chms.
+  2dconvrt, gcnfxeditor, instance, makefont, pvscnvrt
+  pvsedit, rwbuilder, tooned, xboxfxeditor
+  Changelist: 53987
+
+20/08/02 Xbox: Added user guide chapters for Pixel Shaders and
+  Vertex Format Compression. Changelist: 53952
+
+20/08/02 Foreword updated for 3.4
+
+20/08/02 Max and Maya Tutorials: Added chapter on hints and partitions
+
+19/08/02 Tools: Added user guide for Instance; instance.doc in doc\tools
+  Changelist: 53829
+
+19/08/02 ExamplesGeneric: anim, prtstd,  ExamplesPS2: pclone
+  Changelist: 53803
+
+19/08/02 Introduction user guide chapter updated for 3.4
+  Changelist 53801
+
+19/08/02 MayaReference screenshots updated:
+ ANM Exporter: MayaExportANM, ANMGeneralOptions, 
+ BSP Exporter: MayaExportBSP, BSPGeneralOptions, BSPGenerationOptions, BSPGeometryOptions
+ DFF Exporter: MayaExportDFF, DFFGeneralOptions, DFFGeometryOptions
+ GlobalSettings, SceneSettings, RWSOutputWindow, MayaRwShaderXbox
+ RenderWareMenu + RenderWareMenuCreate, RenderWareMenuTools
+ 
+19/08/02 PS2 API Reference: Alpha blending with 16-bit frame buffers 
+ - platform specific restrictions section.
+
+16/08/02 RtAnim : Updates to API reference and Userguide.
+
+16/08/02 RpSkin : Change list 53582.
+  Updated docs and Userguide to include skin split.
+  Added new API RpSkinIsSplit.
+
+15/08/02 Camera chapter - screenshots updated. Changelist 53568
+
+15/08/02 Dynamic Models chapter footballer & 2 paras text removed,
+ screenshots updated. Changelist 53561.
+
+15/08/02 Added platform specific Bone limit sections to the API Ref.
+
+15/08/02 Debugging & Exception Handling user guide chapter
+  RwDebugSetStreamHandler -> RwDebugSetHandler
+
+15/08/02 RpPTank - SKY2 - Cloning Pipelines : Changelist 53529
+  Added platform specific (SKY2) flags : rpPTANKSKYFLAGUSECLONEPIPELINE
+  Added cloning utility functions :
+  RpPTankAtomicSkyCloneSetReferenceAtomic
+  RpPTankAtomicSkyCloneGetReferenceAtomic
+  RpPTankAtomicSkyCloneSetAmbientLight
+  RpPTankAtomicSkyCloneGetAmbientLight
+  RpPTankAtomicSkyCloneSetDirectionalLight
+  RpPTankAtomicSkyCloneGetDirectionalLight
+
+15/08/02 RpPrtStd : Changelist 53513.
+  Added ref counting to RpPrtStd.
+  Added API, RpAtomicIsParticleEmitter.
+
+15/08/02 1.2.1 Initialization Step 3 amended - Initialization & Resource 
+  Management.  Changelist: 53510
+
+15/08/02 User guide chapters: PipelineNodes, PowerPipeOverview, PS2AllOverview
+  updates for 3.4 (due to API ref restructure and gencpipe toolkit). Changlist 53501
+
+15/08/02 User Guide chapters - example screenshots updated:
+  Bezier Patches, DMorph, Immediate Mode, MatFX, World & Static Models,
+
+15/08/02 Updated FreeList section of Initialization & Resource Management
+chapter of the User Guide.
+
+15/08/02 GCN Updated Compressed Vertex Format section.
+
+15/08/02 RpTie RpLightTie RpToonMaterialCreate RpToonMaterialDestroy documented.
+  Changelist 53466
+
+15/08/02 Xbox and D3D8 - Updated platform specific documentation for the Ptank
+  plugin.
+
+15/08/02 RpSkyRenderStateGet in sky2 and nullsky APIs updated support
+  reference.  Changelist 53471.
+
+14/08/02 MultiTexGameCube Visualizer added to Viewer support section
+  Changelist 53411
+
+14/08/02 RpSkyResume, RpSkySuspend docs added to API  : Changelist 53401
+
+14/08/02 ExamplesWin - tutorials para amended          : Changelist 53382
+
+14/08/02 Decal example added to ExampleGeneric doc     : Changelist 53372
+
+14/08/02 Doxygen API powerpipe defgroup restructure for all docs, all platforms
+  world\pipe\p2
+  core\pipe\p2
+  RtAltPipe, RtGenCPipe, RtSlctPipe
+  changelists: 53329, 53330, 53331, 53332, 53333, 53334
+
+14/08/02 Correction to rt2dMESSAGETYPEMOUSEBUTTONSTATE API docs. PR#3695
+
+13/08/02 Fix to bug PR#3561. RwIm3DTransform did not document that
+  rwIM3D_VERTEXXYZ and rwIM3D_VERTEXRGBA are _always_ used.
+
+13/08/02 Dynamic Models user guide chapter  : Changelist 53242
+  removed 3.3 reference in 1.4.2 Viewers section.
+
+13/08/02 PotentiallyVisibileSets.doc : Changelist 53070
+  Updated to reflect new pvs editor
+
+13/08/02 worlds.doc (white paper) : Changelist 53233
+  Update to reflect new hints
+
+12/08/02 RtBoneSplit & RtSkinSplit : Changelist 52570.
+  Renamed RtBoneSplit to RtSkinSplit. Some functions in RpSkin were also renamed from
+  bone split to skin split.
+
+12/08/02 BuildRW whitepaper: Updated with RWDLL information.
+
+12/08/02 AppWizard document. Updated for RWG3.4. Replaced the screenshot with
+  the old RW logo.
+
+12/08/02 RpPrtStd : Added 3 members to structure RpPrtStdEmitterPTank. All 3
+  Are reserved for internal usage.
+
+12/08/02 RpPrtStd : Changelist 52977
+  Renamed RpPrtStdGetDontStreamAll to RpPrtStdGlobalDataGetStreamEmbedded.
+  Also renamed the set function. 
+
+10/08/02 MaxReferenceGuide : Change log #53008
+  Added hints and partitions docs to chapters 3 and 6.
+
+10/08/02 MayaReferenceGuide : Change log #52953
+  Added hints and partitions docs to chapters 3 and 6.
+
+09/08/02 RpPrtStd : Change log #52976.
+  - Added first draft of the RpPrtStd user guide. 
+
+09/08/02 Review and update of the BuildRW whitepaper for how to
+  build the RenderWare Graphics SDK. Changelist #52950.
+
+09/08/02 Review of the PS2 DMA API reference, Changelist #52935.
+
+09/08/02 MaxReferenceGuide - screenshots updated and old docs removed:
+
+ * Scene Settings
+ * removed ANM Skin Settings section & screenshot 
+ * ANM HAnim Settings
+ * BSP Geometry Settings
+ * BSP Generation Settings
+ * BSP Material/Texture Settings updated screenshot and Multiple UVs section 
+   removed, Preserve Normals 2-Sided Materials removed.
+ * DFF Geometry Settings
+ * DFF HAnim Settings
+ * DFF Material/Texture Settings updated screenshot and Multiple UVs section 
+   removed, Preserve Normals 2-Sided Materials removed.
+changelist #52929
+
+08/08/02 PS2. Change list #52749
+	PS2 Vector Code white paper - PS2Manager references removed + chapter 6 rewritten
+	PS2All platform specific chapter - PS2Manager references removed
+
+08/08/02 GCN RwGameCubeCameraTextureFlush docs changed.
+
+08/08/02 RpPrtAdv API document review and update. Changelist #52804.
+  Also, changed RpParticleAdvancePluginAttach to RpPrtAdvPluginAttach.
+  Also, changed RpParticleStandardPluginAttach to RpPrtStdPluginAttach.
+
+08/08/02 RtAnim API document review and update. Changelist #52856.
+
+08/08/02 RpDMorphAtomicInitalize corrected to RpDMorphAtomicInitialize.
+  Changelist #52853
+
+08/08/02 RtAltPipe. Change list #51803
+	New toolkit.
+
+08/08/02 PS2 coredoc.c. Change list #51803
+	All references to PS2Manager, ObjAllInOne and Vanilla pipelines removed
+
+08/08/02 RtSlctPipe. Change list #52734, #51372
+	New toolkit. Added:
+	RtSlctPipeOpen
+	RtSlctPipeClose
+	RtSlctPipeAtomic
+	RtSlctPipeList
+
+08/08/02 bameshop.c/h. Change list #52810, #52693
+	Changes to:
+	RpTriStripCostCallBack
+	RpTriStripTunnelData
+	RpTriStripDefaultCost
+	RpBuildMeshGenerateDefaultTriStrip
+	RpBuildMeshGeneratePreprocessTriStrip
+	RpBuildMeshGenerateExhaustiveTriStrip
+	RpBuildMeshGenerateDefaultIgnoreWindingTriStrip
+	RpBuildMeshGeneratePreprocessIgnoreWindingTriStrip
+	RpBuildMeshGenerateExhaustiveIgnoreWindingTriStrip
+
+08/08/02 RpPrtStd. Change list # 52783.
+    Removed redundant callback ids
+      rpPRTSTDPARTICLECALLBACKSTREAMREAD removed.
+      rpPRTSTDPARTICLECALLBACKSTREAMWRITE removed.
+      rpPRTSTDPARTICLECALLBACKSTREAMGETSIZE removed.
+
+08/08/02 OpenGL White Paper updated for the NVIDIA Vertex Array Range
+   extension. Tidy up and added the new function _rwOpenGLVertexHeapFinishNVFence
+   to the Vertex Array Range section. Changelist #52759
+
+07/08/02 Rt2d docs changed. 
+  - Updated user guide and API reference for font file format.
+
+07/08/02 Added the buildtool user guide document.
+
+07/08/02 D3D8 - Added in features section of the API reference,
+  support for up to 8 texture stages.
+
+07/08/02 Added docs for new functions in Rt2d to control freelist creation.
+  - Rt2dTriPolySetFreeListCreateParams
+  - Rt2dTriVertSetFreeListCreateParams
+
+06/08/02 Changelist #52639. PVS Editor Docs. 
+  Added first draft.
+
+06/08/02 D3D8 - RpAtomicInstance and RpWorldInstance support updated.
+  Changelist #52612.
+
+06/08/02 D3D8 - Updated documentation about the texture stage states changed
+  by the function RwD3D8SetTexture.
+
+05/08/02 RpSkin & RtBoneSplit
+  - New docs for RtBoneSplit toolkit.
+ 
+05/08/02 Rt2d :
+  - Updated Rt2dFontShow to state anchor parameter is used to return the
+    end of string position.
+  - Updated Rt2dSetCamera to mention it needs to be called if the camera's
+    view window and raster dimensions are changed.
+  - Updated userguide to mention no spaces in font bitmap or mask filenames.
+  - Updated userguide to mention metrics files are in Unix format.
+  - Removed Rt2dFontCacheFlush. Redundant function.
+
+05/08/02 PS2 docs.
+  PS2 DMA support section in the Platform Specific, PlayStation 2
+  section. First pass; subject to change.
+
+05/08/02 RpPrtAdv : API reference checked in. Still need review.
+
+05/08/02 OpenGL API references for world, matfx, patch, skin updated due to
+  the rewrite. Changelist #52485
+
+05/08/02 RxScrSpace2DVertex documented for D3D8, GCN, OpenGL, Softras, Xbox.
+  Copy-n-paste from PS2. Changelist #52528
+
+02/08/02 typedef RxConfigMsgHandlerFn docs added back into API ref.
+  Return value added for RpAtomicCallBackRender
+
+02/08/02 RxPipelineNodeSendConfigMsg docs added back into API ref.
+
+01/08/02 Visualizer doc:
+  loader -> launcher
+  hierarchies added to Render section
+  Render section re-ordered.
+
+01/08/02 PR#3478 API docs RwErrorGet desription changed
+
+01/08/02 Artist Guides
+ * Max Reference Guide: DFF Geometry Creation & BSP Geometry Creation sections
+   on tri-strip meshes re-written.
+ * Maya Reference Guide: BSP Geometry Options & DFF Geometry Options sections
+   on tri-strip / tri-stripper re-written.
+
+01/08/02 PR#3585 API docs RwMatrixStreamRead code examples changed.
+
+01/08/02 PR#3668 API docs RwResourcesGetArenaUsage & RwResourcesGetArenaSize
+  return values changed.
+
+01/08/02 PR#3665 API docs RwMatrixUpdate return value changed.
+
+31/07/02 Removed RpHAnimHierarchyHAnimKeyFrameAddAnimTime.
+
+30/07/02 RpPrtStd
+  Added docs for RpPrtStdEmitterPTank and RpPrtStdEmitterPrtMatrix.
+
+30/07/02 RwRenderState API docs
+  Reviewed & updated.
+
+25/07/02 RtWorldImport
+  Added doxy comments on new functions RtWorldImportHintsGetGroup and
+  RtWorldImportHintsSetGroup and the new/changed data structures
+  RtWorldImportBBoxHintDesc and RtWorldImportHints
+
+25/07/02 Xbox New API functions,
+  RpXboxGeometryGetVtxFmt
+  RpXboxGeometrySetVtxFmt
+  RxXboxGetVertexFormatShader
+  RpXboxVtxFmtInit
+  RpXboxVtxFmtSetNormal
+  RpXboxVtxFmtSetPosition
+  RpXboxVtxFmtSetPreLight
+  RpXboxVtxFmtSetTexCoord
+  RpXboxWorldGetVtxFmt
+  RpXboxWorldSetVtxFmt
+
+25/07/02 Hanim/Anim - :
+  RtAnim userguide first checkin
+  Hanim updated userguide first to take rtanim separation into account.
+  Function name changes : **SubAnimation is now SubInterpolator.
+  RtAnimInterpolatorSetAnimLoopCallBack return type changed to void.
+  RtAnimInterpolatorSetAnimCallBack return type changed to void.
+  RpHAnimHierarchySetAnimLoopCallBack return type changed to void.
+  Added function & documentation RpHAnimHierarchySetAnimCallBack.
+                                 RpHAnimHierarchyBlendSubHierarchy.
+                                 RpHAnimHierarchyAddSubHierarchy.
+                                 RpHAnimHierarchyCopy.
+
+24/07/02 MatFX chapter: 1.4.2. Extended Objects section,
+  function names corrected.
+
+24/07/02 PR#3428 RpMipmapKL API docs.
+  sky2 specific note added to all functions & overview.
+
+22/07/02 Removal of renderstates from the API:-
+    rwRENDERSTATEALPHAPRIMITVEBUFFER
+    rwRENDERSTATEFOGTABLE
+  The following documentation has been ammended:-
+    Userguide/Chapters/ImmediateMode/Sorting Alpha Primitives
+    Userguide/Chapters/ImmediateMode/Render States/API
+    API reference/Platform specific restrictions
+
+22/07/02 Minor spelling correction in RpDMorphAtomicInitalize: 'anc' to 'and'
+
+19/07/02 Max Reference Guide:
+ "Texture Size" section changed.
+  SaveSelection -> RwSaveSelection
+  LoadSelection -> RwLoadSelection
+  Blend Modes added to Common Material Topics
+
+  Maya Reference Guide:
+  Blend Modes added to Common Material Topics
+
+18/07/02 API Reference - Fundamental Types structure changed.
+
+18/07/02 Sony libs 2.5.4. ps2 readme updated.
+
+17/07/02 rwsdk/misc/hybrid.jpg updated for Hybrid's new logo. Used
+  in the softras API reference.
+
+16/07/02 Note added to RpMipmapKL overview.
+
+16/07/02 RwFreeList updated overview API ref, Added new API functions
+  RwFreeListCreateAndPreallocateSpace
+  RwCameraSetFreeListCreateParams
+  RwFrameSetFreeListCreateParams
+  RwImageSetFreeListCreateParams
+  RwImageFormatSetFreeListCreateParams
+  RwRasterSetFreeListCreateParams
+  RwTextureSetFreeListCreateParams
+  RwTexDictionarySetFreeListCreateParams
+  RwMatrixSetFreeListCreateParams
+  RwStreamSetFreeListCreateParams
+  RwPluginRegistrySetFreeListCreateParams
+  RxPipelineSetFreeListCreateParams
+  RpAtomicSetFreeListCreateParams
+  RpClumpSetFreeListCreateParams
+  RpLightSetFreeListCreateParams
+  RpLightTieSetFreeListCreateParams
+  RpMaterialSetFreeListCreateParams
+  RpTieSetFreeListCreateParams
+  RpHAnimHierarchySetFreeListCreateParams
+  RpLODAtomicCacheSetFreeListCreateParams
+  RpMatFXMaterialDataSetFreeListCreateParams
+  RpPatchAtomicSetFreeListCreateParams
+  RpPatchGeometrySetFreeListCreateParams
+  RpSkinSetFreeListCreateParams
+  Rt2dBrushSetFreeListCreateParams
+  Rt2dFontSetFreeListCreateParams
+  Rt2dFontDictNodeSetFreeListCreateParams
+  Rt2dObjectSetFreeListCreateParams
+  Rt2dPathSetFreeListCreateParams
+  RtAnimAnimationSetFreeListCreateParams
+
+16/07/02 RpPrtStdEmitterStdEmitSkyCB moved to rpprtstdps2 group.
+
+15/07/02 Hanim : updated the change section with info about RtAnim.
+
+15/07/02 Xbox New API functions,
+  RpXboxSkinVertexShaderCachePreLoad
+  RpXboxSkinVertexShaderCachePurge
+
+15/07/02 dPVS docs : added enum RpDPVSAtomicFlag and functions
+  RpDPVSAtomicSetFlag and RpDPVSAtomicGetFlag
+
+12/07/02 API docs - RtAnim : replaced "instance" by "interpolator" as the type
+  RtAnimAnimationInstance is now known as RtAnimInterpolator.
+
+12/07/02 API docs - typos/bugs
+  Rt2dAnimGetKeyFrameListByIndex
+  Rt2dKeyFrameListStreamRead
+  Rt2dKeyFrameListStreamWrite
+  Rt2dKeyFrameListUnlock
+  Rt2dMaestroGetAnimSceneByIndex
+  Rt2dMaestroStreamGetSize
+  Rt2dMaestroStreamWrite
+  Rt2dCelListCelGetStringLabelIndex
+  Rt2dMaestroGetStringLabelName
+  RtWorldImportBuildClipStatistics
+  RpLtMapWorldSectorSetLightMap
+  RtLtMapMaterialGetAreaLightRadiusModifier
+  RtLtMapSetAreaLightDensityModifier
+  RtLtMapSetMaxAreaLightSamplesPerMesh
+  RtLtMapSetAreaLightRadiusModifier
+  RtLtMapSetAreaLightErrorCutoff
+  RtLtMapWorldSectorGetFlags
+  RwImageCallBackRead
+  RwPluginDataChunkAlwaysCallBack
+  RwPluginDataChunkRightsCallBack
+  RpLogoGetPosition
+  RwTextureSetAddressingU
+  RwTextureSetAddressingV
+
+11/07/02 Xbox New API functions,
+  RpXboxMaterialGetPixelShader
+  RpXboxMaterialSetPixelShader
+  RpXboxPixelShaderCreate
+  RpXboxPixelShaderDestroy
+  RpXboxPixelShaderSetConstant
+  RpXboxPixelShaderSetConstantFast
+
+10/07/02 Example readmes standardised.
+  Analogue -> analog.
+  Exit -> Quit.
+  RenderWare v3.3 Demonstration Program -> RenderWare Graphics Example
+  (gcn) -> (GameCube)
+  (sky) -> (PlayStation 2)
+  (xbox) -> (Xbox)
+
+09/07/02 RtAnim documentation update :
+  function RtAnimAnimationInstanceCreate : documentation added.
+  function RtAnimAnimationInstanceDestroy : documentation added.
+  function RtAnimAnimationInstanceCreateSubAnimation : amended \see section.
+  structure RtAnimInterpolatorInfo, member : amended comment to member
+  keyFrameApplyCB.
+
+05/07/02 Lightmap options documented. 
+  RwMaterial - Max reference guide
+  RenderWare Shader section - Maya reference guide.
+  Index.pdx rebuilt
+
+05/07/02 PR#3608 2dGraphics Toolkit chapter. 1.2.1 Initialization.
+
+04/07/02 Xbox Top level readme configuration section changed: 
+  July 2002 SDK (build number 4721).
+
+04/07/02 2dviewer gcn.txt, mac.txt, sky.txt, win.txt, xbox.txt descriptions
+  added. PR#3462.
+
+04/07/02 RpAtomicGetRenderCallBack docs changed. PR#3415
+
+04/07/02 RpWorldAddAtomic and RpWorldAddClump docs changed. PR#3427
+
+04/07/02 RpHanim : overview modified and removed/change/added new functions.
+
+03/07/02 Xbox and D3D8 added documentation about cube textures support.
+
+03/07/02 New logo for gcnfxeditor, sectoreditor, tooned and xboxfxeditor chms.
+
+02/07/02 All pdfs updated with new logo.
+
+02/07/02 Formatting of API Reference uses Verdana. RenderWare Graphics logo
+  links to www.renderware.com and "skitz" the dog logo links to www.csl.com
+
+02/07/02 Added RtAnim toolkit with first draft of documentation.
+
+02/07/02 Lightmaps chapter & lightmap pdf image corrected.
+
+21/06/02 User Guide vols I, II, III pdfs updated
+  Index.pdx re-built
+
+21/06/02 Userguide / Immediate Mode Chapter / Section 4.3 Blending
+  Rewritten
+
+21/06/02 grammar
+  Rt_mm_comigt_sd
+  Rt_mm_comigt_ss
+  Rt_mm_cvt_si2ss
+  Rt_mm_maskmoveu_si12
+  Rt_mm_movemask_ps
+  Rt_mm_storel_epi64
+  Rt_mm_ucomigt_sd
+  Rt_mm_cvt_ps2pi - parameters
+
+
+22/06/02 New tristripping structures added:
+  RpTriStripPolygon
+  RpTriStripEdge
+  RpTriStripMesh
+  RpTriStripData
+  RpTriStripTunnelData
+  Functions added:
+  RpTriStripPolygonFollowStrip
+  RpTriStripDefaultCost
+  RpTriStripMeshTunnel
+  RpBuildMeshGenerateTriStrip
+
+21/06/02 RtTOC moved to Streaming group.
+
+20/06/02 RtLtMap API change
+  Renamed RtLtMapSkyBaseTexturesProcess to
+  RtLtMapSkyLightingSessionProcessBaseTextures
+  in order to avoid confusion with RtLtMapSkyBaseTextureProcess
+
+20/06/02 PrtStd API change due to functionality change:
+  RpPrtStdEClassStreamWrite
+  RpPrtStdEClassStreamRead
+  RpPrtStdPClassStreamWrite
+  RpPrtStdPClassStreamRead
+  RpPrtStdPropTabStreamRead
+  RpPrtStdPropTabStreamWrite
+  RpPrtStdPropTabStreamGetSize
+  RpPrtStdGlobalDataStreamRead
+  RpPrtStdGlobalDataStreamWrite
+  Functions Added :
+  RpPrtStdSetDontStreamAll
+  RpPrtStdGetDontStreamAll
+
+20/06/02 RtLtMap ps2 API docs moved to ps2 group in API Ref. 
+  RtLtMap Requirements updated.
+
+19/06/02 Toon Editor html files for chm added without context sensitive help.
+
+18/06/02 Macintosh top-level readme update.
+
+17/06/02 Lightmap plugin & toolkit see also references:
+  RtLtMapWorldAreaLightsCreate -> RtLtMapAreaLightGroupCreate
+  RtLtMapWorldAreaLightsDestroy -> RtLtMapAreaLightGroupDestroy
+  RtLtMapMaterialGetLightMapLightDensityModifier -> RtLtMapMaterialGetLightMapDensityModifier 
+  RtLtMapMaterialSetLightMapLightDensityModifier -> RtLtMapMaterialSetLightMapDensityModifier 
+  RtLtMapWorldIlluminate -> RtLtMapIlluminate
+  RtLtMapLightMapsIlluminate -> RtLtMapIlluminate
+  RtLtMapLightMapGetDefaultPrefixString -> RtLtMapGetDefaultPrefixString 
+  RtLtMapLightMapSetDefaultPrefixString -> RtLtMapSetDefaultPrefixString 
+  RtLtMapGetLightMapCount -> RtLtMapGetLightMapCounter 
+  RtLtMapSetLightMapCount -> RtLtMapSetLightMapCounter 
+  RtLtMapWorldSectorSetSize -> RtLtMapWorldSectorSetLightMapSize
+
+17/06/02 Glossary:
+	 Lightmaps: corrected "Lightmaps are supported in RpLtmap and
+	 RtLtMap."
+	 MipMap: corrected "RpMipmapKL toolkit and the RtMipmapK plugin."
+	 RogerB
+
+17/06/02 PS2 _rwSkyFSAAMode0SetVisibleWidth() default changed.
+
+17/06/02 Glossary:      ROgerB
+	 3ds max: modified. 
+	 Bezier: added a line about the plugin.
+	 Bone: added Xref to Quaternions. 
+	 Cross Platform: corrected spelling of Macintosh and RpLtMap.  
+	 Dual-pass: corrected sp of RtLtMap 
+	 Dmorph: changed to DMorph. 
+	 Lightmap: modified.
+	 Mipmap Rp changed to RtMipmapK and RtMipmapKL. 
+	 Modelling package: now refers to "Assets" and has lost a sentence.
+	 SDK: added Xref to API. 
+	 Skin: added a line about the plugin. 
+	 Slerp: seriously modified.
+	 TIFF: added a line about the toolkit. 
+	 Voxel: redined. 
+	 VxWorks: reduced slanginess. 
+
+17/06/02 Softras API docs - opengl ingroups --> softras ingroups.
+  All docs now in softras API Reference.
+  Files changed:
+  plugin\patch\softras\nodesoftraspatchskinatomicinstance.c
+  plugin\skin2\softras\skinplatform.h
+  src\pipe\p2\softras\im3dpipe.c
+  src\pipe\p2\softras\nodesoftrasimmsubmit.c
+  src\pipe\p2\softras\pip2model.h
+  world\pipe\p2\softras\nodesoftraslight.c
+
+14/06/02 About the API Reference and About RenderWare Graphics sections
+  added to the API Reference. Main page updated.
+
+14/06/02 RpPrtStd: Removed functions RpPrtStdEClassStdCreateSky and  
+         RpPrtStdPClassStdCreateSky.
+	 Removed structure RpPrtStdEmitterPrtColorInt.
+
+13/06/02  Examples: the .c .h and .txt files have been standardised - 
+          matching, updated copyright headers and second headers. 
+          Programmer's names replaced by RenderWare Team as the Author.
+          American spelling all(?) removed - the whole lot scanned with
+          Word's spell checker - standard terms, spelling and case applied
+          to the names of menu-options and commands. A consistent order
+          applied to them. Missing Purpose: descriptions added and old
+          ones tidied up in all three file types. General tidying up of 
+          the language in extreme cases. House-style applied to about
+          fifty variant hyphenations, captialisations and spellings. RogerB
+
+10/06/02  Glossary. Modified Bezier and Particle Tank. Added a sentence to
+          Alpha Channel, bmp, dual-pass rendering, frame, freelist, 
+          geometry, hierarchical animation, Particle Tank, Patch, PNG, PVS,
+          Quaternion, RAS, Serialization, Skin, Slerp, Spline &TIFF. RogerB
+
+07/06/02  Glossary. Slight modifications to the At Vector, Up Vector and
+          the Right Vector. Adding 32-bit color, 3ds max, Area Light, 
+          Assets, Back Face Culling, Barycentric, Barymetric, Blit, BMP,
+          Cel, Dual-pass rendering, Fill-rate, G3, GPU, Maya, Mel script,
+          Mesh, Modeling Package, Object (OO or world item), Opaque
+          (function/struct), Patch Mesh, PNG, ROI, slerp, TIFF, Transparent
+          (funct/struct), Visualizer and Voxel. RogerB.
+
+07/06/02 User Guide, Chapter 3, Intialization and Resource Managment. 
+          I replaced the "Note:" at the end of section 3.3.3 with a note
+          saying "RwResourcesSetArenaSize() now determines the size the
+          Resource Arena, which is a single block of allocated memory.
+          This will free the current resource arena heap, if one exists,
+          and allocate a new heap."
+          This functionality changed in Feb *2001*. RogerB
+
+06/06/02 Updated all the .txt files of the published examples, and checked 
+          their .c and .h files for (c) notices, headers, American Spelling
+          etc etc. Checked the order and accuracy of controls and                     menu options. (Can't fully check the platform-specific variations
+          but compared with the code of some of them.)  RogerB
+
+
+27/05/02 The following PS2 API functions documentation has been modified.
+
+  RxWorldLightingCallBack
+  RxPipelineNodePS2ManagerSetLighting
+  RxPipelineNodePS2ObjAllInOneSetLighting
+  RxPipelineNodePS2AllApplyLight
+  RxPipelineNodePS2AllObjectSetupCallBack
+
+27/05/02  The following PS2 API functions have changed to accommodate the
+  removal of RpSurfaceProperties from RpWorld.
+
+  RxWorldLightingCallBack has changed from
+
+  void RxWorldLightingCallBack(
+           RwInt32 objectType,
+           void *object,
+           RwSurfaceProperties *surface);
+
+  to
+
+  void RxWorldLightingCallBack(
+           RwInt32 objectType,
+           void *object);
+
+
+  RxPipelineNodePS2ManagerApplyLight has changed from,
+
+  void RxPipelineNodePS2ManagerApplyLight(
+           const RpLight *light,
+           const RwMatrix *inverseMat,
+           RwReal invScale,
+           RwReal recipInvScale,
+           const RwSurfaceProperties *surfaceProps);
+
+  to
+
+  void RxPipelineNodePS2ManagerApplyLight(
+           const RpLight *light,
+           const RwMatrix *inverseMat,
+           RwReal invScale,
+           RwReal recipInvScale);
+
+
+  RxPipelineNodePS2AllApplyLight has changed from,
+
+  void RxPipelineNodePS2AllApplyLight(
+           const RpLight *light,
+           const RwMatrix *inverseMat,
+           RwReal invScale,
+           RwReal recipInvScale,
+           const RwSurfaceProperties *surfaceProps);
+
+  to
+
+  void RxPipelineNodePS2AllApplyLight(
+           const RpLight *light,
+           const RwMatrix *inverseMat,
+           RwReal invScale,
+           RwReal recipInvScale);
+
+27/05/02 Updated the ExamplesGeneric.doc document: Introduction, to use the new "readme" file names.
+
+24/05/02 GameCube and Xbox Multi-Texturing moved to Multi-Texturing section inside 
+ Materials, in API Reference.
+
+23/05/02 OpenGL WhitePaper updated for changes to the NVIDIA vertex array range extension
+  implementation.
+
+23/05/02 SoftImage Exporter doc. Update new export features: DMorphs, Pathces & Batch Nodes.
+
+21/05/02 Win Tutorials. Tutorial1.pdf - Tutorial5.pdf can now be found in tutorials.chm. The
+  PDFs have been removed from the build. The docs for the build can be found within the 
+  examples\tutorials\tutorialx\doc directory.
+
+20/05/02 OpenGL - Updated Im3D documentation. In particular added RxNodeDefinitionGetOpenGLImmInstance().
+
+16/05/02 MayaReferenceGuide - moved blind data from bsp exporter docs to end of section 5.
+  Changed notebox. Conversion from Blind Data section rewritten.
+
+15/05/02 In User Guide Vol 1 Chapter on Fundamental Types, heading: Frames and the Local
+	 Transform Matris; fixed the "^" in UserGuide Vol 1 P52 to be "..." following 
+	 Akiko's email of May 2nd.
+	 Fixed the UserGuide chapter on Bezier Patches p132, clarifying and correcting the 
+	 sentence that begins "The first will take the value to mean that 1/3 and 1/6"
+	 Fixed the section on Beziers that refers 3 times, to "triSample" in the Example
+	 code, when it should be "triControl"
+	 and in the Chapter on Plugins, under Creating Your Own Plugin, under Registering
+	 The Plugin - changed the function name "...AttachPluginStream()" to 
+	 "...RegisterPluginStream()" - following Akiko's email of May 2nd.
+
+15/05/02 RpClumpRender docs updated.
+
+15/05/02 Mac: Added top level readmes correct for 3.3.
+
+14/05/02 Collision Detection chapter
+
+rpINTERSECTBBOX changed to rpINTERSECTSPHERE and reference above changed to 
+reference sphere instead of bounding box.
+
+Not updated in User Guide Vol 2.
+
+13/05/02 Ingroups changed
+  STRUCT
+  RwBBox                datatypes --> rwbbox
+  RwCamera              datatypes --> rwcamera  
+  RwImage               datatypes --> rwimage
+  RwChunkHeaderInfo     datatypes --> rwstream
+  RwRGBAReal            datatypes --> rwrgba
+  RwRGBA                datatypes --> rwrgba
+  RwEngine              datatypes --> rwengine
+  RwMetrics             datatypes --> rwengine
+  RwSubSystemInfo       datatypes --> rwengine
+  RwVideoMode           datatypes --> rwengine
+  RwError               datatypes --> rwerror
+  RwFileFunctions       datatypes --> memoryfileinterface
+  RwMatrixTolerance     datatypes --> rwmatrix
+  RwMemoryFunctionns    datatypes --> memoryfileinterface
+  RwMemory              datatypes --> rwstream
+  RwV4d                 datatypes --> fundtypesdatatypes
+  RwRect                datatypes --> fundtypesdatatypes
+  RwSphere              datatypes --> fundtypesdatatypes
+  RwLine                datatypes --> fundtypesdatatypes
+  RwTexCoords           datatypes --> fundtypesdatatypes
+  RwSurfaceProperties   datatypes --> fundtypesdatatypes
+  RpTriangle            rpworlddatatypes --> dynamicobjectsdatatypes
+
+TYPEDEF
+  RwCameraChunkInfo       datatypes --> rwcamera
+  RwCameraCallBack        datatypes --> rwcamera
+  RwFrame                 datatypes --> rwframe
+  RwFrameCallBack         datatypes --> rwframe
+  RwImageCallBackRead     datatypes --> rwimage
+  RwImageCallBackWrite    datatypes --> rwimage
+  RwRaster                datatypes --> rwraster
+  RwTexDictionary         datatypes --> rwtexdict
+  RwTexture               datatypes --> rwtexture
+  RwTextureCallBackRead   datatypes --> rwtexture
+  RwTextureCallBack       datatypes --> rwtexture
+  RwTexDictionaryCallBack datatypes --> rwtexdict        
+  RwTextureCallBackMipmapGeneration datatypes --> rwtexture
+  RwTextureCallBackMipmapName       datatypes --> rwtexture
+  RwMatrix                datatypes --> rwmatrix
+  RwFreeListCallBack      datatypes --> rwfreelist
+  RwResEntry              datatypes --> rwresources
+  RwResEntryDestroyNotify datatypes --> rwresources
+  RwStream Memory         datatypes --> rwstream
+  RwStreamCustom          datatypes --> rwstream
+  RwStream                datatypes --> rwstream
+  
+ENUM
+  RwCameraClearMode     datatypes --> rwcamera
+  RwCameraProjection    datatypes --> rwcamera
+  RwFrustumTestResult   datatypes --> rwcamera
+  RwRasterLockMode      datatypes --> rwraster
+  RwRasterFlipMode      datatypes --> rwraster
+  RwRasterType          datatypes --> rwraster
+  RwRasterFormat        datatypes --> rwraster
+  RwDebugType           datatypes --> rwdebug
+  RwDebugHandler        datatypes --> rwdebug
+  RwVideoModeFlag       datatypes --> rwengine
+  RwEngineInitFlag      datatypes --> rwengine
+  RwRenderState         datatypes --> rwrenderstate
+  RwShadeMode           datatypes --> rwrenderstate
+  RwTextureFilterMode   datatypes --> rwrenderstate
+  RwFogType             datatypes --> rwrenderstate
+  RwBlendFunction       datatypes --> rwrenderstate
+  RwTextureAddressMode  datatypes --> rwrenderstate
+  RwStencilOperation    datatypes --> rwrenderstate
+  RwStencilFunction     datatypes --> rwrenderstate
+  RwPrimitiveType       datatypes --> immediatemodedatatypes
+  RwOpCombineType       datatypes --> rwmatrix
+  RwStreamType          datatypes --> rwstream
+  RwStreamAccessType    datatypes --> rwstream
+  RwTextureCoordinateIndex  datatypes --> fundtypesdatatypes
+
+DEFINE
+  RwMalloc   rwmem --> memoryfileinterface
+  RwFree     rwmem --> memoryfileinterface
+  RwCalloc   rwmem --> memoryfileinterface
+  RwRealloc  rwmem --> memoryfileinterface
+
+UNION
+  RwStreamFile datatypes --> rwstream
+  RwStreamUnion datatypes --> rwstream
+
+
+All RwOs functions, typedefs, enums, structs --> memoryfileinterface
+All RwPlugin typedefs, structs, enums --> rwplugin
+All RwObject structs, typedefs --> rwobject
+All RwV2d, RwV3d structs, typdefs, enums --> rwv2d, rwv3d 
+All Integer types, inc RwChar, RwReal, RwBool, RwFixed --> integertypes
+All typedefs, structs, enums in World --> relevant group eg RpAtomic --> RpAtomic
+
+Overview name change RwOs Overview --> Memory & File Interfaces Overview
+
+coredoc.c (all platforms) cross reference in Platform Specific info changed.
+and defgroups renamed.
+
+13/05/02 Changed from a typedef to a struct documentation.
+  RwFrame
+  RwRaster
+  RwTexDictionary
+  RwTexture
+  RwMatrix
+  RwMatrixTolerance
+  RwResEntry
+  RwStreamMemory
+  RwStreamCustom
+  RwStream
+  RpAtomic
+  RpInterpolator
+  RpClump
+  RpGeometry
+  RpMorphTarget
+  RpLight
+  RpMaterial
+  RpWorldSector
+  RpWorld
+  RpGameCubeVtxFmt
+  RpCrowd
+  RpSkin
+  RpToonInk
+  RpToonPaint
+  RpToonGeo
+  RpToonInkDictionary
+  RpToonPaintDictionary
+  RpToonEdge
+  RpToonMaterial
+  Rt2dPath
+  Rt2dFont
+  Rt2dObject
+  Rt2dAnimProps
+  Rt2dKeyFrameList
+  Rt2dKeyFrameSet
+  Rt2dAnimObjectUpdate
+  Rt2dKeyFrameTransform
+  Rt2dAnim
+  Rt2dButton
+  Rt2dCel
+  Rt2dCelList
+  Rt2dMaestro
+  Rt2dMessageList
+  Rt2dStringLabel  
+  RtLtMapAreaLightGroup
+
+13/05/02 Removed typedef docs:
+  RxSkyTransTypeFlags
+  RwIm2dVertex (softras)
+  RxObjSpace3DVertex (d3d8, gcn, sky2, softras, xbox)
+  RwClipFlag
+  RxGeometryFlag
+  RwFileFunctions
+  RwOpCombineType
+  RwMatrixTolerance
+  RwV3d
+  RwV2d
+  RwV4d
+  RwRect
+  RwSphere
+  RwLine
+  RwTexCoords
+  RwSurfaceProperties
+  RpMeshHeader
+  RpD3D8AttenuationParams
+  Rt2dBBox
+  Rt2dKeyFrameColor
+  Rt2dKeyFrameShow
+  Rt2dKeyFrameMorph
+  Rt2dBezierV4d
+  RtWorldImportVertex
+  RtWorldImportWeldVertex
+  RtWorldImportBuildVertex
+  RtWorldImportBuildPolyInfo
+  RtWorldImportGuideKDTree
+  RtWorldImportBuildClipStatistics
+  RtWorldImportPartition
+  RtWorldImportBuildSector
+  RtWorldImportBuildStatus
+  RtWorldImportTriangle
+  RtWorldImportHints
+  RtWorldImportParameters
+  RtWorldImport
+  RtWorldImportBuildCallBacks
+  RtWorldImportUserdataCallBacks
+
+13/05/02 Removed struct docs:
+  RwDevice
+
+09/05/02 OpenGL: Modifications to the API ref to indicate that explicit
+  assembly optimizations are only used in Windows OpenGL.
+
+03/05/02 Note add to Character Studio Max Tutorial to state that biped
+  parts should not be renamed.
+
+03/05/02 SWE* and swe* functions
+  are no more (RW3.4 dev branch only). Some docs on their _rwDMA* replacements
+  should appear sometime.
+
+03/05/02 RpAnisot API reference updated for OpenGL and tidied up generally.
+
+03/05/02 RwStreamOpen API docs updated.
+
+03/05/02 Split 3ds max and Maya artist guides
+    MaxReference & MaxTutorials
+    MayaReference & MayaTutorials
+    ArtistGuideGlossary
+
+01/05/02 Added an extra optimisation note to the APIRef docs for RpAtomicPS2AllTransformSetup
+
+01/05/02 Documented RwOpenGLIsExtensionSupported() function and RwOpenGLVertex structure.
+         Also updated the OpenGL white paper to reflect these changes.
+
+01/05/02 Added documentation about how to enable the reference rasterizer for D3D8.
+
+27/04/02 TOC checked in doxy docs.
+
+26/04/02 Added documentation for RwOpenGLExtensions structure for OpenGL. This structure
+  varies between Win and other OS implementations of OpenGL.
+
+24/04/02 Documentation for softras' lighting callback (typedef and 2 API functions) added.
+
+23/04/02 Wrldview and clmpview readmes: Replaced references to D3D7 with D3D8.
+
+17/04/02 Corrected UsingFlashInRenderWare.pdf now Greg has made the default behaviour of the
+	   exporter to be to export bitmaps as well as a .anm file.  Updated Index.pdx at the
+	   same time.
+
+16/04/02 Reference to "Anisotropic Texture Filtering in OpenGL" document in RpAnisot
+  removed since RWG for OpenGL doesn't support this yet.
+
+17/04/02 Xbox top level readme lighting section updated. 
+  PC top level readme, D3D8 more functions added and multisampling para added.
+
+16/04/02 Added Maya section into Toon Artist Guide, Also added reference to the
+  Toon and LightMaps extension for RenderWare Shader into Maya Artist Guide. 
+
+16/04/02 Removed Doxygen documentation for redundant functions
+   RpClumpSetFrameVoid()
+   RpMaterialAddRefVoid()
+   RpMaterialSetSurfacePropertiesVoid()
+   RwCameraSetFrameVoid()
+   RwCameraSetRasterVoid()
+   RwCameraSetZRasterVoid()
+   RwTextureAddRefVoid()
+
+16/04/02 PVS screenshots updated. All artist guides & ClmpviewWrldview docs.
+
+16/04/02 User Guide Volume II updated with PVS and DMorph chapter changes.
+
+16/04/02 RenderWare Visualizer screenshots updated in Lights & World&StaticModels chapters.
+  DMorph, fixed typo PR#3331
+
+15/04/02 Maya Artist Guide - RenderWare Visualizer screenshots updated & Visualizer keyboard
+  shortcuts updated.
+
+15/04/02 PVS Chapter updated.
+         Documented the efficiency implications of a world with collision data when generating
+         PVS data. To reflect the update in the code.
+
+15/04/02 RenderWare Visualizer doc udpated. Control sensitivity added. Keyboard shortcuts 
+  description updated. Requirements added. IP Address added.
+  Screenshots updated: 
+  * IPAddress.png
+  * MaxRenderWareVisualizer.png & MaxRenderWareVisualizerD3D8.png
+  * MayaOutputWindow.png, MayaRenderWareVisualizer.png, MayaRenderWareVisualizerD3D8.png
+  * Meshes.png, MeshesControl.png
+  * Orbit.png, OrbitControl.png
+  * RenderWareVisualizer.png, RenderWareVisualizerD3D8.png
+  * Tristrip.png, TristripControl.png
+  * Tristripnodeg.png, TristripnodegControl.png
+
+15/04/02 updated the top level readmes to say APRIL 2002 in titles and headers.
+	 Also updated references to PS2 2.4.3 libraries and made them 2.5 libraries
+
+15/04/02 Five Glossary definitions are added or modified: PVS, BSP, BSP Tree, RpWorldSector
+	 and World Sector.
+
+15/04/02 Examples.doc/pdf - I seem to have failed to record that I added to the Introduction
+	 that pressing the space bar will display the ReadMe.txt  and   Correct the IMLIGHT
+	 Example text to say that it means "Immediate" Mode Light Example, (Not "Image Light")
+
+11/04/02 Artists GUide: White Paper on Optimizing for PS2:
+	 Add section on Back Face Culling and a one-sentence paragraph in the
+	 Conclusion that summarises Back Face Culling.
+
+10/04/02 GCN API reference -> Platform Specific -> Restrictions
+         WhitePapers -> gcn -> gcnport.doc -> Restrictions
+         REMOVED: Prelit geometry can not be modulated with material color.
+         
+10/04/02 The Examples document - Introduction has had a few minor changes. 
+	 Most recently it does NOT say that plugins and tookits for each 
+	 Example are listed in their ReadMe.txt file.
+
+10/04/02 Glossary changes: Removed:NDA, Beta, Programming Language.
+	 Added: Bezier, Delta Morph, DMorph, Lumel, Spline, Texel
+	 XRefs altered in: Morph Target Animation, Patch, Release Candidate
+	 Updated: RpToon
+
+10/04/02 Removed from win top level readme the following known issues as they've been resolved:
+  * Morphing and skinning... Bug #3179 marked as resolved.
+  * Using the Visualizer on ATI Radeon 8500..  Bug #3241 marked as resolved.
+
+10/04/02 PR#3313 fixed. Contact support email address replaced with FMSS.
+
+09/04/02 RenderWare Visualizer docs updated. directories changed page 7, navigation keys 
+  description changed, "wireframe visible in cyan" changed to "wireframe rendered in cyan".
+
+09/04/02 User Guide Volumes I, II, III updated pdfs. (HAnim chapter was omitted on the last build).
+
+09/04/02 Changes to User Guide:
+  * Fundamental Types 1.15 Colors
+  * Using Plugins 1.3.3 Vendor ID in notebox
+  * Camera 1.4 rwRASTERTYPENORMAL -> rwRASTERTYPEcamera
+         Destroying a camera, step 2 
+  * Dynamic Models 1.5.2 last para
+                 1.6.4 Sorting Geometry objects by Material
+  * HAnim 1.5 Overloaded interpolation keyframeInterpolateCB
+  * PTank grammar 1.1.4
+
+09/04/02 separate pdfs created for RpCrowd and RpTeam user guide chapters
+
+09/04/02 ExamplesGameCube renamed ExamplesGCN
+
+08/04/02 (this note was added on the 15th) Adding a folder of images for the dPVS document
+
+08/04/02 (this note was added on the 15th) Centred the images for the dPVS document
+
+08/04/02 Max Artist Guide changes to Tutorial 6 - Character Studio boy --> boybiped
+
+04/03/02 Toon User Guide and Artist Guide, and Team Crowd User GUide, indexed.
+
+01/04/02 dPVS User Guide - Section on "dPVS Viewer". It said you could drag a bsp file onto the
+	 Example's icon to launch and run it. This is only true of MS Windows. It now says you 
+	 have to launch and load from the command line.
+
+26/03/02 Put Joe Burmeister's changes into doc\ArtistGuide\max\ArtistGuideMax32.doc:
+	 BSP Export Properties - bitmap on page 80 made up to 100% size
+	 "User Properties" section had a few changes
+	 "Attaching Custom Data to Objects" section (runs over several pages) had a few changes.
+
+26/03/02 Fixed the grammar of the platform dependant documentation about
+   compressed textures in the D3D8 and Xbox platforms.
+
+26/03/02 #PR3240 In docs\Viewers\RenderWareVisualizer.doc, under "XBox" corrected the references to "primary" and "secondary".
+
+26/03/02 Introduction and pages 5 and 6 of doc\tools\sectoredit.doc updated.
+
+20/03/02 Tutorial 5 - Batch Exporter screenshot updated.
+
+19/03/02 RenderWare Visualizer tristrip screenshot updated.
+
+19/03/02 Examples Win.doc updated the paragraph on "Tutorials".
+
+19/03/02 Glossary: added definition of MIPMAP.
+
+19/03/02 RtIntersectionLineTriangle docs updated.
+
+19/03/02 Examples.doc /pdf Changes to the first sentence of Toon and to the plugins 
+         toolkits and modules line lin PICKING
+19/03/02 Changes to the ExamplesGeneric.doc /.pdf
+	dPVSViewer changed to dPVSView
+	Two examples added: Toon and Picker
+	punctuation of RtPNG and RtBMP corrected consistently
+	and in this and the four platform-specific docs and pdfs, the Introduction,
+	paragraph on plugins, modules and toolkits has been replaced.
+
+15/03/02 User Guides volumes 1, 2 and 3, and the platform specific versions for
+  PS2, GCN and Xbox updated for RenderWare Graphics 3.3, including the chapters on
+  morph and ptank.
+
+14/03/02 Major updates to MultiTexGameCube.doc
+
+14/03/02 OpenGL white paper with corrections to previous update.
+
+13/03/02 Tutorials 1-3 updated due to changes to the DSP filenames
+
+13/03/02 Appwizard documentation updated in response to the unrecognized compiler
+  bug now fixed.
+
+12/03/02 Dynamic Models and Introduction chapters refer to RenderWare Visualizer
+  and clmpview, wrldview.
+
+12/03/02 DMorph chapter 1.2 RpAnimation --> RpDMorphAnimation
+
+12/03/02 Skinning chapter, note about RpSkin310 removed.
+
+12/03/02 The "Examples" document and its platform-dependent supplements are now ready for 3.3
+
+12/03/02 OpenGL API, plus core renderstate docs, updated to indicate that it now fully
+  supports the stencil buffer renderstate API. 2 new OpenGL API functions added,
+  RwOpenGLSetStencilClear and RwOpenGLGetStencilClear, and documented.
+
+12/03/02 Changed the description for rwIM3D_VERTEXXYZ in RwIM3DTransformFlags from "World
+         Co-ordinates" to "Vertex positions". The previous description incorrectly
+         suggested the vertices were always in world space.   
+
+11/03/02 Clump view and World View viewers doc - introduction now refers to new viewer.
+
+11/03/02 Tutorial 5 updated to use RWS files and new exporter screenshots added.
+
+10/03/02 Updated PVS chapter with new functionality.
+
+08/03/02 Added a user guide for the sector edit tool. Also - Updated
+  the World&StaticModels chapter to reflect RtImport changes, and the
+  worlds white paper which discusses how to use RtImport's new advanced
+  features.
+
+08/03/02 Tutorials updated with new screenshots, dates, RWG3.2->RWG3.3 etc.
+         Tutorial5 still lacking updated exporter grabs though.
+
+08/03/02 RtPITexD overview updated for information on gamma correction.
+
+08/03/02 Cameras & Dynamic Model chapters
+      Fundamentals chapter --> Fundamental Types chapter
+
+07/03/02 The Examples documented updated to include the LightMaps example. RB
+
+06/03/02 Introduction chapter
+  1.1   Welcome changed.
+  1.2.3 Documentation changed
+  1.3.1 The Core Library, Plugins & Toolkits updated
+  1.4.1 step 4 Fundamentals -> Fundamental Types
+
+06/03/02 Reveiewed and added Valery's Chapter on Xbox State Cache
+
+06/03/02 User Guide chapters updated to 3.3
+
+05/03/02 New Artist White Paper - Optimizing Static Geometry
+
+05/03/02 Tidied up the format of Sky2Texcache.c, putting in \param \return etc
+          void      RpSkyTexCacheAccessSpeculate()
+          RwBool    RpSkyTexCacheAccessRaster()
+          void      RpSkyTexCacheReleaseRaster()
+          RwBool    RpSkyTexCacheRasterLock()
+          void      RpSkyTexCacheRasterUnlockAll()
+          void      RpSkyTexCacheFlush()
+          void      RpSkyTexCacheRestore()
+          RwBool    RpSkyTextureCacheSetState()
+          RwBool    RpSkyTexCacheDisable()
+          RwUInt32  RpSkyTexGetStartAddress()
+          RwUInt32  RpSkyTexGetSize()
+          RwBool    RpSkyTexCacheSetCallBack()
+          RwUInt32  RpSkyTexCacheRasterGetAddr()
+          RwRaster* RpSkyTexSetTex0()
+          RwRaster* RpSkyTexGetTex0()
+          RwRaster* RpSkyTexSetMiptbp1()
+          RwRaster* RpSkyTexGetMiptbp1()
+          RwRaster* RpSkyTexSetMiptbp12()
+          RwRaster* RpSkyTexGetMiptbp12()
+          RwRaster* RpSkyTexCacheValidateRaster()
+          RwBool    RpSkyUploadPixelData()
+          RwRaster* RpSkyTexCacheUploadRaster()
+          RwInt32   RpSkyTexCacheGetStartAddress()
+          RwBool    RpSkyTexCacheSetStartAddress()
+
+05/03/02 #2709 RpSkyTexChacheFlush() Added "This function immediately flushes the cache" to the API Reference.
+
+05/03/02 #2654 Null libraries explained in more detail.
+  * Dynamic Models user Guide chapter 1.8.4 Converting Model Data to RenderWare 
+    notebox updated.
+  * Building RW white paper 7. Building a complete SDK makefile.sky text updated.
+  * Introduction 1.2.1 Libraries and Header Files notebox updated. 
+
+04/03/02 GCN EURGB60 docs removed from default videomode selection as this is
+  no longer the behaviour.
+
+04/03/02 Change to OpenGL and softras skin documentation to indicate the use of vector instructions where available.
+         D3D8 was changed some time ago.
+
+04/03/02 #2192 API Ref now reflects that ClumpClone reverses the order of atomics
+
+04/03/02 #2795 "Note: only partial TIFF support is provided..." removed from API Ref.
+
+04/03/02 Added the platform-specific MPEG Example to the Sky document on Examles.
+
+04/03/02 RwEngineInit platform specific docs added for GCN.
+ * On GameCube specifying NULL will cause RwEngineInit to fail as
+ * there are no default memory allocation routines.
+
+04/03/02 Xbox patch plugin non-API functions removed from reference:
+	RxNodeDefinitionGetXboxPatchAtomicInstance
+	RxNodeDefinitionGetXboxPatchMatFXAtomicInstance
+	RxNodeDefinitionGetXboxPatchSkinAtomicInstance
+	RxNodeDefinitionGetXboxPatchSkinMatFXAtomicInstance
+
+01/03/02 (PR#2978) added to User Guide chapter: Initialization and Resource Mangement to say that Lock and Unlock should be used judiciously.
+
+01/03/02 Metrics build not supported on Xbox. Added sentence to Xbox Restrictions in API.
+
+27/02/02 Team Compatability Matrices added to docs for D3D8, OpenGL, GCN, PS2 and Xbox.
+
+27/02/02 D3D8 Patch plugin: Removed API ref documentation for the following non-API functions
+	NodeDefinitionGetD3D8PatchAtomicInstance
+	NodeDefinitionGetD3D8PatchSkinAtomicInstance
+	NodeDefinitionGetD3D8PatchMatFXAtomicInstance
+	NodeDefinitionGetD3D8PatchSkinMatFXAtomicInstance
+
+26/02/02 RwSoftRasCameraRasterSetLockAbility information updated.
+
+26/02/02 Softras RpMatFX specific information updated since all the material
+  effects are now fully supported.
+
+26/02/02 Updated API documentation for RxClusterLockWrite.
+
+22/02/02 Added requirements section to all plugins and toolkits except RpTeam, 
+  RpPatch and RtImport.
+
+21/02/02 updated parameters documentation for:
+  CORE
+  RwEngineInit 	
+  RwFrameInit 
+  RwFrameTranslate 
+  RwFrameScale 
+  RwFrameTransform 
+  RwFrameRotate 
+  RwRGBAToPixel 
+  RwFreeListCreate 
+  RwResEntryDestroyNotify
+  RxPipelineInsertDebugNode 
+
+  WORLD
+  RpClumpRegisterPluginStream 
+  RpGeometryGetMorphTarget 
+  RpGeometryForAllMaterials 
+  RpGeometryForAllMeshes 
+  RpWorldRegisterPlugin 
+  RwCameraGetWorld 
+  RpAtomicGetDefaultPipeline 
+  RpGameCubeVtxFmtSetTexCoord 
+  RxPipelineNodePS2AllGroupMeshes 
+  RxPipelineNodePS2ManagerApplyLight 
+  RxPipelineNodePS2AllApplyLight 
+  RpAtomicPS2AllResEntryAlloc 
+  RpMeshPS2AllResEntryAllocCallBack 
+  RpMeshPS2AllInstanceCallBack 
+  RwIm3DPS2AllResEntryAlloc 
+  RwIm3DPS2AllResEntryAllocCallBack 
+  RwIm3DPS2AllInstanceCallBack 
+  RpWorldSectorPS2AllObjInstanceTest 
+  RpWorldSectorPS2AllResEntryAlloc 
+
+  PLUGINS
+  RpCrowdGetCurrentAnimTime
+  RpDMorphTargetSetName 
+  RpHAnimHierarchySetKeyFrameCallBacks
+  RpHAnimHierarchyAddSubHierarchy  
+  RpMultiTextureSetGameCubeMTCallBacks 
+  RpStereoCameraSetSeparation 
+
+  TOOLKITS
+  Rt2dCelSetStringLabelIndex 
+  Rt2dCelSetCelIndex 
+  Rt2dStringLabelSetNameIndex 
+  Rt2dMaestroGetStringLabelName 
+  RtIEEEldexpf
+  RtIEEEmodff
+  Rt_m_psllw
+  Rt_m_pand
+  Rt_mm_cvt_ss2si
+  Rt_mm_cvtt_ss2si
+  Rt_mm_set_ss
+  Rt_mm_set_epi16
+  Rt_mm_set_epi8
+  Rt_mm_setr_epi16
+  Rt_mm_setr_epi8
+
+20/02/02 #2937 UV origin was shown as bottom left of the texture. Its now at TOP left.  
+  Rasters, Images and Textures chapter
+
+20/02/02 Changed the User Guide (Vol I) Chapter 3 on "Initialization and Resource   
+  Management".
+  "Step 2" now shows that the video mode is set **AFTER** the RenderWare Graphics engine
+  has been opened. The paragraph on opening the RW Graphics engine has been moved to the
+  start of Step 2.
+
+18/02/02 D3D8 Added the documentation of two new functions for getting access
+  to the pointer of the reinstance callback function:
+  RxD3D8AllInOneSetReinstanceCallBack
+  RxD3D8AllInOneGetReinstanceCallBack
+
+18/02/02 Flag rwRASTERTYPECAMERARASTER incorrect in docs (bug #2950). 
+  Fixed:
+  src\bacamera.c - RwCamera Overview
+  doc\userguide\chapters\cameras.doc 1.4 Rasters and Cameras
+  doc\userguide\chapters\introduction.doc 1.3.3 Namespaces
+  doc\userguide\chapters\2dgraphicstoolkits.doc 1.2.1 Initialization
+
+15/02/02 GCN Added support for EURGB60 to RenderWare Graphics default videomode
+  selection. GCN videomode docs updated to reflect this.
+
+15/02/02 RwD3D8Vertex now documented. Used to be rwD3D8VERTEX and used
+    as the basis for RwIm2dVertex and thus appeared in the API reference.
+
+15/02/02 GCN RpGameCubeVtxFmtSetFormat removed from API.
+
+14/02/02 New TeamCrowd.pdf 
+
+14/02/02 Updated doc/Tutorials/Tutorial3.[doc/pdf] to add the
+    code to write the ZTranslateAtomic() function.
+
+13/02/02 A doument on dPVS (dynamic PVS) is stored in 
+    doc\dPVS\pPVS.doc and .pdf
+
+11/02/02 Xbox lazy state cache added to API reference 
+	 and user guide 
+
+	New API functions
+
+    RwXboxSetCachedRenderState
+    RwXboxSetCachedTextureStageState
+    RwXboxSetCachedTexture
+    RwXboxGetCachedTextureStageState
+    RwXboxGetCachedRenderState
+    RwXboxGetCachedTexture
+    RwXboxDrawIndexedVertices
+    RwXboxDrawIndexedVerticesUP
+    RwXboxDrawVertices
+    RwXboxDrawVerticesUP
+    RwXboxSetRenderTarget
+
+11/02/02 GCN New API functions,
+
+    RwGameCubeSetCopyClear
+    RwGameCubeGetCopyClear
+
+11/02/02 GCN Added docs for new API functions,
+
+    RwGameCubeRasterSetRegion
+    RwGameCubeRasterGetRegion
+    RwGameCubeTextureSetLOD
+    RwGameCubeTextureGetLOD
+    RwGameCubePreLoadEntireTexture
+    RwGameCubeTextureSetPreLoaded
+    RwGameCubeTextureGetPreLoaded
+
+    Modified docs for,
+    RwGameCubeCameraTextureFlush
+
+08/02/02 Max doc example. 
+    Deleted texture files:
+    export/3dsmax/art/DocExample/Textures/limestO1.bmp
+    export/3dsmax/art/DocExample/Textures/mountain.bmp
+    Added texture files:
+    export/3dsmax/art/DocExample/Textures/limestO1.png
+    export/3dsmax/art/DocExample/Textures/sky.bmp
+    export/3dsmax/art/DocExample/Textures/sky.png
+
+07/02/02 D3D8 - documented new functions since the 3.2 release
+    RwD3D8EngineGetMaxMultiSamplingLevels
+    RwD3D8EngineSetMultiSamplingLevels
+    RwD3D8EngineSetRefreshRate
+    RwD3D8RasterIsCompressed
+    RpD3D8LightGetAttenuationParams 
+    RpD3D8LightSetAttenuationParams
+
+07/02/02 Existing functions documentation now in API reference
+    RpMatFX -> Xbox -> Xbox Multitexturing -> Functions
+    RpXboxMTEffectCreate 
+    RpXboxMTEffectGetConfig 
+    RpMatFX Multi-texturing overview in Xbox API.
+
+05/02/02 Extra functions added to RpUserData in API reference
+    RwCameraAddUserDataArray
+    RwCameraRemoveUserDataArray
+    RwCameraGetUserDataArray
+    RwCameraGetUserDataArrayCount
+    RpLightAddUserDataArray
+    RpLightRemoveUserDataArray
+    RpLightGetUserDataArray
+    RpLightGetUserDataArrayCount
+    RpMaterialAddUserDataArray
+    RpMaterialRemoveUserDataArray
+    RpMaterialGetUserDataArray
+    RpMaterialGetUserDataArrayCount
+    RwTextureAddUserDataArray
+    RwTextureRemoveUserDataArray
+    RwTextureGetUserDataArray
+    RwTextureGetUserDataArrayCount
+
+05/02/02 Re-wrote Team Overview in API Reference
+
+28/01/02 Added index.pdx which will enable the user to search all RenderWare Graphics PDF files in the doc directory at once.
+   doc\index.pdx
+   doc\index directory 
+   doc\searchpdfs.pdf
+
+28/01/02 API Reference version number updated to 3.3Dev.
+
+---------------------------------------------------
+BASELINE 28/01/02. 
+Below is a list of other changes to the User Guide.
+
+22/01/02 2D Graphics Toolkits chapter
+  Rendering & Cameras updated 1.2.6
+  Summary "Cameras" updated 1.6.1
+
+18/01/02 Serialization chapter
+  rwMAKECHUNKID() becomes MAKECHUNKID - as per email 29Nov2001 Robert Watkins
+  and PR#2738 LITTLE-endian and BIG-endian were reversed in the table, and a couple 
+  of tiny typing errors immediately preceding.
+
+18/01/02 Rasters Images & Textures chapter
+  Corrected the grey Note box on p126, "As Rasters are 
+  platform-dependent ..." and replaced with Matt Reynolds' contribution 
+  "Platform dependent texture dictionaries ..." as per bug  PR#2847
+
+17/01/02 Clumps now contain lights and cameras
+  chapters updated:
+  * Dynamic Models - 1.2.3 The Clump Object, 1.2.4 Clump Destruction updated
+  * Lights - 1.2.3 Clump Lights & Streaming added
+  * World & Static Models - 1.2 Scenes & Static Models extensively updated
+    1.9 Destruction updated.
+
+17/01/02 Cameras Chapter - Clumps can now contain cameras
+  Section 1.9 edited
+
+13/12/01 HAnim chapter - keyframe table fixed.
+
+23/11/01 Bezier Patches chapter	
+   In parameter space a uniform B-spline's control points are spaced
+   +> uniformly (or evenly) in parameter space, at intervals of 1/n for a
+   curve with open ends, and 1/(n-1)
+   the two n expressions are now swapped
+
+22/11/01 User Data chapter - 1.3.4 Deleting User Data added.

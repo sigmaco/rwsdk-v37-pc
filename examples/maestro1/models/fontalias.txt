@@ -1,0 +1,21 @@
+# Global font path : all the font are in this directory
+GlobalPath ..\font\
+
+# all the font following the subpath command are located in <GlobalPath><SubPath>
+SubPath .\
+
+# default to this font if a font with the same name is not found
+DefaultFont Arial
+
+# Windows/Flash font name
+OriginalFont Arial
+# size font alias
+size 10 font t10
+# if font size doesn't exist, scale it using this font as the base one
+size -10 font t10
+
+SubPath .\
+
+OriginalFont Adler
+size 22 font Adler22
+size -22 font Adler22

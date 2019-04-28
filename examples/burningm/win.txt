@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): BurningM
+--------------------------------------------------------------------------
+
+PURPOSE
+
+This example demonstrates a burning man effect.
+
+A simple particle system, using a ptank for the rendering, is animated
+using a skinned character as an emitter.
+
+For every new particle emitted, a random vertex is chosen and skinned on 
+the cpu, so that particles are created on the surface of the character.
+
+The particle emission code, calculating skinning on the cpu, is using the 
+RenderWare skinning functions, using SSE assembly when available to speed 
+up calculation.
+
+To get more performance out of that code one could :
+- Reorganise the data of the particle system to avoid the data copy used 
+  during the skinning would give better cpu performance.
+- Use 1 weight skin for the burning character.
+- Avoid using the normal as an emittion parameter.
+
+The particle animation code would benefit as well from algorithme 
+simplification (removal of the wind, or the friction) and assembly 
+optimization. 
+
+With those optimization, the effect could be used in a real game situation.
+
+See src\win\prtwin.c file for details of the implementation.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+Left mouse button drag  - Adjusts observer camera orientation.
+
+CURSOR UP and DOWN      - Move observer camera forwards/backwards.
+
+CURSOR LEFT and RIGHT   - Move observer camera left and right.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                     - Allows the user to read the number of frames 
+                          per second being rendered (updated every 
+                          second).
+
+Animation               - Enable/disable animation.
+
+Animation speed         - Adjusts the animation speed, either forwards 
+                          or backwards in time.
+
+Emit particles          - Enable/disable the particles emittion.
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

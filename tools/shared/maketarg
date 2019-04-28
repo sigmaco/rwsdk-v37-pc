@@ -1,0 +1,26 @@
+#
+# Rules for RWS Tools Shared files.
+#
+
+include $(RWGDIR)/shared/maketarg
+
+$(OBJDIR)/%.$(O): $(RWTOOLSHAREDSRC)/%.c
+	$(CC) $(CFLAGS) $(COUT)$@ $<
+
+#
+# Additional for Window console build.
+#
+ifeq ("$(RWOS)", "win")
+LFLAGS += \
+	-subsystem:console
+endif
+
+#
+# needed by install target
+#
+$(RWBINDIR):
+	$(MD) $@
+
+ifndef $(CP)
+CP = cp
+endif

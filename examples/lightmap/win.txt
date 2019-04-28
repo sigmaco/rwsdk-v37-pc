@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Lightmap
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The LIGHTMAP example demonstrates how RenderWare can generate and use
+lightmaps to display detailed, static lighting.
+
+This example can load BSPs and DFFs, generate lightmap UV coordinates for
+them and illuminate the lightmaps from lights in the scene (which can come
+from a DFF).
+
+On load, the example will load example.bsp and example.dff (which contains
+lights for this scene). Further BSPs and DFFs may be loaded from the
+command-line or by drag'n'drop and they may be saved again from the menu
+(see below) after having had lightmaps created and/or illuminated for them.
+
+Typical example use might proceed as follows:
+ o start the example
+   - the default BSP and DFFs load
+ o select Create Lightmaps on the menu
+   - lightmap UVs are calculated for most of the objects
+     in the scene and blank, checkerboard lightmaps are
+     then displayed
+ o the scene's objects are saved with their new lightmap UV coordinates
+   and other lightmap-related plugin data which has automatically been
+   set up
+   - example.bsp is overwritten
+   - vase00.dff to vase03.dff are created (vase.dff is the original)
+ o the camera is moved to view a region of the level and Lighting
+   is selected from the menu
+   - the lightmaps for the visible portion of the level are lit,
+     bit by bit, as you watch
+   - they are lit using static RpLights in the scene
+   - there are two dynamic lights (one ambient, one point) which
+     add on top of this (try toggling Dynamic Lighting)
+   - note that one vase (that which does not display a checkboard)
+     is vertex-lit rather than lit with lightmaps... due to the
+     high vertex count, the results are similar
+ o inspect the lightmaps in various rendering styles by selecting
+   Render Style and Point Sample
+ o view the RpLights in the scene by selecting Draw Lights
+   - point lights are circles with crosses
+   - directional lights are arrows
+   - spotlights are cones
+   - the ambient light is drawn as the world's bounding box
+ o clear the lightmaps with Clear Lightmaps
+   - the lightmaps are returned to the checkerboard state
+ o jitter the RpLights with Jitter Lights and select Lighting again
+   - RpLight shadows are now softened through jittering
+     (look at the lights with Draw Lights again)
+ o select Destroy Lightmaps and then Create Lightmaps again
+   - lightmaps are created only for those objects now
+     in the camera frustum
+ o select RpLights and then Area Lights and then Lighting again
+   - area lighting is now performed
+   - this is much slower than RpLight lighting but produces more
+     realistic results with soft shadows and subtle gradients
+   - two textures are tagged as emitters, light.png and chamberlight.png
+ o save the lightmaps as platform-independent images with Save Images
+   - these images will then be loaded when the example next runs, on
+     any platform
+ o save the lightmaps in a platform-dependent texture dictionary with
+   Save TexDict
+   - the texdict will then be loaded when the example next runs, on
+     the current platform
+
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+Left mouse button drag  - Rotate the camera
+
+CURSOR KEYS +           - Navigate the scene
+Left mouse button drag
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                  [F]  - Allows the user to read the number of frames per
+                            second being rendered (updated every second).
+Camera Speed        [+/-] - Allows the user to adjust the speed of camera
+                            movement
+Create Lightmaps     [C]  - Creates lightmaps for the objects in the camera
+                            view frustum (destroying any existing ones)
+Clear Lightmaps      [X]  - Clears lightmaps to a checkerboard pattern
+                            (will create lightmaps first if none exist)
+Destroy Lightmaps    [Q]  - Destroys all existing lightmaps
+Lightmap Density          - Allows the user to modify the lightmap sample
+                            density used when lightmaps are created
+Lightmap Size             - Allows the user to modify the size of the
+                            lightmaps which will be created for this scene
+Lightmap Supersample      - Allows the user to set the sampling resolution
+                            for lightmaps. The sampling resolution will the
+                            product of the supersample value and the lightmap
+                            size 
+Lighting             [L]  - Toggles incremental lighting for the visible
+                            portions of the scene's lightmaps
+Cancel Lighting      [K]  - Cancels the current lighting session
+Area Lights          [A]  - Toggles the use of area lights during lightmap
+                            illumination
+RpLights             [R]  - Toggles the use of RpLights during lightmap
+                            illumination
+Jitter Lights        [J]  - Duplicates RpLights to produce soft shadows
+Save Images          [I]  - Saves the scene's lightmaps as platform-
+                            independent images
+Save TexDict         [T]  - Saves the scene's textures, including lightmaps,
+                            in a texture dictionary
+Save Objects         [O]  - Saves the scene's objects with any new lightmap-
+                            related data that they may have accrued
+Render Style         [S]  - Toggles the current rendering mode for
+                            lightmapped objects between:
+                            o base texture only
+                            o lightmap only
+                            o base texture multiplied by lightmap
+Point Sample         [P]  - Toggles point sampling for lightmaps
+Dynamic Lights       [Y]  - Toggles the scene's dynamic lights
+Draw Lights          [B]  - Toggles Im3D representations of the scene's
+                            RpLights
+Draw Wireframe       [W]  - Toggles Im3D drawing of wireframe worldsector
+                            bounding boxes and worldsector polygons
+Make Darkmaps        [D]  - Convert the lightmaps to darkmaps for PlayStation 2
+Process Base Texture [U]  - Process the base textures for PlayStation 2
+Lum Calc Method           - Toggle method to calculate the lumin value from
+                            the base textures
+Tex Dict Method           - Toggle method to save texture dictionary in 
+                            platform dependant or indpendent format
+
+-------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+ 
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

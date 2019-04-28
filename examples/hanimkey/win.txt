@@ -1,0 +1,89 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): hanimkey
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The HANIMKEY example shows how to register and use an 
+RpHAnim custom keyframe interpolation scheme.
+
+A standard RpHAnim animation contains rotations and translations for
+the bones of the hierarchy in every keyframe. However, the translations
+may be redundant as the bones often stay at a fixed offset from the 
+parent bone - only the rotation changes.
+
+This example introduces a new keyframe type which includes only the
+rotational animation, and no translations, thus saving memory. To support
+the interpolation and streaming of the new keyframe type, a set of
+callbacks are registered with the RpHAnim system.
+
+The fixed set of translations are applied to the bones after the animation
+has been updated. These are extracted from the RpSkin data based on the
+bone-to-skin matrices which give the base pose of the character. On 
+start up of the example, this translation is not applied, and the skin
+can be seen in a 'collapsed' state.
+
+The rotation-only animation is extracted from a standard animation. Once
+created it may be saved and re-loaded using the standard RpHAnim
+interface.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+Translate bones         - Applies the bone offsets to the animation. These
+                          are extracted from the RpSkin data.
+
+Save animation          - Saves the custom animation.
+
+Load animation          - Loads the custom animation.
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

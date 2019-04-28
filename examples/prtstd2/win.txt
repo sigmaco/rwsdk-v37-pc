@@ -1,0 +1,156 @@
+--------------------------------------------------------------------------
+        RenderWare Graphics Example (win): prtstd2
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The PRTSTD2 example illustrates the use of a custom property with the PrtStd
+plugin.
+
+This examples shows how a custom emitter and particle property can be created
+and used with other standard property in the prtstd plugin.
+
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button       - Rotate the emitter.
+
+Right mouse button      - Rotate the camera around the emitter.
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+EMITTER SIZE X                 - Size (X axis) of the emitter.
+EMITTER SIZE Y                 - Size (Y axis) of the emitter.
+EMITTER SIZE Z                 - Size (Z axis) of the emitter.
+
+EMITTED PARTICLE COUNT         - Number of particles emitted per batch.
+EMITTED PARTICLE COUNT BIAS    - Per batch variation of the number of 
+                                 particle emitted.
+    
+EMITTION GAP                   - Time between to emission.
+EMITTION GAP BIAS              - Per batch variation of the previous value.
+    
+PARTICLES LIFE                 - Life Time of particles.
+PARTICLES LIFE BIAS            - Per particle variation of the previous 
+                                 value.
+
+INITIAL VELOCITY               - Initial velocity of the particles.
+INITIAL VELOCITY BIAS          - Per particle variation of the previous 
+                                 value.
+
+INITIAL DIRECTION X            - Initial direction (X Axis) of the 
+                                 particles in world space.
+INITIAL DIRECTION Y            - Initial direction (Y Axis) of the 
+                                 particles in world space.
+INITIAL DIRECTION Z            - Initial direction (Z Axis) of the 
+                                 particles in world space.
+
+INITIAL DIRECTION X BIAS       - Per particle variation of the previous 
+                                 value.
+INITIAL DIRECTION Y BIAS       - Per particle variation of the previous 
+                                 value.
+INITIAL DIRECTION Z BIAS       - Per particle variation of the previous 
+                                 value.
+
+FORCE X                        - Force (X Axis) applied to the particle 
+                                 system.
+FORCE Y                        - Force (Y Axis) applied to the particle 
+                                 system.
+FORCE Z                        - Force (Z Axis) applied to the particle 
+                                 system.
+
+START COLOR RED                - Initial value of the red component of
+                                 the particles.
+START COLOR GREEN              - Initial value of the green component of 
+                                 the particles.
+START COLOR BLUE               - Initial value of the blue component of 
+                                 the particles.
+START COLOR ALPHA              - Initial value of the alpha component of 
+                                 the particles.
+
+END COLOR RED                  - Final value of the red component of 
+                                 the particles.
+END COLOR GREEN                - Final value of the green component of 
+                                 the particles.
+END COLOR BLUE                 - Final value of the blue component of 
+                                 the particles.
+END COLOR ALPHA                - Final value of the alpha component of 
+                                 the particles.
+
+START SIZE X                   - Initial X size of the particles.
+START SIZE Y                   - Initial Y size of the particles.
+START SIZE X BIAS              - Per particle variation of the 
+                                 previous value.
+START SIZE Y BIAS              - Per particle variation of the 
+                                 previous value.
+
+END SIZE X                     - Final X size of the particles.
+END SIZE Y                     - Final Y size of the particles.
+END SIZE X BIAS                - Per particle variation of the 
+                                 previous value.
+END SIZE Y BIAS                - Per particle variation of the 
+                                 previous value.
+
+RENDER EMITTER                 - Toggle the emitter rendering.
+RESET EMITTER                  - Reset the parameters.
+
+AUTOROTATE EMITTER             - Automatically rotate the emitter.
+
+AUTOROTATE X                   - Autorotate angle on the X axis.
+AUTOROTATE Y                   - Autorotate angle on the Y axis.
+AUTOROTATE Z                   - Autorotate angle on the Z axis.
+
+ALPHA BLENDING                 - Toggle Alpha blending of the particles.
+
+SOURCE BLEND FUNCTION          - Select the source blending mode.
+DESTINATION BLEND FUNCTION     - Select the destination blending mode.
+
+FPS                            - Allows the user to read the number 
+                                 of frames per second being rendered.
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable)
+                          otherwise do what you would do in general
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003.
+Criterion Software grants you a license to use it only in the form as
+supplied. You may not disassemble, decompile or reverse engineer this
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

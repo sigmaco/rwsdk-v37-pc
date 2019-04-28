@@ -1,0 +1,92 @@
+--------------------------------------------------------------------------
+               RenderWare Graphics Example (win): Collis3
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The COLLIS3 example demonstrates the use of the RenderWare collision 
+plugin (RpCollision) for the detection of collisions between atomics, and 
+highlights the use of geometry collision data for improved performance.
+
+The example shows several spheres being pushed around by a set of spinning
+objects. This is not a realistic simulation - the algorithm is crude and
+is used purely to illustrate the collision testing process (it is possible
+for geometry to penetrate when a collision cannot be resolved).
+
+On startup, the geometries of the bowl and spinners do not have collision 
+data. During a sphere intersection test, every triangle in every spinner
+is individually tested. In this state the frame-rate of the application is
+limited by this testing.
+
+Collision data may be built via the menu, and once created the performance
+should improve. This data provides information to enable fast isolation of
+the triangles in the geometry which potentially intersect the sphere 
+before individual tests are performed.
+
+Collision data generation is intended for offline use in custom tools and
+exporters. The code provided with this example shows the simple steps
+required to load an atomic, build geometry collision data and resave.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR              - Toggle menu/help/plain mode.
+
+ESC                   - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+RESET                 - Restarts the example, reverting to geometry
+                        without collision data.
+
+BUILD COLLISION DATA  - Builds geometry collision data for the 
+                        the atomics used in the example. This should
+                        significantly improve performance.
+
+SAVE COLLISION DATA   - Saves the atomics with geometry collision data
+                        if built.
+
+FPS                   - Allows the user to read the number of frames per
+                        second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

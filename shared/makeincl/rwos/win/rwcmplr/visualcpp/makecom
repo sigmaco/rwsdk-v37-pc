@@ -1,0 +1,7 @@
+#########################################
+# These are for Visual C++ -- in C++ mode
+#########################################
+
+CFLAGS += -TP -WX
+
+include $(RWGDIR)/shared/makeincl/rwos/win/rwcmplr/visualc/makecom

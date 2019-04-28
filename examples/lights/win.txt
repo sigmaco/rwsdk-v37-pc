@@ -1,0 +1,125 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Lights
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The LIGHTS example is used to demonstrate the different lights that are 
+available for use in RenderWare.
+
+The lights demonstrated are:
+     - AMBIENT
+     - DIRECTIONAL
+     - POINT
+     - SPOT
+     - SPOT-SOFT
+
+The parameters of these lights can also be varied interactively using the
+controls outlined below.
+
+It should be noted that the changes shown in the light drawing when
+the light radius is changed is representational (i.e. 5%) of the actual
+light radius.
+
+---------------------------------------------------------------------------
+GENERAL CONTROLS
+
+CTRL + 
+Left mouse button drag    - Allows the position of the light source to be 
+                            modified within the x-y plane (applies only 
+                            to lights that can be moved: point, spot and
+                            spot-soft).
+
+CTRL + 
+Right mouse button drag   - Allows the position of the light source to be
+                            modified in the z-direction (applies only
+                            to lights that can be moved: point, spot and
+                            spot-soft).
+
+Left mouse button drag    - Rotates the light source (applies only to
+                            lights that can be rotated: directional, spot
+                            and spot-soft).
+
+SPACEBAR                  - Toggle menu/help/plain mode.
+
+ESC                       - Quit the application.
+
+---------------------------------------------------------------------------
+MENU OPTIONS
+
+LIGHT TYPE                - Allows the user to change the type of light 
+                            source (ambient, directional, point, spot, 
+                            spot-soft) use.
+
+LIGHT                     - Allows the user to turn the light on or off.
+
+DRAW LIGHT                - Allows the user to turn the drawing of the 
+                            light icon on or off.
+
+BASE AMBIENT              - Allows the user to turn the base ambient light
+                            on or off.
+
+RESET                     - Allows the user to reset the position of the
+                            light.
+
+RADIUS                    - For lights which have a radius (point, spot, 
+                            spot-soft) allows the user to change it's 
+                            radius.
+
+CONE ANGLE                - For spot and spot-soft lights allows the user
+                            to change the angle the light illuminates 
+                            objects.
+
+LIGHT RED                 - Allows the user to change the value of the 
+                            red channel for the light's color.
+
+LIGHT GREEN               - Allows the user to change the value of the 
+                            grenn channel for the light's color.
+
+LIGHT BLUE                - Allows the user to change the value of the 
+                            blue channel for the light's color.
+
+FPS                       - Allows the user to read the number of frames 
+                            per second being rendered (updated every 
+                            second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

@@ -1,0 +1,173 @@
+###########################################################################
+#
+# File :     makecom/visualc
+#
+# Abstract : Visual C specific compile time options. 
+#            This file is included from a generic top level makefile when
+#            the Visual C compiler is selected
+#
+###########################################################################
+#
+# This file is a product of Criterion Software Ltd.
+#
+# This file is provided as is with no warranties of any kind and is
+# provided without any obligation on Criterion Software Ltd. or Canon Inc. 
+# to assist in its use or modification.
+#
+# Criterion Software Ltd. will not, under any circumstances, be liable for 
+# any lost revenue or other damages arising from the use of this file.
+#
+# Copyright (c) 1999 Criterion Software Ltd.
+# All Rights Reserved.
+#
+# RenderWare is a trademark of Canon Inc.
+#
+###########################################################################
+
+# Indicate that compiler options have been included
+MAKECOM=1
+
+# These are definately compiler specific
+ifeq ($(SMALLCODE), 1)
+C_SHARED = /MD
+C_OPT = /O1 -Ob2
+else
+C_SHARED = /ML
+C_OPT = /O2 -Ob2
+endif
+
+# applications linking against the NULL DLL built libraries
+# require the multithreaded DLL runtimes
+ifeq ("$(RWTARGET)","null")
+ifeq ($(RWDLL),1)
+C_SHARED = /MD
+endif
+endif
+
+CFLAGS += -GB
+
+CFLAGS += -nologo -W3 -DWIN32 -D_WINDOWS -D_MBCS -D__MSC__ \
+	-DVC_EXTRALEAN  -DWIN32_EXTRA_LEAN -DWIN32_LEAN_AND_MEAN -c
+
+
+ifeq ($(COPTIMIZE), 0)
+ifeq ($(CPROFILE), 0)
+ifeq ($(MSWST), 0)
+CFLAGS += -Ob0 -Oy- -Od
+endif
+else
+# Inlining confuses VTune profiling; turn it off with -Ob0
+CFLAGS += -Ob0gity -Gfys
+endif
+else
+CFLAGS += $(C_OPT)
+endif
+
+ifeq ($(CDEBUG), 1)
+CFLAGS += -Z7 -D_DEBUG $(C_SHARED)d
+LFLAGS += -debug
+else
+ifeq ($(CPROFILE), 1)
+CFLAGS += -Zi -U_DEBUG -DNDEBUG $(C_SHARED)
+LFLAGS += -debug -fixed:no
+else
+ifeq ($(MSWST), 1)
+CFLAGS += -Gh -Ox -Zd -DNDEBUG -GX -Gs -Ob1 -Oity -U_CRTDBG_MAP_ALLOC -U_DEBUG 
+LFLAGS += -PDB:none -debug:mapped,partial -debugtype:coff wst.$(L)
+else
+CFLAGS += -DNDEBUG $(C_SHARED)
+LFLAGS += -opt:REF -opt:ICF,4 -opt:win98
+endif
+endif
+endif
+
+ifdef DXSDK
+RWINCDIR += -I$(DXSDK)/include
+endif
+
+# These are linker specific
+LFLAGS += \
+	-incremental:no \
+	-machine:I386 \
+	-libpath:$(RWLIBDIR) \
+	-nologo \
+	-pdb:none \
+	-subsystem:windows \
+	-warn:3 \
+	-NODEFAULTLIB:OLDNAMES.$(L) \
+        -NODEFAULTLIB:uuid.$(L)
+
+ifeq ("$(RWTARGET)", "softras")
+
+ifeq ($(RWDEBUG), 1)
+LFLAGS += \
+	-NODEFAULTLIB:libcmtd.$(L)
+else # RWDEBUG
+LFLAGS += \
+	-NODEFAULTLIB:libcmt.$(L)
+endif # RWDEBUG
+
+endif # softras
+
+ifneq ($(filter $(RWTARGET), null d3d9),)
+
+# Prevent 'no objects used' warning
+LFLAGS += /IGNORE:4005
+endif  # ifneq ($(filter $(RWTARGET), null, d3d9),)
+
+# These are compiler/linker specific
+ifeq ("$(SYSLIBS)", "")
+
+SYSLIBS = kernel32.$(L) \
+          user32.$(L) \
+          shell32.$(L) \
+          winmm.$(L)
+
+ifeq ("$(RWTARGET)", "opengl")
+SYSLIBS += gdi32.$(L)
+endif # opengl
+
+ifeq ("$(RWTARGET)", "d3d9")
+
+# Prevent 'all references to xxx.dll discarded by /OPT:REF' warning
+ifeq ($(RWDEBUG),0)
+LFLAGS += -IGNORE:4089
+endif
+
+SYSLIBS += advapi32.$(L) uuid.$(L) gdi32.$(L)
+
+endif # d3d9
+
+endif # SYSLIBS
+
+ifeq ($(MSWST), 1)
+SYSLIBS += wst.$(L)
+endif
+
+CC        = cl
+COUT      = -Fo
+LD        = link
+LOUT      = /OUT:
+
+# Librarian options (for append, we include the source lib again)
+AR		= lib.exe
+ARCREATEFLAGS   = -out:$@ $^
+ARAPPENDFLAGS	= -out:$@ $@
+
+# Define some compiler/platform specific parameters for the naming of object
+# and library files
+
+O = obj
+L = lib
+LP = 
+EXE = .exe
+
+%.res : %.rc
+	rc $^
+
+# Directory creation
+ifndef MD
+MD = mkdir -p
+endif
+CPPFLAGS += $(CFLAGS)
+

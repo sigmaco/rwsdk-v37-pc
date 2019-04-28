@@ -1,0 +1,109 @@
+----------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Lights2
+----------------------------------------------------------------------------
+
+PURPOSE
+
+The LIGHTS2 example is used to demonstrate the effects of different 
+global and local lights on an irregular terrain. 
+
+The terrain is always lit by a low level of "Ambient light" (diffuse
+light from all directions).
+
+The "Directional light" (parallel light, as from the sun) can be 
+switched on or off and it illuminates the hills and valleys in light
+and shade.
+
+The "Point light" (like a spot light) is marked by a circle, and throws
+a stronger or weaker light, at a fixed angle, onto the terrain beneath
+it. The radius of its beam is adjustable. It is darkest when the radius
+is small.
+
+
+Ambient and directional lights are known as global lights and illuminate 
+all of the world.  The point light is known as a local light and it's 
+illumination only effects the world sectors contained within its radius.
+
+The position of the point light and it's radius is identified by a colored
+circle.
+
+The direction of the directional light is identified by an arrow drawn to
+the right of the world.
+
+The world sectors are identified by drawing their bounding box and any 
+world sectors which are illuminated by the point light have their bounding 
+box highlighted, by being drawn in another color.
+
+To see the effects of the different lights, the directional and point 
+light can be switched on and off.  The point light's radius can be 
+increased or decreased.  These options can be performed using the menu.  
+The point light can be moved between world sectors and the directional 
+light can be rotated. These options are performed with the mouse.
+
+----------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Right mouse button drag         - Allows the point light to be repositioned 
+                                  in the world, in the x-z plane. 
+
+CTRL + Right mouse button drag  - Rotates the directional light.
+
+SPACEBAR                        - Toggle menu/help/plain mode.
+
+ESC                             - Quit the application.
+
+---------------------------------------------------------------------------
+MENU OPTIONS
+
+DIRECTIONAL LIGHT       - Allows the user to turn the directional light on
+                          or off.
+
+POINT LIGHT             - Allows the user to turn the point light on or
+                          off.
+
+LIGHT RADIUS            - Allows the user to change the radius of the 
+                          point light.
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+ 
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+----------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

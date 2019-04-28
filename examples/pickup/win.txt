@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------
+        RenderWare Graphics Example (win): pickup
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The PICKUP example demonstrates a health-pack pickup effect, using one ptank 
+atomic per pickup.
+
+These effects take advantage of the fact that most pickups in games are 
+static (i.e. : they don't move around during the same level, they are 
+either visible or invisible ).  So, the particles are created at the 
+beginning of the example (or, during loading time of a level in a real game 
+situation) and are not moved or animated any further.
+
+The color animation is then done using the constant color of the ptank 
+atomic.
+
+The CPU cost of this animation is lower than when animating the 
+color and the position for each particles.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button       - Rotate the camera around the pickup.
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                     - Allows the user to read the number 
+                          of frames per second being rendered.
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable)
+                          otherwise do what you would do in general
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003.
+Criterion Software grants you a license to use it only in the form as
+supplied. You may not disassemble, decompile or reverse engineer this
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

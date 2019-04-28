@@ -1,0 +1,160 @@
+###########################################################################
+#
+# File :     makecom/Intel
+#
+# Abstract : Intel compiler specific compile time options.
+#            This file is included from a generic top level makefile when
+#            the Intel compiler is selected
+#
+###########################################################################
+#
+# This file is a product of Criterion Software Ltd.
+#
+# This file is provided as is with no warranties of any kind and is
+# provided without any obligation on Criterion Software Ltd. or Canon Inc.
+# to assist in its use or modification.
+#
+# Criterion Software Ltd. will not, under any circumstances, be liable for
+# any lost revenue or other damages arising from the use of this file.
+#
+# Copyright (c) 1999 Criterion Software Ltd.
+# All Rights Reserved.
+#
+# RenderWare is a trademark of Canon Inc.
+#
+###########################################################################
+
+# Indicate that compiler options have been included
+MAKECOM=1
+
+# These are definately compiler specific
+ifeq ($(SMALLCODE), 1)
+C_SHARED = -MD
+C_OPT = -O1 -Ob2
+else
+C_SHARED = -ML
+C_OPT = -O3 -Qip -Qipo -QaxiMK
+endif
+
+CFLAGS += -nologo -W3 -G6 -DWIN32 -D_WINDOWS -D_MBCS -D__MSC__ \
+	-DVC_EXTRALEAN  -DWIN32_EXTRA_LEAN -DWIN32_LEAN_AND_MEAN -c
+
+ifeq ($(COPTIMIZE), 0)
+ifeq ($(CPROFILE), 0)
+CFLAGS += -Ob0 -Oy- -Od
+else
+# Inlining confuses VTune profiling; turn it off with -Ob0
+CFLAGS += -Ob0gity -Gfys
+endif
+else
+CFLAGS += $(C_OPT)
+endif
+
+ifeq ($(CDEBUG), 1)
+CFLAGS += -Zi -GZ -D_DEBUG -UNDEBUG $(C_SHARED)d
+LFLAGS += -debug
+else
+ifeq ($(CPROFILE), 1)
+CFLAGS += -Zi -U_DEBUG -DNDEBUG $(C_SHARED)
+LFLAGS += -debug -fixed:no
+else
+CFLAGS += -U_DEBUG -DNDEBUG $(C_SHARED)
+LFLAGS += -qipo -opt:REF -opt:ICF,4 -release 
+endif
+endif
+
+ifeq ("$(INTELPGO)", "use")
+CFLAGS += -Qprof_use -Qip -Qprof_dir $(RWGSDK)
+else
+ifeq ("$(INTELPGO)", "gen")
+CFLAGS += -Qprof_gen -Qprof_dir $(RWGSDK)
+endif
+endif
+
+
+ifdef DXSDK
+RWINCDIR += -I$(DXSDK)/include
+endif
+
+# These are linker specific
+LFLAGS += \
+	-incremental:no \
+	-libpath:$(RWLIBDIR) \
+	-machine:I386 \
+	-nologo \
+	-pdb:none \
+	-subsystem:windows \
+	-warn:3 \
+	-NODEFAULTLIB:OLDNAMES.$(L) \
+	-NODEFAULTLIB:uuid.$(L)
+
+ifeq ("$(RWTARGET)", "softras")
+
+ifeq ($(RWDEBUG), 1)
+LFLAGS += \
+	-NODEFAULTLIB:libcmtd.$(L)
+else # RWDEBUG
+LFLAGS += \
+	-NODEFAULTLIB:libcmt.$(L)
+endif # RWDEBUG
+
+endif # softras
+
+
+ifeq ($(RW_USE_SPF), 1)
+SYSLIBS = libm.$(L)
+endif
+
+# These are compiler/linker specific
+SYSLIBS = kernel32.$(L) \
+          user32.$(L) \
+          shell32.$(L) \
+          winmm.$(L)
+
+ifeq ("$(RWTARGET)", "opengl")
+SYSLIBS += gdi32.$(L)
+endif # opengl
+
+ifeq ("$(RWTARGET)", "d3d9")
+
+ifeq ($(RWDEBUG), 1)
+LFLAGS += -NODEFAULTLIB:libcpd.$(L)
+else
+LFLAGS += -NODEFAULTLIB:libcp.$(L)
+endif
+
+SYSLIBS += advapi32.$(L) uuid.$(L) gdi32.$(L)
+
+endif # d3d9
+
+
+ifeq ($(MSWST), 1)
+SYSLIBS += wst.$(L)
+endif
+
+CC        = icl.exe
+COUT      = -Fo
+LD        = xilink.exe
+LOUT      = -OUT:
+
+# Librarian options (for append, we include the source lib again)
+AR		= lib.exe
+ARCREATEFLAGS   = -out:$@ $^
+ARAPPENDFLAGS	= -out:$@ $@
+
+# Define some compiler/platform specific parameters for the naming of object
+# and library files
+
+O = obj
+L = lib
+LP =
+EXE = .exe
+
+%.res : %.rc
+	rc $^
+
+# Directory creation
+ifndef MD
+MD = mkdir -p
+endif
+CPPFLAGS += $(CFLAGS)

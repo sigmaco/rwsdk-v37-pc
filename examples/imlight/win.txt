@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------
+            RenderWare Graphics Example (win): imlight
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The IMLIGHT example illustrates a simple lighting system for use with
+RenderWare's 3D immediate mode API.
+
+The user can move and reorient the doughnut form to see the
+different effects of light on it, and can select the effects of 
+Ambient, Directional or Point Light. These can made to render 
+the form as flat triangles or in Gouraud shading.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button       - Rotate the 3D immediate mode object.
+
+Right mouse button      - Translate the 3D immediate mode object to and
+                          from the camera.
+
+CTRL +
+Left mouse button       - Rotate directional light OR translate point 
+                          light perpendicular to camera's at-vector.
+
+CTRL +
+Right mouse button      - Translate point light to and from the camera.
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+LIGHTING                - Allows the user to choose between three 
+                          different lighting models.
+
+SHADING                 - Allows the user to choose between Gouraud and
+                          flat shading models.
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable)
+                          otherwise do what you would do in general
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003.
+Criterion Software grants you a license to use it only in the form as
+supplied. You may not disassemble, decompile or reverse engineer this
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

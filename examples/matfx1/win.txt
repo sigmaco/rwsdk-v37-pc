@@ -1,0 +1,106 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Material-effects
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The MATFX1 example illustrates how to use the RpMaterialEffects plugin.
+The example shows how to create and manipulate clumps with
+
+1. environment maps
+2. bump maps
+3. combined bump map with environment map
+4. dual texturing
+5. single texture with an animated UV transform
+6. dual textures each with a separate animated UV transform
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button drag   - Rotates the clump.
+
+Right mouse button drag  - Moves the clump towards or away from the camera.
+
+SPACEBAR                 - Toggle menu/help/plain mode.
+
+ESC                      - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+MATERIAL EFFECT          - Toggles the current material effects.
+                           
+EFFECT TYPE              - Allows the user to switch between objects that 
+                           illustrate different material effects.
+
+ENVIRONMENT-MAP          - Allows the user to select a different texture 
+                           to use as an environment-map.
+
+ACTIVE MATERIAL          - Allows the user to select which materials are
+                           affected by the environment-map.
+
+SHININESS                - Allows the user to vary the intensity of the 
+                           reflection of the environment-map.
+
+BUMP-MAP                 - Allows the user to select a different clump 
+                           with a different bump-map.
+
+ACTIVE MATERIAL          - Allows the user to select which materials are
+                           affected by the bump-map.
+
+BUMPINESS                - Allows the user to vary the magnitude of the 
+                           bump-mapping.
+
+SRC BLEND MODE		 - Allows the user to set the source blend mode
+                           for the second texture in a dual pass.
+
+DEST BLEND MODE		 - Allows the user to set the destination blend
+                           mode for the second texture in a  dual pass.
+
+SPIN LIGHT               - Allows the user to rotate the directional 
+                           light around the object.
+
+FPS                      - Allows the user to read the number of frames 
+                           per second being rendered (updated every
+                           second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

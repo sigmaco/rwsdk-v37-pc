@@ -1,0 +1,74 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Pakfile
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The PAKFILE example demonstrates how PAK files can be used in a RenderWare
+application to reduce load times of files.
+
+It shows how PAK files can be seamlessly integrated into the application 
+with minimal effort to create a virtual file system in memory thus reducing
+the time taken to load individual files.
+
+As well as showing the loading of clumps, it demonstrates how associated 
+objects such as textures can also be stored in a PAK file. The scene loaded
+here is exactly equivalent to that created in the FOG example. Readme files
+are also stored and accessed from the PAK file.
+
+This simple example is limited to having a single PAK file open at any one
+time but this can easily be extended to multiple PAK files.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

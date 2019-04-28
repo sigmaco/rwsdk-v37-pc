@@ -1,0 +1,61 @@
+# Global font path : all the font are in this directory
+GlobalPath .\fonts\
+
+# all the font following the subpath command are located in <GlobalPath><SubPath>
+SubPath t\
+
+# default to this font if a font with the same name is not found
+DefaultFont Arial
+
+# Windows/Flash font name
+OriginalFont Arial
+# size font alias
+size 10 font t10
+size 12 font t12
+size 14 font t14
+size 16 font t16
+# if font size doesn't exist, scale it using this font as the base one
+size -10 font t10
+
+SubPath cn\
+
+OriginalFont Courier
+size 12 font cn12
+size 14 font cn14
+size 16 font cn16
+size 8 font cn8
+size -14 font cn14
+
+SubPath tnr\
+
+OriginalFont Time New Roman
+size 10 font tnr10
+size 12 font tnr12
+size 14 font tnr14
+size 16 font tnr16
+size -16 font tnr16
+
+SubPath Adler\
+
+OriginalFont Adler
+size 22 font adler22
+size -22 font adler22
+
+#SubPath misc\
+
+# stroked fonts may have brush widths defined for the strokes
+#   the format is
+#     size <size> font <fontfile> brushWidth <brushWidth>
+#   eg
+#     size 10 font helv brushWidth 0.02
+
+#ch
+#courier
+#fbigtxt
+#ftext
+#gold
+#helv
+#illum
+#tr
+
+

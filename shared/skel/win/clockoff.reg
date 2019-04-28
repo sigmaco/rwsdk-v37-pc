@@ -1,0 +1,5 @@
+REGEDIT4
+; File to disable clocks timing for RenderWare demos
+
+[HKEY_LOCAL_MACHINE\Software\Criterion\RenderWare]
+"DisplayClocks"=dword:00000000

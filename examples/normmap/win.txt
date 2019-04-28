@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Normal Map
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The NORMMAP example shows you how to use the normal map plugin for
+rendering any geometry using a normal map in texture space.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button drag      - Rotate the light.
+
+Right mouse button drag     - Rotate the camera.
+
+CTRL +
+Left mouse button drag      - Translate the camera along its 'at' vector
+                            while maintaining its orientation.
+
+CTRL +
+Right mouse button drag     - Translate the camera along its 'right' vector
+                            while maintaining its orientation.
+
+CURSOR UP and DOWN          - Translate the camera along its 'at' vector
+                            while maintaining its orientation.
+
+CURSOR LEFT and RIGHT       - Translate the camera along its 'right' vector
+                            while maintaining its orientation.
+
+SPACEBAR                    - Toggle menu/help/plain mode.
+
+ESC                         - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+LEFT mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2002. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------

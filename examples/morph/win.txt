@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Morph
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The MORPH example demonstrates how clumps containing morph target 
+information can be used in RenderWare. It shows how interpolators are 
+setup between different morph targets, and how the user can override the
+default callback allowing control over what happens when a target is 
+reached.
+
+This example has been tailored specifically to a particular geometry 
+which is a sphere. The sphere contains information about 3 additional 
+morph targets. The example morphs between the sphere and each of these 
+additional morph targets in turn, such that the order is 
+(0 -> 1 -> 0 -> 2 -> 0 -> 3). The global speed of the morphing can also 
+be controlled by the user. Note that changing this value does not alter 
+the scale of any interpolations.
+
+Morphing can be stopped at any time allowing the user to control the 
+exact position of the geometry between morph targets. A series of useful 
+morphing variables is also available for display, showing how the object 
+is behaving.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Mouse left button drag   - Rotate the clump.
+
+Mouse right button drag  - User advanced morphing (only when morphing is
+                           not free running).
+
+SPACEBAR                 - Toggle menu/help/plain mode.
+
+ESC                      - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+RUN MORPH           - Allows the user to turn morphing on or off.
+
+MORPH SPEED         - Allows the user to adjust the speed of the morphing.
+
+FPS                 - Allows the user to read the number of frames per 
+                      second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

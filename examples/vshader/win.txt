@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Vshader
+--------------------------------------------------------------------------
+
+PURPOSE
+
+Vshader shows how to integrate a vertex shader with RenderWare Graphics.
+A clump is loaded from a binary stream, and an atomic render callback
+set up to set some render states and run a vertex shader on the vertex
+data in the clump, producing a rainbow colored teapot. This is similar to
+NVIDIA's rainbow rendering sample.
+
+Requirements: This demo is available on PC for D3D8, D3D9 and Xbox only.
+It requires a video card that supports programmable shaders, e.g. GeForce3,
+GeForce4 Ti or the ATI Radeon 8500, 9700.
+
+Note: If you want to build other configurations of this example on your
+computer, please ensure that you add the "<DXSDK>/bin/DXUtils" path to your
+system path, or the executables search path in your IDE, in order to use
+the vertex shader assembler supplied with the DirectX8 SDK.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button drag   - Rotate the clump.
+
+Right mouse button drag  - Translate the camera to and from the clump.
+
+SPACEBAR                 - Toggle menu/help/plain mode.
+
+ESC                      - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+Vertex Shader           - Toggle rendering with the vertex shader or
+                          just an ordinary directional light.
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

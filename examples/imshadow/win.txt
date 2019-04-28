@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): Imshadow
+--------------------------------------------------------------------------
+
+PURPOSE
+
+This example demonstrates parallel-projection shadow rendering using 3D 
+immediate mode.
+
+A shadow camera is tracked along with the running character, and a
+preview of its raster may be seen at the upper right hand corner
+of the display.
+
+Every frame, the shadow raster is used as a texture and projected onto
+an array of 3D immediate mode triangles based on the world geometry
+which are then rendered using a suitable blending mode to produce the
+shadow.
+
+The set of immediate mode triangles is limited by a collision
+test around the character and further elimination of any triangles
+whose projected shadow UVs lie outside the range 0 to 1.
+
+Note: Due to unsupported features, the Software Rasterizer (softras)
+      does not render the shadow correctly (it is inverted).
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+SPACEBAR                - Toggle menu/help/plain mode.
+
+Left mouse button drag  - Adjusts observer camera orientation.
+
+CURSOR UP and DOWN      - Move observer camera forwards/backwards.
+
+CURSOR LEFT and RIGHT   - Move observer camera left and right.
+
+ESC                     - Quit the application.
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                     - Allows the user to read the number of frames per
+                          second being rendered (updated every second).
+
+Animation               - Enable/disable animation.
+
+Animation speed         - Adjusts the animation speed, either forwards or
+                          backwards in time.
+
+Shadow                  - Enable/disable shadow.
+
+Shadow rendering        - Only available on PlayStation 2.
+
+Shadow projection       - Choose between generic and optimized shadow
+                          projection. The optimized projection uses
+                          multitexturing to apply the shadow only for
+                          those sectors affected by the shadow volume.
+
+Shadow resolution       - Sets the resolution of the shadow raster. The
+                          actual resolution is two to the power of this
+                          value.
+
+Shadow anti-alias       - Apply anti-alias process to the shadow texture
+                          by averaging 2x2 texels down to 1.
+
+Shadow blur             - Blur the shadow texture. Values greater than 1
+                          cause this process to be repeated multiple 
+                          times. This may have an unacceptable impact on
+                          performance.
+
+Shadow zone radius      - Adjusts the radial extent of the shadow     
+                          covered by the collision region.
+
+Shadow strength         - Sets black or transparent shadows. This may be
+                          negative to give an inverse shadow effect which
+                          clearly shows all immediate mode triangles 
+                          being rendered.
+
+Shadow fade             - If set to ON, the shadow will fade to nothing
+                          at the shadow zone radius, thus hiding the
+                          limit of the collision zone while giving
+                          a natural looking effect.
+
+--------------------------------------------------------------------------
+MENU CONTROLS
+
+CURSOR UP and DOWN      - Select menu item.
+
+CURSOR LEFT and RIGHT   - Modify menu item value or execute associated 
+                          command.
+
+Menu shortcut keys      - Modify menu item value or execute associated 
+                          command.
+
+Left mouse button drag  - Modify floating point value (if applicable) 
+                          otherwise do what you would do in general 
+                          controls.
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003. 
+Criterion Software grants you a license to use it only in the form as 
+supplied. You may not disassemble, decompile or reverse engineer this 
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

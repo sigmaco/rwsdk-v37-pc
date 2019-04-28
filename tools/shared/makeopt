@@ -1,0 +1,40 @@
+# Define Common Directories
+
+ifndef RWGDIR
+RWGDIR = $(CURDIR)/../..
+endif 	# RWGDIR
+
+RWDLL=1
+
+include $(RWGDIR)/shared/makeopt
+
+# include common makefile options
+
+ifndef RWTOOLSHAREDDIR
+RWTOOLSHAREDDIR = $(RWGDIR)/tools/rws/shared
+endif
+
+ifndef RWTOOLSHAREDSRC
+RWTOOLSHAREDSRC = $(RWTOOLSHAREDDIR)/src
+endif
+
+#
+# RWS Tools Install Directory
+#
+ifndef RWBINDIR
+RWBINDIR = $(RWGDIR)/bin
+endif
+
+#
+# Include RWS Tools Shared files
+#
+
+CINCLUDE += \
+	-I$(RWTOOLSHAREDSRC)
+
+ifndef $(CP)
+CP = cp
+endif
+
+help:
+	@echo $(RWDLL)

@@ -1,0 +1,15 @@
+#
+# Skeleton src files for Windows
+#
+
+ifeq ($(RWSPLASH), 1)
+SKELSRC = $(SKELPS)/splash.c
+SYSLIBS += vfw32.lib
+endif
+
+SKELOBJ = $(SKELPS)/win.res
+
+# all softras applications require the generic C pipelines
+ifeq ("$(RWTARGET)","softras")
+RWLIBS += $(RWLIBDIR)/$(LP)rtgncpip.$(L)
+endif # ifeq ("$(RWTARGET)","softras")

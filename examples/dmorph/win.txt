@@ -1,0 +1,64 @@
+--------------------------------------------------------------------------
+             RenderWare Graphics Example (win): DMorph
+--------------------------------------------------------------------------
+
+PURPOSE
+
+The DMORPH example illustrates the DMorph plugin.
+
+The example uses two different geometry objects to illustrate the two ways
+in which delta morph targets can be used – a human face which is animated,
+and a curved surface which can be manipulated – both have a base geometry
+and two morph targets.
+
+--------------------------------------------------------------------------
+GENERAL CONTROLS
+
+Left mouse button       - Affect the surface
+        move left       - Reduce the contribution of DMorph Target 0.
+        move right      - Increase the contribution of DMorph Target 0.
+        move up	        - Increase the contribution of DMorph Target 1.
+        move down       - Reduce the contribution of DMorph Target 1.
+
+Right mouse button      - Affect the face
+        move left       - Reduce the loop-cycle time of DMorph Target 0.
+        move right      - Increase the loop-cycle time of DMorph Target 0.
+        move up         - Increase the loop-cycle time of DMorph Target 1.
+        move down       - Reduce the loop-cycle time of DMorph Target 1.
+
+SPACEBAR                - Toggle help.
+
+ESC                     - Quit the application.
+
+
+--------------------------------------------------------------------------
+MENU OPTIONS
+
+FPS                  - Allows the user to read the number of frames per
+                       second being rendered (updated every second).
+
+--------------------------------------------------------------------------
+HELP CONTROLS
+
+CURSOR UP and DOWN      - Scroll a line at a time (autorepeat available).
+
+PAGE UP and DOWN        - Scroll a page at a time.
+
+Mouse Wheel scroll      - Scroll up or down the page using the mouse wheel
+                          (if available).
+
+--------------------------------------------------------------------------
+This demonstration program is copyright Criterion Software Limited 2003.
+Criterion Software grants you a license to use it only in the form as
+supplied. You may not disassemble, decompile or reverse engineer this
+demonstration program.
+
+This demonstration program is provided as is with no warranties of any
+kind. Criterion Software will not, under any circumstances, be liable for
+any lost revenue or other damages arising from the use of this
+demonstration program.
+
+RenderWare is a registered trademark of Canon Inc.
+Other trademarks acknowledged.
+--------------------------------------------------------------------------
+Thu Feb 12 12:56:16 2004 -- build main eval ( 148160 )

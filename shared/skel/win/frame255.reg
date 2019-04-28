@@ -1,0 +1,5 @@
+REGEDIT4
+; File to set frame count for RenderWare demos
+
+[HKEY_LOCAL_MACHINE\Software\Criterion\RenderWare]
+"FrameCount"=dword:000000ff
