@@ -1,5 +1,5 @@
 # RenderWare (Graphics) 3.7.0.2 — Evaluation Edition
 Auto-descritivo. Se não foi captado por você, então isso não é pra você.
 
-RW é © 1993-2004 Criterion Software Limited. Todos os direitos reservados.
+Este conteúdo é © 1993-2004 Criterion Software Limited. Todos os direitos reservados.
 Violação de copyright não-intencional. Isto está aqui para propósitos educativos e preservação digital.
